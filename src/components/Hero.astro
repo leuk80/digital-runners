@@ -1,0 +1,53 @@
+---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  subtitle?: string;
+}
+
+const { lang, title, subtitle } = Astro.props;
+const t = useTranslations(lang);
+
+const heroTitle = title ?? t('hero.title');
+const heroSubtitle = subtitle ?? t('hero.subtitle');
+---
+
+<section class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white overflow-hidden">
+  <!-- Background decoration -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-500 rounded-full opacity-10 blur-3xl"></div>
+    <div class="absolute bottom-0 -left-24 w-80 h-80 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36">
+    <div class="max-w-3xl">
+      <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-4">Digital Runners</p>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        {heroTitle}
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+        {heroSubtitle}
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href={`/${lang}/kontakt`}
+          class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors"
+        >
+          {t('hero.cta')}
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+        <a
+          href={`/${lang}/leistungen`}
+          class="inline-flex items-center gap-2 border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 text-slate-300 font-medium px-6 py-3 rounded-lg transition-colors"
+        >
+          {t('hero.learnMore')}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

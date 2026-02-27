@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en' as const;
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('portfolio.title')}
+  description="Our portfolio and projects – examples of successful digital projects by Digital Runners."
+>
+  <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-3">Digital Runners</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('portfolio.title')}</h1>
+      <p class="text-slate-300 text-lg">{t('portfolio.subtitle')}</p>
+    </div>
+  </div>
+
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center py-16 bg-slate-50 rounded-2xl border border-dashed border-slate-300">
+        <div class="text-5xl mb-4">🚧</div>
+        <p class="text-slate-500 text-lg">{t('portfolio.comingSoon')}</p>
+        <a
+          href="/en/kontakt"
+          class="inline-flex items-center gap-2 mt-6 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors"
+        >
+          {t('hero.cta')}
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

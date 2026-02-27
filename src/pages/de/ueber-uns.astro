@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+
+const values = [
+  { icon: '🎯', title: 'Fokus', desc: 'Wir konzentrieren uns auf das Wesentliche und liefern Ergebnisse, die einen echten Unterschied machen.' },
+  { icon: '🤝', title: 'Partnerschaft', desc: 'Wir arbeiten eng mit unseren Kunden zusammen und verstehen uns als verlässlicher Partner – nicht nur Dienstleister.' },
+  { icon: '🚀', title: 'Innovation', desc: 'Wir bleiben immer auf dem neuesten Stand der Technologie und bringen frische Ideen in jedes Projekt.' },
+  { icon: '💎', title: 'Qualität', desc: 'Kompromisslose Qualität in allen Bereichen – von der Konzeption bis zur Umsetzung.' },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('about.title')}
+  description="Wer wir sind: Digital Runners ist Ihr Partner für digitale Transformation in der Schweiz."
+>
+  <!-- Page header -->
+  <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-3">{t('about.subtitle')}</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('about.title')}</h1>
+      <p class="text-slate-300 text-lg max-w-2xl">{t('about.text')}</p>
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-slate-900 mb-6">{t('about.mission')}</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">{t('about.missionText')}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-12">Unsere Werte</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {values.map(v => (
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
+            <div class="text-4xl mb-4">{v.icon}</div>
+            <h3 class="font-bold text-slate-900 mb-2">{v.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">Lernen Sie uns kennen</h2>
+      <p class="text-slate-600 mb-8">Wir freuen uns auf das Gespräch mit Ihnen.</p>
+      <a
+        href="/de/kontakt"
+        class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-colors"
+      >
+        {t('about.cta')}
+      </a>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en' as const;
+const t = useTranslations(lang);
+
+const services = [
+  {
+    icon: '💻',
+    title: t('services.web.title'),
+    desc: t('services.web.desc'),
+    details: [
+      'Responsive web design for all devices',
+      'Performance-optimised implementation',
+      'Modern technologies (Astro, React, Next.js)',
+      'CMS integration as required',
+      'SEO-friendly structure',
+    ],
+  },
+  {
+    icon: '🧭',
+    title: t('services.strategy.title'),
+    desc: t('services.strategy.desc'),
+    details: [
+      'Digital audit and current state analysis',
+      'Roadmap development',
+      'Technology evaluation',
+      'Change management support',
+      'KPI definition and success measurement',
+    ],
+  },
+  {
+    icon: '📈',
+    title: t('services.seo.title'),
+    desc: t('services.seo.desc'),
+    details: [
+      'Technical SEO audit',
+      'Keyword research and content strategy',
+      'On-page optimisation',
+      'Google Ads and social media advertising',
+      'Analytics and reporting',
+    ],
+  },
+  {
+    icon: '⚡',
+    title: t('services.automation.title'),
+    desc: t('services.automation.desc'),
+    details: [
+      'Workflow analysis and optimisation',
+      'No-code / low-code solutions',
+      'API integrations',
+      'Automated reports and notifications',
+      'CRM and ERP integration',
+    ],
+  },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('services.title')}
+  description="Our services: web development, digital strategy, SEO & marketing and process automation."
+>
+  <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-3">Digital Runners</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('services.title')}</h1>
+      <p class="text-slate-300 text-lg max-w-2xl">{t('services.subtitle')}</p>
+    </div>
+  </div>
+
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      {services.map((service, i) => (
+        <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center', i % 2 !== 0 ? 'md:flex-row-reverse' : '']}>
+          <div class:list={[i % 2 !== 0 ? 'md:order-2' : '']}>
+            <div class="text-5xl mb-4">{service.icon}</div>
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
+            <p class="text-slate-600 leading-relaxed mb-6">{service.desc}</p>
+            <a href="/en/kontakt" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+              Request a quote →
+            </a>
+          </div>
+          <div class:list={['bg-slate-50 rounded-2xl p-8 border border-slate-100', i % 2 !== 0 ? 'md:order-1' : '']}>
+            <h3 class="font-semibold text-slate-800 mb-4">What we deliver:</h3>
+            <ul class="space-y-3">
+              {service.details.map(item => (
+                <li class="flex items-start gap-3 text-sm text-slate-700">
+                  <svg class="h-5 w-5 text-cyan-500 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="bg-slate-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Interested? Get in touch.</h2>
+      <p class="text-slate-400 mb-8">We'll create a no-obligation proposal for you.</p>
+      <a href="/en/kontakt" class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-colors">
+        {t('hero.cta')}
+      </a>
+    </div>
+  </section>
+</BaseLayout>
