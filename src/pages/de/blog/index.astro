@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../../i18n/utils';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+
+const posts = (await getCollection('blog', ({ data }) => data.lang === 'de'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('blog.title')}
+  description={t('blog.subtitle')}
+>
+  <!-- Page header -->
+  <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-3">Digital Runners</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('blog.title')}</h1>
+      <p class="text-slate-300 text-lg">{t('blog.subtitle')}</p>
+    </div>
+  </div>
+
+  <!-- Posts -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {posts.length === 0 ? (
+        <div class="text-center py-16 bg-slate-50 rounded-2xl border border-dashed border-slate-300">
+          <p class="text-slate-500 text-lg">{t('blog.comingSoon')}</p>
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map(post => (
+            <article class="bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div class="p-6">
+                <time class="text-xs text-slate-400 uppercase tracking-wider">
+                  {post.data.pubDate.toLocaleDateString('de-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+                <h2 class="text-lg font-bold text-slate-900 mt-2 mb-3">{post.data.title}</h2>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">{post.data.description}</p>
+                {post.data.tags && (
+                  <div class="flex flex-wrap gap-1 mb-4">
+                    {post.data.tags.map((tag: string) => (
+                      <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">{tag}</span>
+                    ))}
+                  </div>
+                )}
+                <a
+                  href={`/de/blog/${post.slug.replace(/^de\//, '')}`}
+                  class="text-cyan-600 font-semibold text-sm hover:text-cyan-700 transition-colors"
+                >
+                  {t('blog.readMore')} →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

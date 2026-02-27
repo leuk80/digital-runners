@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en' as const;
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  lang={lang}
+  title="Home"
+  description="Digital Runners – Your partner for web development, digital strategy, SEO and process automation in Switzerland."
+>
+  <!-- Hero -->
+  <Hero lang={lang} />
+
+  <!-- Services overview -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t('services.title')}</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">{t('services.subtitle')}</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { icon: '💻', title: t('services.web.title'), desc: t('services.web.desc') },
+          { icon: '🧭', title: t('services.strategy.title'), desc: t('services.strategy.desc') },
+          { icon: '📈', title: t('services.seo.title'), desc: t('services.seo.desc') },
+          { icon: '⚡', title: t('services.automation.title'), desc: t('services.automation.desc') },
+        ].map(service => (
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+            <div class="text-3xl mb-4">{service.icon}</div>
+            <h3 class="font-semibold text-slate-900 mb-2">{service.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{service.desc}</p>
+          </div>
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href="/en/leistungen" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+          View all services →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About teaser -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-cyan-500 font-semibold text-sm uppercase tracking-widest mb-3">{t('about.subtitle')}</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{t('about.title')}</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">{t('about.text')}</p>
+          <a href="/en/ueber-uns" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            {t('about.cta')}
+          </a>
+        </div>
+        <div class="bg-gradient-to-br from-blue-950 to-slate-900 rounded-2xl p-10 text-white">
+          <div class="grid grid-cols-2 gap-6">
+            {[
+              { value: '50+', label: 'Projects' },
+              { value: '5+', label: 'Years of experience' },
+              { value: '100%', label: 'Client satisfaction' },
+              { value: 'CH', label: 'Based in Switzerland' },
+            ].map(stat => (
+              <div class="text-center">
+                <div class="text-3xl font-extrabold text-cyan-400 mb-1">{stat.value}</div>
+                <div class="text-sm text-slate-400">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-cyan-500 py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Ready for the next step?</h2>
+      <p class="text-slate-800 mb-8 max-w-xl mx-auto">Contact us for a no-obligation initial consultation.</p>
+      <a href="/en/kontakt" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors">
+        {t('hero.cta')}
+      </a>
+    </div>
+  </section>
+</BaseLayout>

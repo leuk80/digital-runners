@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('contact.title')}
+  description="Kontaktieren Sie Digital Runners – wir freuen uns auf Ihre Anfrage."
+>
+  <!-- Page header -->
+  <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-3">{t('contact.subtitle')}</p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('contact.title')}</h1>
+      <p class="text-slate-300 text-lg max-w-2xl">{t('contact.text')}</p>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Info -->
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 mb-6">So erreichen Sie uns</h2>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-cyan-50 rounded-lg p-3 text-cyan-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">E-Mail</h3>
+                <a href="mailto:info@digital-runners.ch" class="text-cyan-600 hover:text-cyan-700">
+                  info@digital-runners.ch
+                </a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-cyan-50 rounded-lg p-3 text-cyan-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">Standort</h3>
+                <p class="text-slate-600">Schweiz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 mb-6">Nachricht schreiben</h2>
+          <ContactForm lang={lang} />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
