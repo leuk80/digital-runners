@@ -7,51 +7,51 @@ const t = useTranslations(lang);
 
 const services = [
   {
-    icon: '💻',
-    title: t('services.web.title'),
-    desc: t('services.web.desc'),
+    icon: '🌐',
+    title: 'UniFi Network',
+    desc: 'High-performance WiFi, switch and gateway infrastructure for reliable, scalable networks in any environment.',
     details: [
-      'Responsive web design for all devices',
-      'Performance-optimised implementation',
-      'Modern technologies (Astro, React, Next.js)',
-      'CMS integration as required',
-      'SEO-friendly structure',
+      'UniFi Access Points for maximum WiFi coverage',
+      'Managed switches for structured cabling',
+      'UniFi Cloud Gateways and Dream Machines',
+      'Centralised management via UniFi Network Controller',
+      'VPN, VLAN and advanced network segmentation',
     ],
   },
   {
-    icon: '🧭',
-    title: t('services.strategy.title'),
-    desc: t('services.strategy.desc'),
+    icon: '📹',
+    title: 'UniFi Protect',
+    desc: 'Professional IP video surveillance with UniFi Protect – cameras, NVR and centralised management from a single source.',
     details: [
-      'Digital audit and current state analysis',
-      'Roadmap development',
-      'Technology evaluation',
-      'Change management support',
-      'KPI definition and success measurement',
+      'IP cameras for indoor and outdoor applications',
+      'UniFi NVR and Cloud Key for local recording',
+      'Real-time monitoring and motion detection',
+      'Easy management via UniFi Protect App',
+      'Scalable from small offices to large facilities',
     ],
   },
   {
-    icon: '📈',
-    title: t('services.seo.title'),
-    desc: t('services.seo.desc'),
+    icon: '🔧',
+    title: 'Installation & Consulting',
+    desc: 'We analyse your requirements, plan the optimal solution and install your UniFi infrastructure professionally.',
     details: [
-      'Technical SEO audit',
-      'Keyword research and content strategy',
-      'On-page optimisation',
-      'Google Ads and social media advertising',
-      'Analytics and reporting',
+      'Site survey and requirements analysis',
+      'Tailored network planning',
+      'Professional mounting and cabling',
+      'Configuration and commissioning',
+      'Handover training and documentation',
     ],
   },
   {
-    icon: '⚡',
-    title: t('services.automation.title'),
-    desc: t('services.automation.desc'),
+    icon: '🛟',
+    title: 'Support & Maintenance',
+    desc: 'Continuous support, proactive maintenance and fast assistance when problems arise – so your network always runs smoothly.',
     details: [
-      'Workflow analysis and optimisation',
-      'No-code / low-code solutions',
-      'API integrations',
-      'Automated reports and notifications',
-      'CRM and ERP integration',
+      'Firmware updates and security patches',
+      'Proactive monitoring of your infrastructure',
+      'Fast troubleshooting when issues occur',
+      'Regular performance reviews',
+      'Phone and remote support',
     ],
   },
 ];
@@ -60,7 +60,7 @@ const services = [
 <BaseLayout
   lang={lang}
   title={t('services.title')}
-  description="Our services: web development, digital strategy, SEO & marketing and process automation."
+  description="Our UniFi services: UniFi Network, UniFi Protect, installation, consulting, support and maintenance."
 >
   <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +73,7 @@ const services = [
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       {services.map((service, i) => (
-        <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center', i % 2 !== 0 ? 'md:flex-row-reverse' : '']}>
+        <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center']}>
           <div class:list={[i % 2 !== 0 ? 'md:order-2' : '']}>
             <div class="text-5xl mb-4">{service.icon}</div>
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
@@ -102,10 +102,10 @@ const services = [
 
   <section class="bg-slate-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Interested? Get in touch.</h2>
-      <p class="text-slate-400 mb-8">We'll create a no-obligation proposal for you.</p>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Interested? We are happy to advise you.</h2>
+      <p class="text-slate-400 mb-8">Contact us for a no-obligation consultation.</p>
       <a href="/en/kontakt" class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-colors">
-        {t('hero.cta')}
+        Get in touch now
       </a>
     </div>
   </section>

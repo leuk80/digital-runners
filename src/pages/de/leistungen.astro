@@ -7,51 +7,51 @@ const t = useTranslations(lang);
 
 const services = [
   {
-    icon: '💻',
-    title: t('services.web.title'),
-    desc: t('services.web.desc'),
+    icon: '🌐',
+    title: 'UniFi Network',
+    desc: 'Leistungsstarke WLAN-, Switch- und Gateway-Infrastruktur für zuverlässige, skalierbare Netzwerke in jedem Umfeld.',
     details: [
-      'Responsive Webdesign für alle Geräte',
-      'Performance-optimierte Umsetzung',
-      'Moderne Technologien (Astro, React, Next.js)',
-      'CMS-Integration nach Bedarf',
-      'SEO-freundliche Struktur',
+      'UniFi Access Points für maximale WLAN-Abdeckung',
+      'Managed Switches für strukturierte Verkabelung',
+      'UniFi Cloud Gateways und Dream Machines',
+      'Zentrale Verwaltung über UniFi Network Controller',
+      'VPN, VLAN und fortschrittliche Netzwerksegmentierung',
     ],
   },
   {
-    icon: '🧭',
-    title: t('services.strategy.title'),
-    desc: t('services.strategy.desc'),
+    icon: '📹',
+    title: 'UniFi Protect',
+    desc: 'Professionelle IP-Videoüberwachung mit UniFi Protect – Kameras, NVR und zentrale Verwaltung aus einer Hand.',
     details: [
-      'Digital-Audit und Ist-Analyse',
-      'Roadmap-Entwicklung',
-      'Technologie-Evaluierung',
-      'Change Management Begleitung',
-      'KPI-Definition und Erfolgsmessung',
+      'IP-Kameras für Innen- und Aussenanwendungen',
+      'UniFi NVR und Cloud Key für lokale Aufzeichnung',
+      'Echtzeit-Monitoring und Bewegungserkennung',
+      'Einfache Verwaltung über UniFi Protect App',
+      'Skalierbar von kleinen Büros bis zu grossen Anlagen',
     ],
   },
   {
-    icon: '📈',
-    title: t('services.seo.title'),
-    desc: t('services.seo.desc'),
+    icon: '🔧',
+    title: 'Installation & Beratung',
+    desc: 'Wir analysieren Ihre Anforderungen, planen die optimale Lösung und installieren Ihre UniFi-Infrastruktur fachgerecht.',
     details: [
-      'Technisches SEO-Audit',
-      'Keyword-Recherche und Content-Strategie',
-      'On-Page-Optimierung',
-      'Google Ads und Social Media Ads',
-      'Analytics und Reporting',
+      'Standortanalyse und Bedarfsermittlung',
+      'Massgeschneiderte Netzwerkplanung',
+      'Professionelle Montage und Verkabelung',
+      'Konfiguration und Inbetriebnahme',
+      'Einweisung und Dokumentation',
     ],
   },
   {
-    icon: '⚡',
-    title: t('services.automation.title'),
-    desc: t('services.automation.desc'),
+    icon: '🛟',
+    title: 'Support & Wartung',
+    desc: 'Kontinuierlicher Support, proaktive Wartung und schnelle Hilfe bei Problemen – damit Ihr Netzwerk immer läuft.',
     details: [
-      'Workflow-Analyse und Optimierung',
-      'No-Code / Low-Code Lösungen',
-      'API-Integrationen',
-      'Automatisierte Berichte und Benachrichtigungen',
-      'CRM und ERP-Anbindung',
+      'Firmware-Updates und Sicherheits-Patches',
+      'Proaktives Monitoring Ihrer Infrastruktur',
+      'Schnelle Fehlerbehebung bei Problemen',
+      'Regelmässige Leistungsüberprüfungen',
+      'Telefonischer und Remote-Support',
     ],
   },
 ];
@@ -60,9 +60,8 @@ const services = [
 <BaseLayout
   lang={lang}
   title={t('services.title')}
-  description="Unsere Leistungen: Webentwicklung, digitale Strategie, SEO & Marketing und Prozessautomatisierung für Ihr Unternehmen."
+  description="Unsere UniFi-Leistungen: UniFi Network, UniFi Protect, Installation, Beratung, Support und Wartung."
 >
-  <!-- Page header -->
   <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-3">Digital Runners</p>
@@ -71,19 +70,15 @@ const services = [
     </div>
   </div>
 
-  <!-- Services list -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       {services.map((service, i) => (
-        <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center', i % 2 !== 0 ? 'md:flex-row-reverse' : '']}>
+        <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center']}>
           <div class:list={[i % 2 !== 0 ? 'md:order-2' : '']}>
             <div class="text-5xl mb-4">{service.icon}</div>
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
             <p class="text-slate-600 leading-relaxed mb-6">{service.desc}</p>
-            <a
-              href="/de/kontakt"
-              class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors"
-            >
+            <a href="/de/kontakt" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
               Anfrage stellen →
             </a>
           </div>
@@ -105,16 +100,12 @@ const services = [
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="bg-slate-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Interessiert? Kontaktieren Sie uns.</h2>
-      <p class="text-slate-400 mb-8">Wir erstellen Ihnen ein unverbindliches Angebot.</p>
-      <a
-        href="/de/kontakt"
-        class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-colors"
-      >
-        {t('hero.cta')}
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Interesse? Wir beraten Sie gerne.</h2>
+      <p class="text-slate-400 mb-8">Kontaktieren Sie uns für ein unverbindliches Gespräch.</p>
+      <a href="/de/kontakt" class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-colors">
+        Jetzt Kontakt aufnehmen
       </a>
     </div>
   </section>
