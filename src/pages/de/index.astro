@@ -5,14 +5,37 @@ import { useTranslations } from '../../i18n/utils';
 
 const lang = 'de' as const;
 const t = useTranslations(lang);
+
+const testimonials = [
+  {
+    quote: 'Digital Runners hat uns eine erstklassige UniFi-Lösung erstellt. Der Support und Service waren top.',
+    author: 'M. Steiner',
+    role: 'Geschäftsführer',
+  },
+  {
+    quote: 'Die Wahl von Digital Runners war die beste Entscheidung, die wir getroffen haben. Ihre Expertise ist unübertroffen und sie haben die perfekte Lösung für uns gefunden.',
+    author: 'Johannes H.',
+    role: 'IT Manager',
+  },
+];
+
+const industries = [
+  { icon: '🏥', label: 'Gesundheitswesen' },
+  { icon: '🏨', label: 'Hotellerie' },
+  { icon: '⚖️', label: 'Kanzleien' },
+  { icon: '🏢', label: 'Büros' },
+  { icon: '🏭', label: 'Lager & Logistik' },
+  { icon: '🏛️', label: 'Museen' },
+  { icon: '🔧', label: 'Werkstätten' },
+  { icon: '✂️', label: 'Salons' },
+];
 ---
 
 <BaseLayout
   lang={lang}
   title="Startseite"
-  description="Digital Runners – Ihr Partner für Webentwicklung, digitale Strategie, SEO und Prozessautomatisierung in der Schweiz."
+  description="Digital Runners – Ihr Schweizer UniFi Partner für professionelle Netzwerklösungen, UniFi Network und UniFi Protect."
 >
-  <!-- Hero -->
   <Hero lang={lang} />
 
   <!-- Services overview -->
@@ -24,10 +47,10 @@ const t = useTranslations(lang);
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
-          { icon: '💻', title: t('services.web.title'), desc: t('services.web.desc') },
-          { icon: '🧭', title: t('services.strategy.title'), desc: t('services.strategy.desc') },
-          { icon: '📈', title: t('services.seo.title'), desc: t('services.seo.desc') },
-          { icon: '⚡', title: t('services.automation.title'), desc: t('services.automation.desc') },
+          { icon: '🌐', title: t('services.network.title'), desc: t('services.network.desc') },
+          { icon: '📹', title: t('services.protect.title'), desc: t('services.protect.desc') },
+          { icon: '🔧', title: t('services.install.title'), desc: t('services.install.desc') },
+          { icon: '🛟', title: t('services.support.title'), desc: t('services.support.desc') },
         ].map(service => (
           <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
             <div class="text-3xl mb-4">{service.icon}</div>
@@ -37,11 +60,8 @@ const t = useTranslations(lang);
         ))}
       </div>
       <div class="text-center mt-10">
-        <a
-          href="/de/leistungen"
-          class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors"
-        >
-          {t('services.title')} ansehen
+        <a href="/de/leistungen" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+          Alle Leistungen ansehen
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
@@ -50,54 +70,61 @@ const t = useTranslations(lang);
     </div>
   </section>
 
-  <!-- About teaser -->
+  <!-- Industries -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <p class="text-cyan-500 font-semibold text-sm uppercase tracking-widest mb-3">{t('about.subtitle')}</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{t('about.title')}</h2>
-          <p class="text-slate-600 leading-relaxed mb-6">{t('about.text')}</p>
-          <a
-            href="/de/ueber-uns"
-            class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-          >
-            {t('about.cta')}
-          </a>
-        </div>
-        <div class="bg-gradient-to-br from-blue-950 to-slate-900 rounded-2xl p-10 text-white">
-          <div class="grid grid-cols-2 gap-6">
-            {[
-              { value: '50+', label: 'Projekte' },
-              { value: '5+', label: 'Jahre Erfahrung' },
-              { value: '100%', label: 'Kundenzufriedenheit' },
-              { value: 'CH', label: 'Standort Schweiz' },
-            ].map(stat => (
-              <div class="text-center">
-                <div class="text-3xl font-extrabold text-cyan-400 mb-1">{stat.value}</div>
-                <div class="text-sm text-slate-400">{stat.label}</div>
-              </div>
-            ))}
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t('portfolio.title')}</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">{t('portfolio.subtitle')}</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {industries.map(ind => (
+          <div class="flex flex-col items-center gap-3 bg-slate-50 rounded-xl p-5 border border-slate-100 hover:border-cyan-300 transition-colors text-center">
+            <span class="text-3xl">{ind.icon}</span>
+            <span class="text-sm font-medium text-slate-700">{ind.label}</span>
           </div>
-        </div>
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href="/de/referenzen" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+          Alle Branchen ansehen →
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Banner -->
+  <!-- Testimonials -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">Was unsere Kunden sagen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {testimonials.map(item => (
+          <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100">
+            <svg class="h-8 w-8 text-cyan-400 mb-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p class="text-slate-700 leading-relaxed mb-6 italic">„{item.quote}"</p>
+            <div>
+              <p class="font-semibold text-slate-900">{item.author}</p>
+              <p class="text-sm text-slate-500">{item.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="bg-cyan-500 py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-        Bereit für den nächsten Schritt?
+        Bereit für Ihr professionelles UniFi-Netzwerk?
       </h2>
       <p class="text-slate-800 mb-8 max-w-xl mx-auto">
-        Kontaktieren Sie uns für ein unverbindliches Erstgespräch.
+        Kontaktieren Sie uns für ein unverbindliches Gespräch. Wir finden die optimale Lösung für Sie.
       </p>
-      <a
-        href="/de/kontakt"
-        class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
-      >
-        {t('hero.cta')}
+      <a href="/de/kontakt" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors">
+        Jetzt Kontakt aufnehmen
       </a>
     </div>
   </section>
