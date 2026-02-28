@@ -2,7 +2,6 @@
 import { useTranslations, getAlternatePath } from '../i18n/utils';
 import type { Lang } from '../i18n/utils';
 import { languages } from '../i18n/ui';
-import Icon from './Icon.astro';
 
 interface Props {
   lang: Lang;
@@ -28,7 +27,9 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a href={`/${lang}/`} class="flex items-center gap-2 text-xl font-bold hover:text-cyan-400 transition-colors">
-        <Icon name="Bulb" class="text-2xl text-cyan-400" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
         Digital Runners
       </a>
 
@@ -71,7 +72,9 @@ const currentPath = Astro.url.pathname;
         aria-label="Menu öffnen"
         aria-expanded="false"
       >
-        <Icon name="Hamburger_MD" class="text-2xl" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
     </div>
 
