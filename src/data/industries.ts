@@ -50,6 +50,8 @@ export const industries: Industry[] = [
         'UniFi Protect für Eingang, Wartebereiche und Medikamentenlager',
         'Zentrales Management ohne eigene IT-Abteilung',
         'Gastnetz mit Captive Portal für Patienten und Besucher',
+        'UniFi Access für Zugangskontrolle zu Medikamentenlagern und eingeschränkten Bereichen',
+        'UniFi Drive für lokale, DSGVO-konforme Speicherung sensibler Patientendaten',
       ],
       products: [
         {
@@ -98,6 +100,8 @@ export const industries: Industry[] = [
         'UniFi Protect for entrance, waiting areas and medication storage',
         'Central management without an in-house IT department',
         'Guest network with captive portal for patients and visitors',
+        'UniFi Access for access control to medication stores and restricted areas',
+        'UniFi Drive for local, GDPR-compliant storage of sensitive patient data',
       ],
       products: [
         {
@@ -151,6 +155,8 @@ export const industries: Industry[] = [
         'Wand-APs für diskrete Zimmerinstallation mit optimaler Signalqualität',
         'Integration mit PMS über eigene VLAN-Struktur',
         'Bandbreitenmanagement pro Nutzer und SSID',
+        'UniFi Access für Gäste- und Mitarbeiterzutritt – Zimmer, Spa und Betriebsbereiche',
+        'UniFi Talk als lokale Telefonanlage für Rezeption und interne Kommunikation',
       ],
       products: [
         {
@@ -199,6 +205,8 @@ export const industries: Industry[] = [
         'In-wall APs for discreet room installation with optimal signal quality',
         'PMS integration via dedicated VLAN structure',
         'Bandwidth management per user and SSID',
+        'UniFi Access for guest and staff entry – rooms, spa and operational areas',
+        'UniFi Talk as on-premise phone system for reception and internal communication',
       ],
       products: [
         {
@@ -252,6 +260,9 @@ export const industries: Industry[] = [
         'UniFi Protect für diskreten Eingangsbereich und Archiv',
         'Gastnetzwerk mit Portal für Mandantenbesuche',
         'Einfaches zentrales Management – keine eigene IT-Abteilung nötig',
+        'UniFi Access für Archiv- und Besprechungsräume – nur autorisiertes Personal erhält Zutritt',
+        'UniFi Talk als lokale Telefonanlage ohne Cloud-Abhängigkeit – kompatibel mit Schweizer SIP-Anbietern',
+        'UniFi Drive für lokale, DSGVO-konforme Ablage sensibler Mandantenakten',
       ],
       products: [
         {
@@ -300,6 +311,9 @@ export const industries: Industry[] = [
         'UniFi Protect for discreet entrance and archive areas',
         'Guest network with portal for client visits',
         'Simple central management – no in-house IT team required',
+        'UniFi Access for archive and meeting rooms – only authorised personnel gain entry',
+        'UniFi Talk as on-premise phone system with no cloud dependency – compatible with Swiss SIP providers',
+        'UniFi Drive for local, GDPR-compliant storage of sensitive client files',
       ],
       products: [
         {
@@ -353,6 +367,9 @@ export const industries: Industry[] = [
         'VLAN für Gäste, Mitarbeitende und Serverbereich',
         'UniFi Protect für Eingang, Serverraum und Treppenhaus',
         'Einfaches Management über die UniFi Network App',
+        'UniFi Access für Eingang und Serverraum – Zutritt nur für autorisierte Mitarbeitende',
+        'UniFi Talk als lokale VoIP-Telefonanlage für alle Mitarbeitenden',
+        'UniFi Drive als lokaler Dateiserver für das gesamte Team',
       ],
       products: [
         {
@@ -401,6 +418,9 @@ export const industries: Industry[] = [
         'VLANs for guests, employees and server areas',
         'UniFi Protect for entrance, server room and stairwells',
         'Easy management via the UniFi Network App',
+        'UniFi Access for entrance and server room – access restricted to authorised staff',
+        'UniFi Talk as on-premise VoIP phone system for all employees',
+        'UniFi Drive as a local file server for the entire team',
       ],
       products: [
         {
@@ -454,6 +474,7 @@ export const industries: Industry[] = [
         'Managed Switches für strukturiertes Wired Backbone im gesamten Lager',
         'Zuverlässige Anbindung für Warehouse-Management-Systeme (WMS)',
         'UniFi Protect für Lagerein- und -ausgänge sowie Aussengelände',
+        'UniFi Access für Tor- und Sicherheitszutritt – kontrollierter Zugang zu Hochregalen und Sicherheitsbereichen',
       ],
       products: [
         {
@@ -502,6 +523,7 @@ export const industries: Industry[] = [
         'Managed switches for structured wired backbone throughout the warehouse',
         'Reliable connectivity for warehouse management systems (WMS)',
         'UniFi Protect for warehouse entrances, exits and outdoor areas',
+        'UniFi Access for gate and security entry – controlled access to high-rack areas and secure zones',
       ],
       products: [
         {
@@ -555,6 +577,7 @@ export const industries: Industry[] = [
         'UniFi Protect für Ausstellungsräume, Eingänge und Depots',
         'Stabile Verbindung für interaktive Medienstationen und Kassensysteme',
         'Separates Netz für Mitarbeitende und Sicherheitssysteme',
+        'UniFi Access für Depots und Mitarbeiterbereiche – sensible Sammlungen bleiben geschützt',
       ],
       products: [
         {
@@ -603,6 +626,7 @@ export const industries: Industry[] = [
         'UniFi Protect for exhibition rooms, entrances and storage areas',
         'Stable connectivity for interactive media stations and ticketing systems',
         'Separate network for staff and security systems',
+        'UniFi Access for depots and staff-only areas – keeping sensitive collections protected',
       ],
       products: [
         {
@@ -858,6 +882,7 @@ export const industries: Industry[] = [
         'VLAN-Segmentierung: Kassennetz, Kundennetz und Backoffice getrennt',
         'Zentrale Verwaltung mehrerer Filialen aus einem einzigen Dashboard',
         'UniFi Protect für Eingang, Kasse und Lager',
+        'UniFi Access für Backoffice und Lager – nur autorisiertes Personal erhält Zutritt',
       ],
       products: [
         {
@@ -906,6 +931,7 @@ export const industries: Industry[] = [
         'VLAN segmentation: POS network, customer WiFi and back office separated',
         'Central management of multiple locations from a single dashboard',
         'UniFi Protect for entrance, checkout and storage areas',
+        'UniFi Access for back office and storage – only authorised staff gain entry',
       ],
       products: [
         {
@@ -960,6 +986,8 @@ export const industries: Industry[] = [
         'BYOD-Management mit sicheren Onboarding-Prozessen',
         'UniFi Protect für Schulgebäude, Eingänge und Aussenanlagen',
         'Skalierbar von einem Schulhaus bis zum gesamten Campus',
+        'UniFi Access für Lehrerzimmer und Serverraum – nur autorisiertes Personal',
+        'UniFi Drive als lokaler Schul-Dateiserver für sichere, DSGVO-konforme Datenverwaltung',
       ],
       products: [
         {
@@ -1009,6 +1037,8 @@ export const industries: Industry[] = [
         'BYOD management with secure onboarding processes',
         'UniFi Protect for school buildings, entrances and outdoor areas',
         'Scalable from a single school to an entire campus',
+        'UniFi Access for staff rooms and server rooms – authorised personnel only',
+        'UniFi Drive as a local school file server for secure, GDPR-compliant data management',
       ],
       products: [
         {
