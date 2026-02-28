@@ -38,6 +38,15 @@ export const ui = {
     'services.support.title': 'Support & Wartung',
     'services.support.desc':
       'Kontinuierlicher Support, proaktive Wartung und schnelle Hilfe bei Problemen – damit Ihr Netzwerk immer läuft.',
+    'services.access.title': 'UniFi Access',
+    'services.access.desc':
+      'Professionelle Zutrittskontrolle direkt im UniFi-Ökosystem – NFC-Karten, mobiles Entsperren und Intercom aus einer Hand.',
+    'services.talk.title': 'UniFi Talk',
+    'services.talk.desc':
+      'Lokale VoIP-Telefonanlage ohne Cloud-Abhängigkeit – kompatibel mit Schweizer SIP-Anbietern wie Sunrise, Salt und Swisscom.',
+    'services.drive.title': 'UniFi Drive',
+    'services.drive.desc':
+      'Netzwerkgebundener Speicher direkt im UniFi-Ökosystem – sicher, lokal und DSGVO-konform.',
 
     // About
     'about.title': 'Über uns',
@@ -111,6 +120,15 @@ export const ui = {
     'services.support.title': 'Support & Maintenance',
     'services.support.desc':
       'Continuous support, proactive maintenance and fast assistance when problems arise – so your network always runs smoothly.',
+    'services.access.title': 'UniFi Access',
+    'services.access.desc':
+      'Professional access control directly within the UniFi ecosystem – NFC cards, mobile unlock and intercom from a single platform.',
+    'services.talk.title': 'UniFi Talk',
+    'services.talk.desc':
+      'On-premise VoIP phone system with no cloud dependency – compatible with Swiss SIP providers such as Sunrise, Salt and Swisscom.',
+    'services.drive.title': 'UniFi Drive',
+    'services.drive.desc':
+      'Network-attached storage directly within the UniFi ecosystem – secure, local and GDPR-compliant.',
 
     // About
     'about.title': 'About Us',
