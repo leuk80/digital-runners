@@ -18,7 +18,7 @@ const { industry } = Astro.props;
 const c = industry.en;
 ---
 
-<BaseLayout lang="en" title={c.title} description={c.metaDescription}>
+<BaseLayout lang="en" title={c.title} description={c.metaDescription} alternatePath={`/de/branchen/${industry.slug}`}>
   <!-- Hero -->
   <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
