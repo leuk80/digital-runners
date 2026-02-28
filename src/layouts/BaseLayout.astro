@@ -9,12 +9,13 @@ interface Props {
   description: string;
   lang: Lang;
   ogImage?: string;
+  alternatePath?: string;
 }
 
-const { title, description, lang, ogImage } = Astro.props;
+const { title, description, lang, ogImage, alternatePath } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://digital-runners.ch');
 const otherLang = lang === 'de' ? 'en' : 'de';
-const otherPath = Astro.url.pathname.replace(`/${lang}`, `/${otherLang}`);
+const otherPath = alternatePath ?? Astro.url.pathname.replace(`/${lang}`, `/${otherLang}`);
 ---
 
 <!doctype html>
@@ -51,7 +52,7 @@ const otherPath = Astro.url.pathname.replace(`/${lang}`, `/${otherLang}`);
     <title>{title} | Digital Runners</title>
   </head>
   <body class="flex flex-col min-h-full bg-white text-slate-800">
-    <Header lang={lang} />
+    <Header lang={lang} alternatePath={alternatePath} />
     <main class="flex-1">
       <slot />
     </main>

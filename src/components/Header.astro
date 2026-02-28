@@ -5,9 +5,10 @@ import { languages } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
+  alternatePath?: string;
 }
 
-const { lang } = Astro.props;
+const { lang, alternatePath } = Astro.props;
 const t = useTranslations(lang);
 
 const navLinks = [
@@ -49,7 +50,7 @@ const currentPath = Astro.url.pathname;
         <div class="flex items-center gap-1 ml-2 border-l border-slate-700 pl-4">
           {Object.entries(languages).map(([code, label]) => (
             <a
-              href={code === lang ? '#' : getAlternatePath(currentPath, code as Lang)}
+              href={code === lang ? '#' : (alternatePath ?? getAlternatePath(currentPath, code as Lang))}
               class:list={[
                 'text-xs font-semibold px-2 py-1 rounded transition-colors',
                 code === lang
