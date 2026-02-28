@@ -28,9 +28,13 @@ const t = useTranslations(lang);
     </a>
 
     <header class="mb-10">
-      <time class="text-xs text-slate-400 uppercase tracking-wider">
-        {post.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
-      </time>
+      <div class="flex items-center gap-3">
+        <time class="text-xs text-slate-400 uppercase tracking-wider">
+          {post.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+        <span class="text-slate-300">·</span>
+        <span class="text-xs text-slate-400">{Math.ceil(post.body.split(/\s+/).length / 200)} min read</span>
+      </div>
       <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">{post.data.title}</h1>
       <p class="text-lg text-slate-600">{post.data.description}</p>
       {post.data.tags && (

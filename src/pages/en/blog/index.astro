@@ -34,10 +34,14 @@ const posts = (await getCollection('blog', ({ data }) => data.lang === 'en'))
           {posts.map(post => (
             <article class="bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
               <div class="p-6">
-                <time class="text-xs text-slate-400 uppercase tracking-wider">
-                  {post.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </time>
-                <h2 class="text-lg font-bold text-slate-900 mt-2 mb-3">{post.data.title}</h2>
+                <div class="flex items-center gap-3 mb-2">
+                  <time class="text-xs text-slate-400 uppercase tracking-wider">
+                    {post.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </time>
+                  <span class="text-slate-300">·</span>
+                  <span class="text-xs text-slate-400">{Math.ceil(post.body.split(/\s+/).length / 200)} min read</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-3">{post.data.title}</h2>
                 <p class="text-sm text-slate-600 leading-relaxed mb-4">{post.data.description}</p>
                 {post.data.tags && (
                   <div class="flex flex-wrap gap-1 mb-4">
