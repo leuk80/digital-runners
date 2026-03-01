@@ -38,17 +38,21 @@ export const POST: APIRoute = async ({ request }) => {
     const { error } = await resend.emails.send({
       from: 'Digital Runners Website <info@digital-runners.ch>',
       to: ['info@digital-runners.ch'],
-      replyTo: `${name} <${email}>`,
+      replyTo: email,
       subject: `Neue Kontaktanfrage von ${name}`,
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
     });
 
     if (error) {
-      console.error('Resend error:', error);
-      return new Response(JSON.stringify({ success: false, error: 'Failed to send email' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      console.error('Resend error:', JSON.stringify(error));
+      const detail = (error as { name?: string; message?: string; statusCode?: number });
+      return new Response(
+        JSON.stringify({
+          success: false,
+          error: `Resend: ${detail.name ?? 'Error'} – ${detail.message ?? JSON.stringify(error)}`,
+        }),
+        { status: 500, headers: { 'Content-Type': 'application/json' } },
+      );
     }
 
     return new Response(JSON.stringify({ success: true }), {
