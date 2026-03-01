@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 
 export const prerender = false;
 
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request, locals }) => {
   try {
     const data = await request.formData();
     const name = data.get('name')?.toString().trim();
@@ -24,7 +24,10 @@ export const POST: APIRoute = async ({ request }) => {
       });
     }
 
-    const apiKey = import.meta.env.RESEND_API_KEY;
+    // In Cloudflare Pages, runtime env vars are accessible via locals.runtime.env,
+    // not import.meta.env (which is build-time only).
+    const runtime = (locals as { runtime?: { env?: Record<string, string> } }).runtime;
+    const apiKey = runtime?.env?.RESEND_API_KEY ?? import.meta.env.RESEND_API_KEY;
     if (!apiKey) {
       console.error('RESEND_API_KEY is not set');
       return new Response(JSON.stringify({ success: false, error: 'Email service not configured' }), {
