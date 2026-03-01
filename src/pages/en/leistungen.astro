@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
 import { useTranslations } from '../../i18n/utils';
 
 const lang = 'en' as const;
@@ -7,7 +8,7 @@ const t = useTranslations(lang);
 
 const services = [
   {
-    icon: '🌐',
+    icon: 'Globe',
     title: 'UniFi Network',
     desc: 'High-performance WiFi, switch and gateway infrastructure for reliable, scalable networks in any environment.',
     details: [
@@ -19,7 +20,7 @@ const services = [
     ],
   },
   {
-    icon: '📹',
+    icon: 'Camera',
     title: 'UniFi Protect',
     desc: 'Professional IP video surveillance with UniFi Protect – cameras, NVR and centralised management from a single source.',
     details: [
@@ -31,7 +32,7 @@ const services = [
     ],
   },
   {
-    icon: '🚪',
+    icon: 'Exit',
     title: 'UniFi Access',
     desc: 'Professional access control directly within the UniFi ecosystem – NFC cards, mobile unlock and intercom from a single platform.',
     details: [
@@ -43,7 +44,7 @@ const services = [
     ],
   },
   {
-    icon: '📞',
+    icon: 'Phone',
     title: 'UniFi Talk',
     desc: 'On-premise VoIP phone system with no cloud dependency – compatible with Swiss SIP providers such as Sunrise, Salt and Swisscom.',
     details: [
@@ -55,7 +56,7 @@ const services = [
     ],
   },
   {
-    icon: '🗄️',
+    icon: 'Data',
     title: 'UniFi Drive',
     desc: 'Network-attached storage directly within the UniFi ecosystem – secure, local and GDPR-compliant.',
     details: [
@@ -67,7 +68,7 @@ const services = [
     ],
   },
   {
-    icon: '🔧',
+    icon: 'Settings',
     title: 'Installation & Consulting',
     desc: 'We analyse your requirements, plan the optimal solution and install your UniFi infrastructure professionally.',
     details: [
@@ -79,7 +80,7 @@ const services = [
     ],
   },
   {
-    icon: '🛟',
+    icon: 'Help',
     title: 'Support & Maintenance',
     desc: 'Continuous support, proactive maintenance and fast assistance when problems arise – so your network always runs smoothly.',
     details: [
@@ -111,7 +112,7 @@ const services = [
       {services.map((service, i) => (
         <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center']}>
           <div class:list={[i % 2 !== 0 ? 'md:order-2' : '']}>
-            <div class="text-5xl mb-4">{service.icon}</div>
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-4"><Icon name={service.icon} class="h-8 w-8 text-cyan-600" /></div>
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
             <p class="text-slate-600 leading-relaxed mb-6">{service.desc}</p>
             <a href="/en/kontakt" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
@@ -123,9 +124,7 @@ const services = [
             <ul class="space-y-3">
               {service.details.map(item => (
                 <li class="flex items-start gap-3 text-sm text-slate-700">
-                  <svg class="h-5 w-5 text-cyan-500 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
+                  <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}

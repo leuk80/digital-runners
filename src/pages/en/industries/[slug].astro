@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Icon from '../../../components/Icon.astro';
 import { industries } from '../../../data/industries';
 import type { Industry } from '../../../data/industries';
 
@@ -29,7 +30,7 @@ const c = industry.en;
         ← All Industries
       </a>
       <div class="flex items-center gap-3 mb-4">
-        <span class="text-4xl">{industry.icon}</span>
+        <Icon name={industry.icon} class="h-10 w-10 text-cyan-400" />
         <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">Industry</span>
       </div>
       <h1 class="text-4xl md:text-5xl font-bold mb-4">{c.title}</h1>
@@ -47,7 +48,7 @@ const c = industry.en;
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {c.challenges.map((ch) => (
           <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
-            <div class="text-3xl mb-4">{ch.icon}</div>
+            <div class="mb-4"><Icon name={ch.icon} class="h-8 w-8 text-cyan-500" /></div>
             <h3 class="font-bold text-slate-900 mb-2">{ch.title}</h3>
             <p class="text-slate-600 text-sm leading-relaxed">{ch.desc}</p>
           </div>
@@ -64,16 +65,7 @@ const c = industry.en;
         <ul class="space-y-4">
           {c.solutions.map((sol) => (
             <li class="flex items-start gap-4 bg-white rounded-xl px-6 py-4 shadow-sm border border-slate-100">
-              <svg
-                class="h-5 w-5 text-cyan-500 shrink-0 mt-0.5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0 mt-0.5" />
               <span class="text-slate-700">{sol}</span>
             </li>
           ))}
@@ -89,7 +81,7 @@ const c = industry.en;
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {c.products.map((p) => (
           <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 text-center hover:shadow-md transition-shadow">
-            <div class="text-4xl mb-4">{p.icon}</div>
+            <div class="flex justify-center mb-4"><Icon name={p.icon} class="h-8 w-8 text-cyan-500" /></div>
             <h3 class="font-bold text-slate-900 mb-3">{p.title}</h3>
             <p class="text-slate-600 text-sm leading-relaxed">{p.desc}</p>
           </div>
