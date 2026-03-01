@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 export const prerender = false;
 
@@ -24,32 +24,32 @@ export const POST: APIRoute = async ({ request }) => {
       });
     }
 
-    const smtpPass = import.meta.env.SMTP_PASS;
-    if (!smtpPass) {
-      console.error('SMTP_PASS is not set');
+    const apiKey = import.meta.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error('RESEND_API_KEY is not set');
       return new Response(JSON.stringify({ success: false, error: 'Email service not configured' }), {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
       });
     }
 
-    const transporter = nodemailer.createTransport({
-      host: 'smtp.purelymail.com',
-      port: 587,
-      secure: false, // STARTTLS
-      auth: {
-        user: 'info@digital-runners.ch',
-        pass: smtpPass,
-      },
-    });
+    const resend = new Resend(apiKey);
 
-    await transporter.sendMail({
-      from: '"Digital Runners Website" <info@digital-runners.ch>',
-      to: 'info@digital-runners.ch',
-      replyTo: `"${name}" <${email}>`,
+    const { error } = await resend.emails.send({
+      from: 'Digital Runners Website <info@digital-runners.ch>',
+      to: ['info@digital-runners.ch'],
+      replyTo: `${name} <${email}>`,
       subject: `Neue Kontaktanfrage von ${name}`,
       text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
     });
+
+    if (error) {
+      console.error('Resend error:', error);
+      return new Response(JSON.stringify({ success: false, error: 'Failed to send email' }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
