@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import nodemailer from 'nodemailer';
 
 export const prerender = false;
 
@@ -9,7 +10,6 @@ export const POST: APIRoute = async ({ request }) => {
     const email = data.get('email')?.toString().trim();
     const message = data.get('message')?.toString().trim();
 
-    // Basic validation
     if (!name || !email || !message) {
       return new Response(JSON.stringify({ success: false, error: 'Missing required fields' }), {
         status: 400,
@@ -24,17 +24,32 @@ export const POST: APIRoute = async ({ request }) => {
       });
     }
 
-    // TODO: Integrate email service (e.g. Resend, Mailchannels)
-    // Example with Resend:
-    // const resend = new Resend(import.meta.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'website@digital-runners.ch',
-    //   to: 'info@digital-runners.ch',
-    //   subject: `Neue Kontaktanfrage von ${name}`,
-    //   text: `Von: ${name} <${email}>\n\n${message}`,
-    // });
+    const smtpPass = import.meta.env.SMTP_PASS;
+    if (!smtpPass) {
+      console.error('SMTP_PASS is not set');
+      return new Response(JSON.stringify({ success: false, error: 'Email service not configured' }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
 
-    console.log(`Contact form submission: ${name} <${email}>`);
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.purelymail.com',
+      port: 587,
+      secure: false, // STARTTLS
+      auth: {
+        user: 'info@digital-runners.ch',
+        pass: smtpPass,
+      },
+    });
+
+    await transporter.sendMail({
+      from: '"Digital Runners Website" <info@digital-runners.ch>',
+      to: 'info@digital-runners.ch',
+      replyTo: `"${name}" <${email}>`,
+      subject: `Neue Kontaktanfrage von ${name}`,
+      text: `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`,
+    });
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
