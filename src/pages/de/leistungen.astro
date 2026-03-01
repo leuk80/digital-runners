@@ -8,7 +8,7 @@ const t = useTranslations(lang);
 
 const services = [
   {
-    icon: '🌐',
+    icon: 'Globe',
     title: 'UniFi Network',
     desc: 'Leistungsstarke WLAN-, Switch- und Gateway-Infrastruktur für zuverlässige, skalierbare Netzwerke in jedem Umfeld.',
     details: [
@@ -20,7 +20,7 @@ const services = [
     ],
   },
   {
-    icon: '📹',
+    icon: 'Camera',
     title: 'UniFi Protect',
     desc: 'Professionelle IP-Videoüberwachung mit UniFi Protect – Kameras, NVR und zentrale Verwaltung aus einer Hand.',
     details: [
@@ -32,7 +32,7 @@ const services = [
     ],
   },
   {
-    icon: '🚪',
+    icon: 'Exit',
     title: 'UniFi Access',
     desc: 'Professionelle Zutrittskontrolle direkt im UniFi-Ökosystem – NFC-Karten, mobiles Entsperren und Intercom aus einer Hand.',
     details: [
@@ -44,7 +44,7 @@ const services = [
     ],
   },
   {
-    icon: '📞',
+    icon: 'Phone',
     title: 'UniFi Talk',
     desc: 'Lokale VoIP-Telefonanlage ohne Cloud-Abhängigkeit – kompatibel mit Schweizer SIP-Anbietern wie Sunrise, Salt und Swisscom.',
     details: [
@@ -56,7 +56,7 @@ const services = [
     ],
   },
   {
-    icon: '🗄️',
+    icon: 'Data',
     title: 'UniFi Drive',
     desc: 'Netzwerkgebundener Speicher direkt im UniFi-Ökosystem – sicher, lokal und DSGVO-konform.',
     details: [
@@ -68,7 +68,7 @@ const services = [
     ],
   },
   {
-    icon: '🔧',
+    icon: 'Settings',
     title: 'Installation & Beratung',
     desc: 'Wir analysieren Ihre Anforderungen, planen die optimale Lösung und installieren Ihre UniFi-Infrastruktur fachgerecht.',
     details: [
@@ -80,7 +80,7 @@ const services = [
     ],
   },
   {
-    icon: '🛟',
+    icon: 'Help',
     title: 'Support & Wartung',
     desc: 'Kontinuierlicher Support, proaktive Wartung und schnelle Hilfe bei Problemen – damit Ihr Netzwerk immer läuft.',
     details: [
@@ -112,7 +112,7 @@ const services = [
       {services.map((service, i) => (
         <div class:list={['grid grid-cols-1 md:grid-cols-2 gap-10 items-center']}>
           <div class:list={[i % 2 !== 0 ? 'md:order-2' : '']}>
-            <div class="text-5xl mb-4">{service.icon}</div>
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-4"><Icon name={service.icon} class="h-8 w-8 text-cyan-600" /></div>
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
             <p class="text-slate-600 leading-relaxed mb-6">{service.desc}</p>
             <a href="/de/kontakt" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">

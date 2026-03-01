@@ -37,7 +37,7 @@ const t = useTranslations(lang);
             href={`/en/industries/${industry.enSlug}`}
             class="group bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:border-cyan-300 hover:shadow-md transition-all"
           >
-            <div class="text-4xl mb-4">{industry.icon}</div>
+            <div class="mb-4"><Icon name={industry.icon} class="h-8 w-8 text-cyan-600" /></div>
             <h2 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-cyan-600 transition-colors">
               {industry.en.name}
             </h2>

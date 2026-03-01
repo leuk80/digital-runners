@@ -1,15 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
 import { useTranslations } from '../../i18n/utils';
 
 const lang = 'de' as const;
 const t = useTranslations(lang);
 
 const values = [
-  { icon: '🎯', title: 'UniFi-Expertise', desc: 'Wir sind vollständig auf das UniFi-Ökosystem spezialisiert und kennen jedes Produkt in- und auswendig.' },
-  { icon: '🤝', title: 'Partnerschaft', desc: 'Wir verstehen uns als langfristiger Partner – nicht nur als Installateur. Ihr Erfolg ist unser Erfolg.' },
-  { icon: '🔒', title: 'Zuverlässigkeit', desc: 'Stabile Netzwerke sind kein Zufall. Wir planen sorgfältig und stehen für nachhaltige, ausfallsichere Lösungen.' },
-  { icon: '📍', title: 'Lokaler Support', desc: 'Als Schweizer Unternehmen sind wir nah bei unseren Kunden – schnell erreichbar und persönlich vor Ort.' },
+  { icon: 'Compass', title: 'UniFi-Expertise', desc: 'Wir sind vollständig auf das UniFi-Ökosystem spezialisiert und kennen jedes Produkt in- und auswendig.' },
+  { icon: 'UsersGroup', title: 'Partnerschaft', desc: 'Wir verstehen uns als langfristiger Partner – nicht nur als Installateur. Ihr Erfolg ist unser Erfolg.' },
+  { icon: 'Lock', title: 'Zuverlässigkeit', desc: 'Stabile Netzwerke sind kein Zufall. Wir planen sorgfältig und stehen für nachhaltige, ausfallsichere Lösungen.' },
+  { icon: 'MapPin', title: 'Lokaler Support', desc: 'Als Schweizer Unternehmen sind wir nah bei unseren Kunden – schnell erreichbar und persönlich vor Ort.' },
 ];
 ---
 
@@ -44,7 +45,7 @@ const values = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {values.map(v => (
           <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-            <div class="text-4xl mb-4">{v.icon}</div>
+            <div class="flex justify-center mb-4"><Icon name={v.icon} class="h-8 w-8 text-cyan-600" /></div>
             <h3 class="font-bold text-slate-900 mb-2">{v.title}</h3>
             <p class="text-sm text-slate-600 leading-relaxed">{v.desc}</p>
           </div>
