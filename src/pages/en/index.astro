@@ -8,18 +8,6 @@ import { industries } from '../../data/industries';
 const lang = 'en' as const;
 const t = useTranslations(lang);
 
-const testimonials = [
-  {
-    quote: 'Digital Runners delivered a first-class UniFi solution for us. The support and service were excellent.',
-    author: 'M. Steiner',
-    role: 'Managing Director',
-  },
-  {
-    quote: 'Choosing Digital Runners was the best decision we made. Their expertise is unmatched and they found the perfect solution for us.',
-    author: 'Johannes H.',
-    role: 'IT Manager',
-  },
-];
 ---
 
 <BaseLayout
@@ -86,25 +74,6 @@ const testimonials = [
         <a href="/en/referenzen" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
           View all industries →
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">What our clients say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {testimonials.map(item => (
-          <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100">
-            <Icon name="DoubleQuotesL" class="h-8 w-8 text-cyan-400 mb-4" />
-            <p class="text-slate-700 leading-relaxed mb-6 italic">"{item.quote}"</p>
-            <div>
-              <p class="font-semibold text-slate-900">{item.author}</p>
-              <p class="text-sm text-slate-500">{item.role}</p>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   </section>
