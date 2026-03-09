@@ -1,7 +1,7 @@
 ---
 title: "UniFi Protect People Counting: Für Läden & Retail 2026"
 description: "AI People Counting mit G5 Turret Ultra + AI Ports. Umsatz-Korrelation, Conversion Rates, Filial-Performance. Complete Setup-Guide für Retail-Ketten."
-pubDate: 2026-06-03
+pubDate: 2026-03-05
 lang: de
 tags: ["Protect", "Retail", "AI", "Analytics", "UniFi"]
 author: "Digital Runners"

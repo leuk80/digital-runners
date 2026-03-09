@@ -1,7 +1,7 @@
 ---
 title: "UniFi U7 Mesh: WiFi‑7 Mesh für Indoor & Outdoor"
 description: "Wie der neue UniFi U7 Mesh mit smarter Antennen‑Architektur dein WLAN im Haus und im Aussenbereich massiv erweitert."
-pubDate: 2026-03-02
+pubDate: 2026-01-26
 lang: de
 tags: ["UniFi", "WiFi 7", "Mesh", "Outdoor-WLAN", "Access Point"]
 author: "Digital Runners"

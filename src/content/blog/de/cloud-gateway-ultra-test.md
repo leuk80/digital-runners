@@ -1,7 +1,7 @@
 ---
 title: "Cloud Gateway Ultra Test: Einstieg in UniFi 2026"
 description: "Kompakter Gateway für 300+ Clients – EU-Preis, Setup-Guide & Praxistest. Perfekt für Heimnetze, kleine Büros und Filialen."
-pubDate: 2026-04-01
+pubDate: 2026-02-02
 lang: de
 tags: ["Hardware", "UniFi", "Review", "UCG Ultra Review", "UniFi Einstieg"]
 author: "Digital Runners"

@@ -1,7 +1,7 @@
 ---
 title: "Enterprise Fortress Gateway: 25G Security Monster 2026"
 description: "High-End 25G Cloud Gateway mit NeXT AI Inspection, Shadow Mode HA, 12.5 Gbps IDS/IPS. Für Enterprise Security, Zero Trust & Multi-Site. Vollständiger Test + ..."
-pubDate: 2026-05-20
+pubDate: 2026-02-26
 lang: de
 tags: ["Hardware", "Security", "Enterprise", "UniFi", "EFG UniFi Test"]
 author: "Digital Runners"

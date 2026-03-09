@@ -1,7 +1,7 @@
 ---
 title: "WiFi 7 mit U7 Pro: Migrations-Guide & Praxistest 2026"
 description: "Von WiFi 6 zu WiFi 7: Kompletter Migrations-Guide für U7 Pro AP. Speed-Tests, MLO, 6GHz Coverage, Client-Kompatibilität. EU-Preise & Setup für Heim/Büro."
-pubDate: 2026-04-22
+pubDate: 2026-02-12
 lang: de
 tags: ["WiFi", "Hardware", "Migration", "UniFi", "UniFi WiFi 7 AP"]
 author: "Digital Runners"

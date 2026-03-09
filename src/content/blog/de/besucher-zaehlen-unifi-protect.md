@@ -1,7 +1,7 @@
 ---
 title: "Besucher zählen mit UniFi Protect: People-Counting für Läden"
 description: "So baust du ein skalierbares People-Counting-System mit UniFi Protect, AI Port und Line Crossing für deine Filialen."
-pubDate: 2026-03-05
+pubDate: 2026-01-29
 lang: de
 tags: ["UniFi Protect", "People Counting", "Retail", "AI Port", "Besucherzählung"]
 author: "Digital Runners"

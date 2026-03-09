@@ -1,7 +1,7 @@
 ---
 title: "UX7 UniFi Express 7: Der ultimative Travel Router 2026"
 description: "10G WiFi 7 in Taschenformat – Mesh-fähig, EU-Store. Perfekt für Business-Reisen, Hotels, Coworking & Remote Work. Vollständiger Test + Setup-Guide."
-pubDate: 2026-04-15
+pubDate: 2026-02-09
 lang: de
 tags: ["Hardware", "Mobility", "WiFi", "UniFi", "UniFi Express 7 Review"]
 author: "Digital Runners"

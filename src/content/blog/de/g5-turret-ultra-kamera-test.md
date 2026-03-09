@@ -1,7 +1,7 @@
 ---
 title: "G5 Turret Ultra: Beste UniFi Kamera 2026?"
 description: "4K Low-Light Kamera mit PTZ, AI People Counting, Weatherproof. Perfekt für Läden, Haus & Büro. EU-Preise, Installation, Test vs. G4/G6."
-pubDate: 2026-05-27
+pubDate: 2026-03-02
 lang: de
 tags: ["Protect", "Hardware", "Kamera", "Review", "UniFi G5 Kamera Test"]
 author: "Digital Runners"

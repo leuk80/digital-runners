@@ -1,7 +1,7 @@
 ---
 title: "Flex Mini 2.5G Switch: Multi-Gig für Zuhause 2026"
 description: "Kompakter 2.5G PoE Switch für WiFi 7 APs, NAS, PCs. 109€ EU-Preis, Desktop-Power für Home-Labs, Offices & Filialen. Vollständiger Test + VLAN-Guide."
-pubDate: 2026-05-13
+pubDate: 2026-02-23
 lang: de
 tags: ["Switches", "Hardware", "Multi-Gig", "UniFi", "UniFi Flex Mini Review"]
 author: "Digital Runners"

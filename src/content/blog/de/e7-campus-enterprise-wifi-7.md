@@ -1,7 +1,7 @@
 ---
 title: "Enterprise WiFi 7: E7 Campus für Büros & Events 2026"
 description: "High-Density WiFi 7 AP für Büros, Campusse, Events. E7 Campus mit 6GHz Standard Power, 1000+ Clients, 500m² Coverage. Test, Kapazitätsplanung & EU-Preise."
-pubDate: 2026-05-06
+pubDate: 2026-02-19
 lang: de
 tags: ["WiFi", "Enterprise", "Hardware", "UniFi", "UniFi E7 Campus Review"]
 author: "Digital Runners"

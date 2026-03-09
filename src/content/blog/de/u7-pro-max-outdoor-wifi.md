@@ -1,7 +1,7 @@
 ---
 title: "U7 Pro Max Outdoor: WiFi für Garten & Garage 2026"
 description: "Wettersicherer WiFi 7 Outdoor-AP für Gärten, Garagen, Terrassen. 6GHz MLO, 300m² Coverage, PoE++. Kompletter Test, Montage-Guide & EU-Preise."
-pubDate: 2026-04-29
+pubDate: 2026-02-16
 lang: de
 tags: ["WiFi", "Outdoor", "Hardware", "UniFi", "UniFi Outdoor WiFi 7"]
 author: "Digital Runners"

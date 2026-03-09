@@ -1,7 +1,7 @@
 ---
 title: "UDM Pro Max vs. UCG Max: Gateway-Vergleich 2026"
 description: "UDM Pro Max vs. UCG Max – welches Gateway für große Netze? Vollständiger Vergleich: Ports, PoE, Protect-Support, Preise EU-Store. Für 1000+ Clients und Filia..."
-pubDate: 2026-04-08
+pubDate: 2026-02-05
 lang: de
 tags: ["Hardware", "Vergleich", "UniFi", "UDM Pro Max Test", "UniFi Gateway Vergleich"]
 author: "Digital Runners"
