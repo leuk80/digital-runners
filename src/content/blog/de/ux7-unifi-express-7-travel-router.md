@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 Der **UniFi Express 7 (UX7)** ist 2025 als kompaktester WiFi-7-Gateway der Welt lanciert worden – kleiner als eine Powerbank, leistungsstärker als viele Desktop-Router. Mit **10G WAN/LAN**, **WiFi 7 BE11000** (6GHz) und nativer **UniFi Mesh-Fähigkeit** löst er Probleme wie unsichere Hotel-WLANs, langsame Coworking-Netze und komplizierte Remote-Access-Setups in 3 Minuten.
 
-**Preis:** 199€ im EU-Store – lieferbar in 2-3 Tagen nach Zürich. Für Digital-Marketer mit internationalen Kundenbesuchen oder Remote-Teams unschlagbar.
+Im EU-Store erhältlich, lieferbar in 2-3 Tagen nach Zürich. Für Digital-Marketer mit internationalen Kundenbesuchen oder Remote-Teams unschlagbar.
 
 **Das Problem, das er löst:**
 ```
@@ -34,7 +34,6 @@ Remote Work: VPN-Drama, Device-Management
 | **Apps** | Network, Protect Lite (2 Kameras) |
 | **Maße** | 110 x 82 x 30 mm (382g) |
 | **Strom** | USB-C PD (15-45W) |
-| **Preis EU** | 199€ (eu.store.ui.com) |
 
 
 *UX7 in der Hand – kleiner als iPhone 15 Pro Max, WiFi 7 für 100 Clients.*
@@ -115,7 +114,7 @@ APAC/EU/US Hotels getestet:
 🔥 10G WAN – bereit für 10G Home
 🔥 Native UniFi Mesh (weltweites Management)
 🔥 USB-C Powerbank-kompatibel (Flugzeug)
-🔥 199€ EU – unschlagbarer Preis
+🔥 Unschlagbare Preis-Leistung
 ```
 
 **❌ Cons:**
@@ -153,19 +152,14 @@ APAC/EU/US Hotels getestet:
 
 ## Kauf-Tipps & Bundle-Empfehlungen EU 2026
 
-```
-Preisvergleich (Feb 2026):
-├── eu.store.ui.com: 199€ (2-3 Tage CH)
-├── Amazon.de: 219€ (Prime, sofort)
-├── Digitec.ch: 228CHF (nächster Tag)
-└── Bundle UX7 + U7 Pro: 379€
+Der UX7 ist im EU-Store, bei Amazon und bei Digitec erhältlich.
 
-Reise-Bundle (399€):
-├── UX7 + PoE Injector (49€)
-├── U7 Pro AP (189€)
-├── Travel Case (29€)
-└── 45W USB-C Charger (32€)
-```
+**Reise-Bundle Empfehlung:**
+- UX7
+- PoE Injector
+- U7 Pro AP
+- Travel Case
+- 45W USB-C Charger
 
 **Travel-Hacks:**
 ```
@@ -214,7 +208,7 @@ Features: 9/10
 
 **🚀 Nächste Schritte für dich:**
 1. **Newsletter** – Wöchentliche Travel-UniFi-Tipps
-2. **Bundle-Angebot** – UX7 + Setup-Service (349CHF)
+2. **Bundle-Angebot** – UX7 + Setup-Service
 3. **Config-Pack** – 5 Travel-Templates gratis
 
 **Weiterlesen:**

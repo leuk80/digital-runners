@@ -1,6 +1,6 @@
 ---
 title: "UDM Pro Max vs. UCG Max: Gateway-Vergleich 2026"
-description: "UDM Pro Max vs. UCG Max – welches Gateway für große Netze? Vollständiger Vergleich: Ports, PoE, Protect-Support, Preise EU-Store. Für 1000+ Clients und Filia..."
+description: "UDM Pro Max vs. UCG Max – welches Gateway für große Netze? Vollständiger Vergleich: Ports, PoE, Protect-Support. Für 1000+ Clients und Filialen."
 pubDate: 2026-02-05
 lang: de
 tags: ["Hardware", "Vergleich", "UniFi", "UDM Pro Max Test", "UniFi Gateway Vergleich"]
@@ -17,7 +17,6 @@ Für größere UniFi-Installationen (100+ Clients, Multi-App, Filialnetze) gibt 
 
 | Kriterium | UDM Pro Max | UCG Max |
 |-----------|-------------|-----------------|
-| **Preis EU** | 599€ | 399€ |
 | **Clients** | 1000+ | 750+ |
 | **IDS/IPS** | 3.5 Gbps | 2.5 Gbps |
 | **Routing** | 5 Gbps | 10 Gbps |
@@ -131,13 +130,13 @@ UDM Pro Max: Externe Switches nötig
 ✅ 16TB NVR onboard, beste Protect-Integration
 ✅ Multi-App (Talk, Access, Drive)
 ✅ Enterprise-Stabilität (99.99% Uptime)
-❌ 599€, Rack-only, kein PoE onboard
+❌ Rack-only, kein PoE onboard
 ❌ Höherer Stromverbrauch (60W)
 ```
 
 **UCG Max ✅❌**
 ```
-✅ 399€, 120W PoE++, 10G Routing
+✅ 120W PoE++, 10G Routing
 ✅ Kompakt (Desktop/Wand), leise
 ✅ Perfekt für WiFi 7 & Multi-Gig
 ❌ Kein nativer NVR (UNAS nötig)
@@ -150,26 +149,12 @@ UDM Pro Max: Externe Switches nötig
 Dein Szenario → Empfehlung:
 ├── 10+ Kameras/Filiale → UDM Pro Max
 ├── 50+ WiFi 7 APs → UCG Max
-├── Budget <400€ → UCG Max
+├── Budget-bewusst → UCG Max
 ├── MSP/Multi-Site → UDM + Shadow UCG
 ├── Home-Lab → UCG Max (erweiterbar)
 ```
 
-**Preisvergleich EU (Feb 2026):**
-```
-eu.store.ui.com:
-├── UDM Pro Max: 599€ (3-5 Tage)
-├── UCG Max: 399€ (2-3 Tage)
-Amazon.de: +15% (sofort lieferbar)
-```
-
-**Bundle-Empfehlung:**
-```
-SMB Starter (3 APs + Kameras):
-├── UDM Pro Max + 2x UNAS Pro: 1.400€
-├── UCG Max + UNAS Pro + PoE Switch: 1.100€
-→ UCG günstiger bei reinen Netzwerken
-```
+Beide Gateways sind im EU-Store, bei Amazon und bei Digitec erhältlich.
 
 ## Migration aus alten Geräten
 
@@ -201,7 +186,7 @@ Zeitaufwand: 15-45 Min pro Site
 
 **🚀 Nächste Schritte:**
 1. **Newsletter** – Wöchentliche UniFi-Updates
-2. **Setup-Service** – Zürich-Installation (ab 300CHF)
+2. **Setup-Service** – Zürich-Installation
 3. **Config-Template** – Kostenloser Download
 
 **Weiterlesen:** [Cloud Gateway Ultra →](#) | [WiFi 7 Guide →](#)

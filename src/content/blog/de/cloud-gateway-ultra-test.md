@@ -1,6 +1,6 @@
 ---
 title: "Cloud Gateway Ultra Test: Einstieg in UniFi 2026"
-description: "Kompakter Gateway für 300+ Clients – EU-Preis, Setup-Guide & Praxistest. Perfekt für Heimnetze, kleine Büros und Filialen."
+description: "Kompakter Gateway für 300+ Clients – Setup-Guide & Praxistest. Perfekt für Heimnetze, kleine Büros und Filialen."
 pubDate: 2026-02-02
 lang: de
 tags: ["Hardware", "UniFi", "Review", "UCG Ultra Review", "UniFi Einstieg"]
@@ -11,14 +11,14 @@ author: "Digital Runners"
 
 Wenn du 2026 in UniFi einsteigen willst, gibt es eine klare Empfehlung: **Der UniFi Cloud Gateway Ultra (UCG-Ultra)**. Seit seinem Launch 2024 hat sich dieses kompakte Gerät als der ultimative Einstieg etabliert – egal ob für ambitionierte Heimnetze, Home-Offices, kleine Büros oder Filialen.
 
-**Warum?** Es kombiniert modernes UniFi OS 4.x/5.x mit 1 Gbit/s IDS/IPS, Multi-WAN-Loadbalancing und voller App-Integration (Network, Protect, Access) – alles für 129€ im EU-Store. Kein separates Hosting nötig, keine Cloud-Abos, volle Kontrolle über deine Daten. In Zürich kostet er inkl. MwSt. ca. 154CHF und ist sofort lieferbar.
+**Warum?** Es kombiniert modernes UniFi OS 4.x/5.x mit 1 Gbit/s IDS/IPS, Multi-WAN-Loadbalancing und voller App-Integration (Network, Protect, Access). Kein separates Hosting nötig, keine Cloud-Abos, volle Kontrolle über deine Daten. Im EU-Store sofort lieferbar.
 
 **Vergleich zu Alternativen:**
-| Gerät | Preis EU | Clients | IDS/IPS | NVR |
-|-------|----------|---------|---------|-----|
-| UCG Ultra | 129€ | 300+ | 1 Gbps | Nein |
-| UDM Pro Max | 599€ | 1000+ | 3.5 Gbps | Ja |
-| UX7 Express | 199€ | 100 | 0.5 Gbps | Nein |
+| Gerät | Clients | IDS/IPS | NVR |
+|-------|---------|---------|-----|
+| UCG Ultra | 300+ | 1 Gbps | Nein |
+| UDM Pro Max | 1000+ | 3.5 Gbps | Ja |
+| UX7 Express | 100 | 0.5 Gbps | Nein |
 
 ## Technische Spezifikationen im Detail
 
@@ -34,7 +34,6 @@ Wenn du 2026 in UniFi einsteigen willst, gibt es eine klare Empfehlung: **Der Un
 | **Connectivity** | WiFi-Downlink (AP adoptieren), Etherlighting-ready |
 | **Maße** | 135 x 129 x 42 mm (DIN-A5, wandmontierbar) |
 | **Verbrauch** | 15W Idle, 35W Load |
-| **Preis EU** | 129€ (eu.store.ui.com) |
 ```
 
 
@@ -109,10 +108,10 @@ Week 1-4 Metrics:
 ## Vor- & Nachteile
 
 **✅ Pros:**
-- Preis-Leistung unschlagbar (129€ für Full UniFi)
+- Hervorragende Preis-Leistung für Full UniFi
 - Kompakt, leise, PoE-LAN (kein extra Injector)
 - Shadow Mode HA (zweiter UCG als Backup)
-- EU-Store: 2-3 Tage Lieferung, 129€ fix.
+- EU-Store: 2-3 Tage Lieferung.
 
 **❌ Cons:**
 - Nur 128 GB SSD (für 50+ Kameras tight)
@@ -130,18 +129,12 @@ Week 1-4 Metrics:
 
 ## Kauf-Tipps Europa 2026
 
-```
-Preisvergleich (Feb 2026):
-├── eu.store.ui.com: 129€ (offiziell, 2-3 Tage)
-├── Amazon.de: 139€ (Prime, sofort)
-├── Toppreise.ch: 148CHF (CH, kostenloser Versand)
-└── Alternativen: Digitec/Galaxus (Bundle mit APs)
-```
+Der UCG Ultra ist im EU-Store, bei Amazon und bei Digitec/Galaxus erhältlich.
 
 **Zubehör-Empfehlung:**
-- USW-Flex-Mini (2.5G Switch): 109€
-- U7-Pro (WiFi 7 AP): 189€
-- PoE++ Injector (für SFP+ WAN): 49€
+- USW-Flex-Mini (2.5G Switch)
+- U7-Pro (WiFi 7 AP)
+- PoE++ Injector (für SFP+ WAN)
 
 ## Fazit & Rating
 
@@ -153,7 +146,7 @@ Preisvergleich (Feb 2026):
 
 **🚀 Nächste Schritte:**
 1. **Newsletter abonnieren** – Wöchentliche UniFi-Tipps
-2. **Setup-Service?** Kontakt für Zürich-Installation (ab 200CHF)
+2. **Setup-Service?** Kontakt für Zürich-Installation
 3. **Fragen?** Kommentare oder mail@deinblog.ch
 
 **Mehr Tests:** [UDM Pro Max Vergleich →](#) | [WiFi 7 Guide →](#)

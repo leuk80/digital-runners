@@ -11,13 +11,13 @@ author: "Digital Runners"
 
 Der **Enterprise Fortress Gateway (EFG)** ist Ubiquitis **25G Security Monster** für 2026 – entwickelt für **MSPs, Campus-Netzwerke, Fabriken und Filialketten** mit **Zero-Trust-Anforderungen**. Mit **NeXT AI Inspection** (SSL/TLS Deep Packet Inspection), **Shadow Mode HA** und **12.5 Gbps IDS/IPS** setzt er neue Maßstäbe für Enterprise Networking.
 
-**Preis:** 2.499€ im EU-Store – Dual 25G SFP28, 2x 10G Copper, für UXG Enterprise/UDM Pro Max Environments. Lieferzeit Schweiz: 5-7 Tage.
+Dual 25G SFP28, 2x 10G Copper, für UXG Enterprise/UDM Pro Max Environments. Im EU-Store erhältlich, Lieferzeit Schweiz: 5-7 Tage.
 
 **Das Enterprise-Security-Problem:**
 ```
 ❌ 10Gbps Traffic → 2Gbps IDS Bottleneck
 ❌ SSL/TLS Encrypted Threats → Blind Spots
-❌ Single Gateway → 30min Downtime = 50k€
+❌ Single Gateway → 30min Downtime = massive Kosten
 ✅ EFG: 25G Inspection, AI Threat Detection, HA
 ```
 
@@ -34,7 +34,6 @@ Der **Enterprise Fortress Gateway (EFG)** ist Ubiquitis **25G Security Monster**
 | **Management** | Network 9.0+, Site Manager 4.0 |
 | **Power** | Dual PSU (redundant, 250W) |
 | **Rack** | 1U, Etherlighting Pro |
-| **Preis EU** | 2.499€ (eu.store.ui.com) |
 
 
 *EFG im 1U Rack – Dual 25G SFP28, Etherlighting zeigt Traffic-Typen farbig.*
@@ -220,8 +219,8 @@ PoE++ Power:
 
 **Cable Plant:**
 ```
-25G SFP28 DAC: 3m = 299€
-Cat8 Patchkabel: 2m = 49€
+25G SFP28 DAC: 3m
+Cat8 Patchkabel: 2m
 Fiber OM4: Campus Backbone ready
 ```
 
@@ -237,14 +236,14 @@ Schweiz/D/A/CH Enterprise Security:
 
 ## Vergleich: EFG vs. Consumer/Prosumer Gateways
 
-| Gateway | Preis | IDS/IPS | SSL Inspect | HA | Clients |
-|---------|-------|---------|-------------|----|---------|
-| **EFG** | 2.499€ | 12.5Gbps | NeXT AI | Shadow | 10.000+ |
-| UDM Pro Max | 599€ | 3.5Gbps | Basic | Shadow | 1.000+ |
-| UCG Max | 399€ | 2.5Gbps | None | Shadow | 750+ |
-| Fortinet 100F | 5.000€ | 10Gbps | Full | Active | 5.000+ |
+| Gateway | IDS/IPS | SSL Inspect | HA | Clients |
+|---------|---------|-------------|----|---------|
+| **EFG** | 12.5Gbps | NeXT AI | Shadow | 10.000+ |
+| UDM Pro Max | 3.5Gbps | Basic | Shadow | 1.000+ |
+| UCG Max | 2.5Gbps | None | Shadow | 750+ |
+| Fortinet 100F | 10Gbps | Full | Active | 5.000+ |
 
-**EFG gewinnt:** UniFi Integration + AI + Preis!
+**EFG gewinnt:** UniFi Integration + AI!
 
 ## Vor- & Nachteile: Enterprise Real Talk
 
@@ -259,7 +258,6 @@ Schweiz/D/A/CH Enterprise Security:
 
 **❌ Cons:**
 ```
-💰 2.499€ Enterprise Price
 🔌 25G Backbone mandatory
 💾 Rack Space + Kühlung (1U Hot)
 ⚠️ DSGVO SSL Inspection (Legal Review)
@@ -267,29 +265,11 @@ Schweiz/D/A/CH Enterprise Security:
 
 ## EU Enterprise Kauf-Tipps 2026
 
-```
-Preisvergleich Feb 2026:
-├── eu.store.ui.com: 2.499€ (5-7 Tage)
-├── Network Dealer: 2.450€ (Volume 5+)
-├── Leasing: 85€/Monat (36 Monate)
-
-Enterprise Bundle (25k€):
-├── 2x EFG HA (5k€)
-├── 8x USW Enterprise 48 (12k€)
-├── 50x E7 Campus (30k€)
-→ Complete Campus Network
-```
+Der EFG ist im EU-Store und über Network Dealer erhältlich. Auch Leasing-Optionen sind verfügbar.
 
 ## ROI: Security spart Millionen
 
-```
-Kosten: 2x EFG = 5k€
-Ersparnis:
-├── Ransomware Block: 500k€
-├── 99.999% Uptime: 250k€/Jahr
-├── Compliance Audit: 100k€
-→ Payback: 3-6 Monate!
-```
+Die Investition in Enterprise Security zahlt sich schnell aus durch vermiedene Ransomware-Schäden, maximale Uptime (99.999%) und vereinfachte Compliance Audits. Der typische Payback liegt bei 3-6 Monaten.
 
 ## Fazit & Rating: Der Security-König 2026
 

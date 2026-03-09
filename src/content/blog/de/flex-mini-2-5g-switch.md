@@ -1,6 +1,6 @@
 ---
 title: "Flex Mini 2.5G Switch: Multi-Gig für Zuhause 2026"
-description: "Kompakter 2.5G PoE Switch für WiFi 7 APs, NAS, PCs. 109€ EU-Preis, Desktop-Power für Home-Labs, Offices & Filialen. Vollständiger Test + VLAN-Guide."
+description: "Kompakter 2.5G PoE Switch für WiFi 7 APs, NAS, PCs. Desktop-Power für Home-Labs, Offices & Filialen. Vollständiger Test + VLAN-Guide."
 pubDate: 2026-02-23
 lang: de
 tags: ["Switches", "Hardware", "Multi-Gig", "UniFi", "UniFi Flex Mini Review"]
@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 Der **UniFi Flex Mini 2.5G** ist 2025 als **kompakter Multi-Gig Switch** lanciert worden – perfekt für die **WiFi 7 Revolution** mit U7 Pro APs, 10G NAS (UNAS Pro) und Multi-Gig PCs. Mit **8x 2.5G Ports** (optional PoE), **Etherlighting RGB** und **VLAN Magic** macht er aus jedem Schreibtisch den **Multi-Gig-Hub** für Home-Office, Gaming-Rigs und kleine Filialen.
 
-**Preis:** 109€ im EU-Store – lieferbar in 2 Tagen nach Zürich. Der **missing link** zwischen 1G Internet und 10G Zukunft.
+Im EU-Store erhältlich, lieferbar in 2 Tagen nach Zürich. Der **missing link** zwischen 1G Internet und 10G Zukunft.
 
 **Das Problem, das er löst:**
 ```
@@ -33,7 +33,6 @@ Der **UniFi Flex Mini 2.5G** ist 2025 als **kompakter Multi-Gig Switch** lancier
 | **VLANs** | 4000+ (Magic VLANs) |
 | **Power** | 15W Idle, 140W PoE Full |
 | **Maße** | 210 x 130 x 44 mm (Desktop) |
-| **Preis EU** | 109€ (eu.store.ui.com) |
 
 
 *Flex Mini 2.5G auf Schreibtisch – Etherlighting zeigt VLANs farbig, 8x 2.5G für WiFi 7 Setup.*
@@ -204,11 +203,11 @@ RGB Port Status (Genius Feature):
 → Alles PoE vom Flex Mini!
 
 Vergleich zu 1G Switches:
-| Switch | Preis | PoE | Speed |
-|--------|-------|-----|-------|
-| **Flex Mini** | 109€ | 120W | 2.5G |
-| USW Flex | 99€ | 0W | 1G |
-| Netgear MS108 | 289€ | 60W | 2.5G |
+| Switch | PoE | Speed |
+|--------|-----|-------|
+| **Flex Mini** | 120W | 2.5G |
+| USW Flex | 0W | 1G |
+| Netgear MS108 | 60W | 2.5G |
 ```
 
 ## VLAN Best Practices für Home-Office
@@ -228,28 +227,18 @@ Management → All: Allow
 
 ## EU-Kauf-Tipps & Smart Bundles
 
-```
-Preisvergleich Feb 2026:
-├── eu.store.ui.com: 109€ (2 Tage CH)
-├── Digitec.ch: 125CHF (next day)
-├── Amazon.de: 119€ (Prime)
+Der Flex Mini 2.5G ist im EU-Store, bei Digitec und bei Amazon erhältlich.
 
-Multi-Gig Starter (399€):
-├── Flex Mini 2.5G (109€)
-├── U7 Pro WiFi 7 (189€)
-├── Cat6a Kabel 3m (19€)
-├── PoE Test: 100% 2.5G Links
-```
+**Multi-Gig Starter Bundle:**
+- Flex Mini 2.5G
+- U7 Pro WiFi 7
+- Cat6a Kabel 3m
 
-**Pro Bundle (799€):**
-```
-Filial-/Office-Ready:
-├── 2x Flex Mini (218€)
-├── 2x U7 Pro (378€)
-├── G5 Turret (129€)
-├── UCG Ultra (129€)
-→ Complete Branch Office
-```
+**Pro Bundle (Filial-/Office-Ready):**
+- 2x Flex Mini
+- 2x U7 Pro
+- G5 Turret
+- UCG Ultra
 
 ## Vor- & Nachteile: Desktop Switch Reality
 
@@ -259,7 +248,7 @@ Filial-/Office-Ready:
 🚀 120W PoE++ für APs/Kameras
 🚀 Etherlighting = visual Debugging
 🚀 VLAN Magic = 90s Config
-🚀 109€ = unschlagbarer Preis
+🚀 Unschlagbare Preis-Leistung
 ```
 
 **❌ Cons:**
@@ -300,7 +289,7 @@ Value: 10/10
 
 **🚀 Next Steps:**
 1. **VLAN Config Pack** – 15 Templates gratis
-2. **Multi-Gig Audit** – Zürich Service (149CHF)
+2. **Multi-Gig Audit** – Zürich Service
 3. **Newsletter** – Wöchentliche Switch-Tipps
 
 **Weiterlesen:**

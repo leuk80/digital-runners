@@ -5,13 +5,14 @@ pubDate: 2026-03-05
 lang: de
 tags: ["Protect", "Retail", "AI", "Analytics", "UniFi"]
 author: "Digital Runners"
+draft: true
 ---
 
 ## People Counting 2026: Vom Bauchgefühl zur Datengetriebenen Retail-Strategie
 
-**UniFi Protect People Counting** ist die **Retail-Revolution** für 2026 – **AI-gestützte Besucherzählung** direkt aus deinen UniFi-Kameras (G5 Turret Ultra, AI Ports) mit **Umsatz-Korrelation**, **Conversion-Rate-Analyse** und **Filial-Benchmarking**. Für Ladenbesitzer, Filialketten und Einkaufszentren ersetzt es teure externe Sensoren (5.000€+) durch **native UniFi Hardware** ab 329€.
+**UniFi Protect People Counting** ist die **Retail-Revolution** für 2026 – **AI-gestützte Besucherzählung** direkt aus deinen UniFi-Kameras (G5 Turret Ultra, AI Ports) mit **Umsatz-Korrelation**, **Conversion-Rate-Analyse** und **Filial-Benchmarking**. Für Ladenbesitzer, Filialketten und Einkaufszentren ersetzt es teure externe Sensoren durch **native UniFi Hardware**.
 
-**Preis:** G5 Turret Ultra (199€) + AI Port (129€) = 328€ pro Eingang. **Zürich-Setup:** 2 Eingänge = 656CHF, live in 90 Minuten. Perfekt für Digital-Marketer mit physischen Stores.
+Perfekt für Digital-Marketer mit physischen Stores – ein typisches Setup mit 2 Eingängen ist in 90 Minuten live.
 
 **Das Retail-Problem, das es löst:**
 ```
@@ -32,7 +33,7 @@ author: "Digital Runners"
 | **Integration** | Kassensystem, Google Sheets, BI |
 | **Multi-Site** | 1000+ Filialen zentral |
 | **Privacy** | Anonym (keine Gesichtserkennung) |
-| **Preis pro Eingang** | 328€ (Kamera + AI Port) |
+| **Setup pro Eingang** | Kamera + AI Port |
 
 
 *G5 Turret Ultra + AI Port: Besucherzählung Eingang → Kasse, Conversion Rate live im Protect Dashboard.*
@@ -46,7 +47,7 @@ Freitags 18-20 Uhr: Peak 45 Besucher/h
 → Personalplanung: 2 Kassierer Peak, 1 sonst
 ```
 
-### 💰 **2. Conversion Rate (Besucher → Käufer)**
+### **2. Conversion Rate (Besucher → Käufer)**
 ```
 12.847 Besucher → 3.214 Kassenzettel
 → Conversion Rate: 25% (Branchen-Benchmark: 22%)
@@ -76,12 +77,12 @@ Filiale Bern: 14 Besucher/h (Warning)
 → Marketing Budget: Zürich verstärken
 ```
 
-### 💳 **6. Umsatz pro Besucher (Revenue per Visitor)**
+### **6. Umsatz pro Besucher (Revenue per Visitor)**
 ```
-12.847 Besucher → 187.000€ Umsatz
-→ 14,56€ pro Besucher
-→ Week 15: 12,20€ (Warning)
-→ Aktion Week 16: +18% → 14,42€
+Besucher vs. Umsatz Korrelation:
+→ Revenue per Visitor berechnen
+→ Wochen-Trends erkennen (Warnings)
+→ Aktionen messen: +18% Umsatz/Week
 ```
 
 ### 🚶 **7. Peak Load & Queue Management**
@@ -95,7 +96,7 @@ Peak Conversion Drop: -15% bei Wartezeit >3min
 
 ### **Setup 1: Einfacher Laden (1 Eingang)**
 ```
-G5 Turret Ultra (199€) über Eingang
+G5 Turret Ultra über Eingang
 ├── 112° Wide View (ganzer Eingang)
 ├── AI Zone "Eingang" (Linie auf Boden)
 ├── Accuracy: 98% (1 Kamera)
@@ -104,20 +105,19 @@ G5 Turret Ultra (199€) über Eingang
 
 ### **Setup 2: Filiale mit 2 Eingängen **
 ```
-2x G5 Turret Ultra (398€) + 1x AI Port (129€)
+2x G5 Turret Ultra + 1x AI Port
 ├── Eingang 1: Turret Ultra + AI Zone
 ├── Eingang 2: Turret Ultra + AI Zone
 ├── Kasse: AI Port (Conversion Tracking)
-→ Total: 656CHF, 90 Minuten Setup
+→ 90 Minuten Setup
 ```
 
 ### **Setup 3: Filialkette (10 Stores)**
 ```
 10x Stores × 2 Eingänge = 20 Kameras
-├── Zentrale UNVR Pro (16TB): 2.299€
+├── Zentrale UNVR Pro (16TB)
 ├── Site Manager 4.0: Multi-Site Dashboard
 ├── API → Kassensystem/BI
-→ 15.000€ Complete Solution
 ```
 
 ## Schritt-für-Schritt: Installation & Kalibrierung
@@ -177,7 +177,7 @@ Umsatz → People Count (Google Sheets):
 ```
 Besucher: 15.237 (Ø42/Tag)
 Kassenzettel: 3.847 (Ø25% Conversion)
-Umsatz: 223.400€ (Ø14,65€/Besucher)
+Conversion & Revenue per Visitor trackbar
 
 Wetter-Korrelation:
 ├── Sonne: +28% Besucher
@@ -236,34 +236,29 @@ Filial-Ranking:
 50. Chur: 18/h (Action needed)
 ```
 
-## Hardware Cost vs. Sensor-Alternativen
+## UniFi vs. Sensor-Alternativen
 
 ```
 UniFi Protect vs. Traditionelle Lösungen:
-| Lösung | Preis/Eingang | Accuracy | Installation |
-|--------|---------------|----------|--------------|
-| **UniFi G5+AI** | 328€ | 98% | 90min |
-| Visiplus Sensor | 1.200€ | 95% | 4h |
-| Terabee Lidar | 2.800€ | 97% | 1 Tag |
-| Axis People Counter | 4.500€ | 99% | 2 Tage |
+| Lösung | Accuracy | Installation |
+|--------|----------|--------------|
+| **UniFi G5+AI** | 98% | 90min |
+| Visiplus Sensor | 95% | 4h |
+| Terabee Lidar | 97% | 1 Tag |
+| Axis People Counter | 99% | 2 Tage |
 
-UniFi = 7-14x günstiger + Video Bonus!
+UniFi = deutlich günstiger + Video Bonus!
 ```
 
 ## EU Retail-Kauf-Tipps & Bundles
 
-```
-Preisvergleich Feb 2026:
-├── eu.store.ui.com: G5 199€ + AI Port 129€
-├── Digitec Bundle: 338CHF (next day)
+Die Hardware ist im EU-Store, bei Digitec und bei Amazon erhältlich.
 
-Filiale Complete (2 Eingänge) :
-├── 2x G5 Turret Ultra: 398€
-├── 1x AI Port Kasse: 129€
-├── UCG Ultra Controller: 129€
-├── USW Flex Mini PoE: 109€
-→ Total: 765€ (vs. 15k€ Sensoren)
-```
+**Filiale Complete (2 Eingänge):**
+- 2x G5 Turret Ultra
+- 1x AI Port Kasse
+- UCG Ultra Controller
+- USW Flex Mini PoE
 
 ## Data Privacy: DSGVO-konform
 
@@ -279,7 +274,7 @@ Schweiz/D/A/CH Retail:
 
 **✅ Pros:**
 ```
-💰 14x günstiger als Sensoren
+💰 Deutlich günstiger als Sensoren
 📊 Conversion + Umsatz Insights
 ⚡ 90min Setup (kein Profi)
 🔗 Kassensystem Integration
@@ -288,21 +283,14 @@ Schweiz/D/A/CH Retail:
 
 **❌ Cons:**
 ```
-⚠️ AI Port nötig für Conversion (129€)
+⚠️ AI Port nötig für Conversion
 ⚠️ Kamera-Ausrichtung kritisch (Kalibrierung)
 ⚠️ Kassendaten manuell (API besser)
 ```
 
 ## ROI: Data-Driven Retail zahlt sich aus
 
-```
-Kosten: 2 Eingänge = 656CHF
-Ersparnis/Mehrumsatz:
-├── Personal optimiert: 1.200€/Jahr
-├── Marketing Timing: 6.000€/Jahr
-├── Conversion +8%: 24.000€/Jahr
-→ Payback: 4 Wochen!
-```
+Die Investition in People Counting zahlt sich schnell aus: Personalplanung optimieren, Marketing-Timing verbessern und Conversion-Rates steigern sorgen für einen typischen Payback von wenigen Wochen.
 
 ## Fazit & Rating: Retail Game Changer 2026
 
@@ -323,7 +311,7 @@ ROI: 10/10
 ***
 
 **🚀 Retail Next Steps:**
-1. **People Counting PoC** – 1 Woche Zürich (199CHF)
+1. **People Counting PoC** – 1 Woche Zürich
 2. **Kassensystem Integration** – Custom Setup
 3. **Newsletter** – Wöchentliche Retail Analytics
 

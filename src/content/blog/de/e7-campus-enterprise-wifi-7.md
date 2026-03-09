@@ -1,6 +1,6 @@
 ---
 title: "Enterprise WiFi 7: E7 Campus für Büros & Events 2026"
-description: "High-Density WiFi 7 AP für Büros, Campusse, Events. E7 Campus mit 6GHz Standard Power, 1000+ Clients, 500m² Coverage. Test, Kapazitätsplanung & EU-Preise."
+description: "High-Density WiFi 7 AP für Büros, Campusse, Events. E7 Campus mit 6GHz Standard Power, 1000+ Clients, 500m² Coverage. Test & Kapazitätsplanung."
 pubDate: 2026-02-19
 lang: de
 tags: ["WiFi", "Enterprise", "Hardware", "UniFi", "UniFi E7 Campus Review"]
@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 Der **UniFi E7 Campus** ist 2025 als **High-Density WiFi 7 Monster** lanciert worden – speziell für Szenarien wo **1000+ Clients**, **500m² Coverage** und **6GHz Standard Power** (EU-legal) zusammenkommen. Für offene Büros, Universitäten, Stadien, Messen, Hotels und Fabrikhallen ist das der **Enterprise-Maßstab 2026**.
 
-**Preis:** 599€ im EU-Store – PoE++ powered, 10G Uplinks, für UDM Pro Max/UCG Max/Enterprise Fortress Gateway. Lieferzeit Schweiz: 3-5 Tage.
+PoE++ powered, 10G Uplinks, für UDM Pro Max/UCG Max/Enterprise Fortress Gateway. Im EU-Store erhältlich, Lieferzeit Schweiz: 3-5 Tage.
 
 **Das Enterprise-Problem, das er löst:**
 ```
@@ -34,7 +34,6 @@ Der **UniFi E7 Campus** ist 2025 als **High-Density WiFi 7 Monster** lanciert wo
 | **Antennas** | 12x 7.8dBi (sektoriell, Beamforming) |
 | **Power** | PoE++ 802.3bt (120W) |
 | **Mount** | Decke (3-6m), Discreet Campus Design |
-| **Preis EU** | 599€ (eu.store.ui.com) |
 
 
 *E7 Campus in Open-Office-Decke – 4x 6GHz Radios für 1000+ Clients, 360° Coverage.*
@@ -244,7 +243,6 @@ Controller: UXG Enterprise + Site Manager 4.0
 | Uplinks | 2x 10G | 1x 2.5G |
 | VLANs | 4000+ | 10 |
 | Management | Site Manager 4.0 | App |
-| Preis | 599€ | 189€ |
 
 ## Vor- & Nachteile: Enterprise Real Talk
 
@@ -259,7 +257,6 @@ Controller: UXG Enterprise + Site Manager 4.0
 
 **❌ Cons:**
 ```
-💰 599€ (3x U7 Pro Preis)
 🔌 120W PoE++ (Enterprise Switches)
 📏 Decke 3-6m (kein Wandmount)
 ⏱️ Komplexe Planung (RF Survey)
@@ -267,18 +264,7 @@ Controller: UXG Enterprise + Site Manager 4.0
 
 ## Kauf-Tipps EU Enterprise 2026
 
-```
-Preisvergleich Feb 2026:
-├── eu.store.ui.com: 599€ (3-5 Tage)
-├── Network Dealer: 620€ (Volume Discount)
-├── Amazon Business: 639€ (sofort)
-
-Enterprise Starter (10 APs):
-├── 10x E7 Campus: 5990€
-├── 2x USW Pro Max 48: 3400€
-├── UXG Enterprise: 1299€
-→ Total: 10.689€ (ROI: 18 Monate)
-```
+Der E7 Campus ist im EU-Store, über Network Dealer und bei Amazon Business erhältlich.
 
 ## Fazit & Rating: Enterprise WiFi 7 Maßstab
 
@@ -299,7 +285,7 @@ Value: 9/10
 ***
 
 **🚀 Enterprise Next Steps:**
-1. **RF Survey Service** – Zürich (499CHF)
+1. **RF Survey Service** – Zürich
 2. **Enterprise Design** – Design Center 2.1
 3. **Newsletter** – High-Density Best Practices
 

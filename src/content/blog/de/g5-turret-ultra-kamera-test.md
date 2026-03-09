@@ -1,6 +1,6 @@
 ---
 title: "G5 Turret Ultra: Beste UniFi Kamera 2026?"
-description: "4K Low-Light Kamera mit PTZ, AI People Counting, Weatherproof. Perfekt für Läden, Haus & Büro. EU-Preise, Installation, Test vs. G4/G6."
+description: "4K Low-Light Kamera mit PTZ, AI People Counting, Weatherproof. Perfekt für Läden, Haus & Büro. Installation, Test vs. G4/G6."
 pubDate: 2026-03-02
 lang: de
 tags: ["Protect", "Hardware", "Kamera", "Review", "UniFi G5 Kamera Test"]
@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 Die **G5 Turret Ultra** ist Ubiquitis **Low-Light Monster** für 2026 – entwickelt für **Läden, Einfamilienhäuser, Büros und Industrie** mit höchsten Anforderungen an **4K Bildqualität bei null Licht**. Mit **AI People/Vehicle Detection**, **optischem Zoom (3x)**, **Weatherproof IP67** und **24/7 Color Night Vision** ersetzt sie 2-3 ältere Kameras auf einmal.
 
-**Preis:** 199€ im EU-Store – PoE powered, sofort verfügbar in der Schweiz. Die **beste Wahl** für Protect-Setups mit UCG Ultra/UDM Pro Max.
+PoE powered, sofort verfügbar im EU-Store. Die **beste Wahl** für Protect-Setups mit UCG Ultra/UDM Pro Max.
 
 **Das Kamera-Problem, das sie löst:**
 ```
@@ -34,7 +34,6 @@ Die **G5 Turret Ultra** ist Ubiquitis **Low-Light Monster** für 2026 – entwic
 | **Weatherproof** | IP67 (Regen, Staub, -40°C → +60°C) |
 | **Power** | PoE 802.3af (12W) |
 | **Audio** | 2-Wege Mic + Speaker |
-| **Preis EU** | 199€ (eu.store.ui.com) |
 
 
 *G5 Turret Ultra bei Nacht – 4K Color Night Vision mit 40m IR Range, PTZ Position "Eingang".*
@@ -191,14 +190,14 @@ Real-World Tests:
 
 ## Vergleich: G5 Turret Ultra vs. G4 Pro / G6
 
-| Kamera | Preis | Low Light | AI | Zoom | Weather |
-|--------|-------|-----------|----|------|---------|
-| **G5 Turret Ultra** | 199€ | 0.001Lux | Full | 3.7x | IP67 |
-| G4 Pro | 449€ | 0.01Lux | Basic | Fixed | IPX4 |
-| G6 Dome | 299€ | 0.005Lux | Full | Fixed | Indoor |
-| G6 180° | 399€ | 0.01Lux | Full | Fixed | IP67 |
+| Kamera | Low Light | AI | Zoom | Weather |
+|--------|-----------|----|------|---------|
+| **G5 Turret Ultra** | 0.001Lux | Full | 3.7x | IP67 |
+| G4 Pro | 0.01Lux | Basic | Fixed | IPX4 |
+| G6 Dome | 0.005Lux | Full | Fixed | Indoor |
+| G6 180° | 0.01Lux | Full | Fixed | IP67 |
 
-**G5 gewinnt:** Preis/Leistung + Zoom + Weatherproof!
+**G5 gewinnt:** Beste Leistung + Zoom + Weatherproof!
 
 ## Protect Storage & Bandwidth Optimierung
 
@@ -231,23 +230,16 @@ G5 Turret Ultra Sound:
 
 ## EU-Kauf-Tipps & Bundle-Empfehlungen
 
-```
-Preisvergleich Feb 2026:
-├── eu.store.ui.com: 199€ (2-3 Tage)
-├── Digitec.ch: 228CHF (next day)
-├── Amazon.de: 219€ (Prime)
+Die G5 Turret Ultra ist im EU-Store, bei Digitec und bei Amazon erhältlich.
 
-Laden Bundle (799€) :
-├── 4x G5 Turret Ultra (796€)
-├── UCG Ultra (129€)
-├── USW Flex Mini PoE (109€)
-→ Complete Filial Protect
+**Laden Bundle:**
+- 4x G5 Turret Ultra
+- UCG Ultra
+- USW Flex Mini PoE
 
-Haus Bundle (599€):
-├── 2x G5 Turret (398€)
-├── UDM Pro Max (599€, ohne NVR)
-→ Smart Home Complete
-```
+**Haus Bundle:**
+- 2x G5 Turret
+- UDM Pro Max
 
 ## Montage-Hacks Schweiz
 
@@ -271,7 +263,7 @@ Haus Bundle (599€):
 🌟 3.7x Opti-Zoom + Auto-Track
 🌟 AI Smart Detection (People/Vehicle)
 🌟 IP67 Weatherproof All-Year
-🌟 199€ = 2x G4 Pro Performance
+🌟 Hervorragende Preis-Leistung vs. G4 Pro
 ```
 
 **❌ Cons:**
@@ -284,14 +276,7 @@ Haus Bundle (599€):
 
 ## ROI: Sicherheit spart Versicherung
 
-```
-Kosten: 4x G5 Turret = 796€
-Ersparnis:
-├── Einbruch Video-Beweis: 5000CHF Schaden
-├── Versicherung Rabatt: 300CHF/Jahr
-├── People Counting Umsatz: 2000€/Monat
-→ Payback: 3-6 Monate
-```
+Ein Kamera-Setup mit G5 Turret Ultra zahlt sich schnell aus: Einbruch-Videobeweise, Versicherungsrabatte und People Counting zur Umsatzoptimierung sorgen für einen typischen Payback von 3-6 Monaten.
 
 ## Fazit & Rating: Die Kamera-Königin 2026
 
@@ -313,7 +298,7 @@ Value: 10/10
 
 **🚀 Next Steps:**
 1. **Protect Config Pack** – 10 Kamera Templates
-2. **Installation Service** – Zürich (199CHF)
+2. **Installation Service** – Zürich
 3. **Newsletter** – Wöchentliche Protect-Tipps
 
 **Weiterlesen:**
