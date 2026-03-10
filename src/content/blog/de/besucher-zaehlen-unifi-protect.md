@@ -5,6 +5,7 @@ pubDate: 2026-01-29
 lang: de
 tags: ["UniFi Protect", "People Counting", "Retail", "AI Port", "Besucherzählung"]
 author: "Digital Runners"
+draft: true
 ---
 
 
