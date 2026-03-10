@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
   const githubToken = getGitHubToken(locals as Record<string, unknown>);
 
   if (!password || !githubToken) {
-    return json({ success: false, error: 'Server nicht konfiguriert' }, 500);
+    return json({ success: false, error: `Server nicht konfiguriert (pw: ${!!password}, token: ${githubToken ? githubToken.slice(0, 8) + '...' : 'missing'})` }, 500);
   }
 
   const sessionToken = getSessionCookie(request);
