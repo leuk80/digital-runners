@@ -151,7 +151,7 @@ export async function uploadRawMarkdown(params: UploadRawMarkdownParams): Promis
     if (response.status === 422 && !params.overwrite) {
       throw new Error(`Datei existiert bereits: ${slug}.md – verwende overwrite: true zum Überschreiben`);
     }
-    throw new Error(`GitHub API Fehler: ${response.status} – ${(error as { message?: string }).message || 'Unbekannt'}`);
+    throw new Error(`GitHub API Fehler: ${response.status} – ${JSON.stringify(error)}`);
   }
 
   return { slug, url: `/${lang}/blog/${slug}` };
@@ -183,7 +183,7 @@ export async function createBlogPost(params: BlogPostParams): Promise<{ slug: st
     if (response.status === 422) {
       throw new Error(`Datei existiert bereits: ${slug}.md`);
     }
-    throw new Error(`GitHub API Fehler: ${response.status} – ${(error as { message?: string }).message || 'Unbekannt'}`);
+    throw new Error(`GitHub API Fehler: ${response.status} – ${JSON.stringify(error)}`);
   }
 
   return {
