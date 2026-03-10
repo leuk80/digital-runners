@@ -30,21 +30,25 @@ interface BlogPostParams {
   slug?: string;
 }
 
+function escapeYaml(value: string): string {
+  return value.replace(/"/g, '\\"');
+}
+
 function buildMarkdown(params: BlogPostParams): string {
   const lines = [
     '---',
-    `title: "${params.title}"`,
-    `description: "${params.description}"`,
+    `title: "${escapeYaml(params.title)}"`,
+    `description: "${escapeYaml(params.description)}"`,
     `pubDate: ${today()}`,
     `lang: ${params.lang}`,
   ];
 
   if (params.tags && params.tags.length > 0) {
-    const tagList = params.tags.map((t) => `"${t}"`).join(', ');
+    const tagList = params.tags.map((t) => `"${escapeYaml(t)}"`).join(', ');
     lines.push(`tags: [${tagList}]`);
   }
 
-  lines.push(`author: "${params.author || 'Digital Runners'}"`);
+  lines.push(`author: "${escapeYaml(params.author || 'Digital Runners')}"`);
 
   if (params.image) {
     lines.push(`image: "${params.image}"`);

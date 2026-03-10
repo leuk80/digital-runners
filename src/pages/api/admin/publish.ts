@@ -36,7 +36,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return json({ success: false, error: 'Sprache muss "de" oder "en" sein' }, 400);
   }
 
-  const tags = tagsRaw ? tagsRaw.split(',').map((t) => t.trim()).filter(Boolean) : undefined;
+  const tags = tagsRaw
+    ? tagsRaw.split(',').map((t) => t.trim().replace(/^["'\[\]]+|["'\[\]]+$/g, '')).filter(Boolean)
+    : undefined;
 
   try {
     const result = await createBlogPost({
