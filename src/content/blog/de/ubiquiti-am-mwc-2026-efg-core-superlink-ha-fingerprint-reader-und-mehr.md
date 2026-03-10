@@ -71,3 +71,4 @@ Ubiquiti baut das UniFi-Ökosystem in mehrere Richtungen gleichzeitig aus: Enter
 
 Sobald Ubiquiti offizielle Spezifikationen veröffentlicht, aktualisieren wir die Details hier auf Digital Runners. Bei Fragen zu deinem UniFi-Setup oder zur Planung mit den kommenden Produkten: melde dich bei uns.
 
+
