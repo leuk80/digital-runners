@@ -3,7 +3,7 @@ title: "Ubiquiti am MWC 2026: EFG Core, SuperLink HA, Fingerprint Reader und meh
 description: "Ubiquiti hat am Mobile World Congress in Barcelona neue Hardware gezeigt. Die spannendsten Ankündigungen im Überblick: EFG Core, SuperLink HA mit Thread-Support, Enterprise NAS und der Retro Reader Fingerprint."
 pubDate: 2026-03-10
 lang: de
-tags: ["UniFi"", "MWC", "Enterprise", "SuperLink", "Access", "Thread", "Smart Home"]
+tags: ["UniFi", "MWC", "Enterprise", "SuperLink", "Access", "Thread", "Smart Home"]
 author: "Digital Runners"
 ---
 
@@ -70,6 +70,7 @@ Zwei-Faktor-Authentifizierung wird damit möglich: NFC-Karte plus Fingerabdruck,
 Ubiquiti baut das UniFi-Ökosystem in mehrere Richtungen gleichzeitig aus: Enterprise-Security (EFG Core), Speicher (NAS/NVR), Smart Home und IoT (SuperLink HA mit Thread), klassische Sicherheit (Alarm Hub) und Zutrittskontrolle (Fingerprint Reader). Keines dieser Produkte hat bisher ein offizielles Datenblatt oder einen Preis. Es sind Prototypen und Vorankündigungen vom Messestand.
 
 Sobald Ubiquiti offizielle Spezifikationen veröffentlicht, aktualisieren wir die Details hier auf Digital Runners. Bei Fragen zu deinem UniFi-Setup oder zur Planung mit den kommenden Produkten: melde dich bei uns.
+
 
 
 
