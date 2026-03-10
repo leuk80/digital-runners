@@ -1,5 +1,6 @@
 const REPO = 'leuk80/digital-runners';
 const BRANCH = 'main';
+const USER_AGENT = 'digital-runners-blog';
 
 export function slugify(text: string): string {
   return text
@@ -121,6 +122,7 @@ export async function uploadRawMarkdown(params: UploadRawMarkdownParams): Promis
       headers: {
         Authorization: `Bearer ${params.token}`,
         Accept: 'application/vnd.github+json',
+        'User-Agent': USER_AGENT,
       },
     });
     if (checkResp.ok) {
@@ -142,6 +144,7 @@ export async function uploadRawMarkdown(params: UploadRawMarkdownParams): Promis
       Authorization: `Bearer ${params.token}`,
       Accept: 'application/vnd.github+json',
       'Content-Type': 'application/json',
+      'User-Agent': USER_AGENT,
     },
     body: JSON.stringify(body),
   });
@@ -174,16 +177,17 @@ export async function createBlogPost(params: BlogPostParams): Promise<{ slug: st
       Authorization: `Bearer ${params.token}`,
       Accept: 'application/vnd.github+json',
       'Content-Type': 'application/json',
+      'User-Agent': USER_AGENT,
     },
     body,
   });
 
   if (!response.ok) {
-    const rawText = await response.text();
+    const error = await response.json().catch(() => ({}));
     if (response.status === 422) {
       throw new Error(`Datei existiert bereits: ${slug}.md`);
     }
-    throw new Error(`GitHub API Fehler: ${response.status} – token: ${params.token.slice(0, 10)}... – ${rawText.slice(0, 500)}`);
+    throw new Error(`GitHub API Fehler: ${response.status} – ${(error as { message?: string }).message || 'Unbekannt'}`);
   }
 
   return {
