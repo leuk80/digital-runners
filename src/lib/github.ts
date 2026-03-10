@@ -179,11 +179,11 @@ export async function createBlogPost(params: BlogPostParams): Promise<{ slug: st
   });
 
   if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
+    const rawText = await response.text();
     if (response.status === 422) {
       throw new Error(`Datei existiert bereits: ${slug}.md`);
     }
-    throw new Error(`GitHub API Fehler: ${response.status} – ${JSON.stringify(error)}`);
+    throw new Error(`GitHub API Fehler: ${response.status} – token: ${params.token.slice(0, 10)}... – ${rawText.slice(0, 500)}`);
   }
 
   return {
