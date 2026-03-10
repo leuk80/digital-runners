@@ -1,0 +1,138 @@
+---
+export const prerender = false;
+
+import { getAdminPassword, getSessionCookie, verifySessionToken } from '../../lib/admin-auth';
+
+const password = getAdminPassword(Astro.locals as Record<string, unknown>);
+const sessionToken = getSessionCookie(Astro.request);
+const isAuthenticated = password && sessionToken ? await verifySessionToken(sessionToken, password) : false;
+
+const error = Astro.url.searchParams.get('error');
+---
+
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin – Blog Post erstellen</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f8fafc; color: #1e293b; min-height: 100vh; }
+    .container { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+    h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+    label { display: block; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem; color: #475569; }
+    input, select, textarea { width: 100%; padding: 0.5rem 0.75rem; border: 1px solid #cbd5e1; border-radius: 0.5rem; font-size: 0.875rem; margin-bottom: 1rem; font-family: inherit; }
+    textarea { resize: vertical; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #06b6d4; box-shadow: 0 0 0 2px rgba(6,182,212,0.2); }
+    .btn { display: inline-block; padding: 0.625rem 1.5rem; background: #0891b2; color: #fff; border: none; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 600; cursor: pointer; }
+    .btn:hover { background: #0e7490; }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .error { background: #fef2f2; color: #dc2626; padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; font-size: 0.875rem; }
+    .success { background: #f0fdf4; color: #16a34a; padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; font-size: 0.875rem; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .checkbox-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+    .checkbox-row input { width: auto; margin: 0; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 2rem; }
+    #result a { color: #0891b2; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    {!isAuthenticated ? (
+      <div class="card">
+        <h1>Admin Login</h1>
+        {error && <div class="error">Falsches Passwort.</div>}
+        <form method="POST" action="/api/admin/login">
+          <label for="password">Passwort</label>
+          <input type="password" id="password" name="password" required autofocus />
+          <button type="submit" class="btn">Anmelden</button>
+        </form>
+      </div>
+    ) : (
+      <div class="card">
+        <h1>Neuen Blog Post erstellen</h1>
+        <div id="result"></div>
+        <form id="postForm">
+          <label for="title">Titel *</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="description">Beschreibung *</label>
+          <textarea id="description" name="description" rows="2" required></textarea>
+
+          <div class="row">
+            <div>
+              <label for="lang">Sprache *</label>
+              <select id="lang" name="lang" required>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+            <div>
+              <label for="slug">Slug (optional)</label>
+              <input type="text" id="slug" name="slug" placeholder="wird aus Titel generiert" />
+            </div>
+          </div>
+
+          <label for="tags">Tags (komma-getrennt)</label>
+          <input type="text" id="tags" name="tags" placeholder="UniFi, Netzwerk, Security" />
+
+          <div class="row">
+            <div>
+              <label for="author">Autor</label>
+              <input type="text" id="author" name="author" value="Digital Runners" />
+            </div>
+            <div>
+              <label for="image">Bild-URL (optional)</label>
+              <input type="text" id="image" name="image" />
+            </div>
+          </div>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="draft" name="draft" />
+            <label for="draft" style="margin:0">Als Entwurf speichern</label>
+          </div>
+
+          <label for="content">Inhalt (Markdown) *</label>
+          <textarea id="content" name="content" rows="20" required placeholder="## Erste Überschrift&#10;&#10;Dein Markdown-Inhalt..."></textarea>
+
+          <button type="submit" class="btn" id="submitBtn">Veröffentlichen</button>
+        </form>
+      </div>
+    )}
+  </div>
+
+  <script>
+    const form = document.getElementById('postForm');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = document.getElementById('submitBtn');
+        const result = document.getElementById('result');
+        btn.disabled = true;
+        btn.textContent = 'Wird veröffentlicht...';
+        result.innerHTML = '';
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch('/api/admin/publish', { method: 'POST', body: formData });
+          const data = await res.json();
+
+          if (data.success) {
+            result.innerHTML = `<div class="success">Blog Post erstellt! <a href="${data.url}" target="_blank">${data.url}</a> – Die Seite wird in wenigen Minuten neu gebaut.</div>`;
+            form.reset();
+            document.getElementById('author').value = 'Digital Runners';
+          } else {
+            result.innerHTML = `<div class="error">${data.error}</div>`;
+          }
+        } catch (err) {
+          result.innerHTML = `<div class="error">Netzwerkfehler: ${err.message}</div>`;
+        }
+
+        btn.disabled = false;
+        btn.textContent = 'Veröffentlichen';
+      });
+    }
+  </script>
+</body>
+</html>
