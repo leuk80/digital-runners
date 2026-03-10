@@ -5,7 +5,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://digital-runners.ch',
+  site: 'https://www.digital-runners.ch',
   output: 'static',
   adapter: cloudflare(),
   integrations: [mdx(), sitemap()],
