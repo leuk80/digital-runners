@@ -14,6 +14,17 @@ export function getGitHubToken(locals: Record<string, unknown>): string | undefi
   return getEnvVar(locals, 'GITHUB_TOKEN');
 }
 
+export function getApiKey(locals: Record<string, unknown>): string | undefined {
+  return getEnvVar(locals, 'ADMIN_API_KEY');
+}
+
+export function verifyApiKey(request: Request, expectedKey: string): boolean {
+  const header = request.headers.get('authorization') ?? '';
+  if (!header.startsWith('Bearer ')) return false;
+  const provided = header.slice(7);
+  return provided.length > 0 && provided === expectedKey;
+}
+
 async function hmacSign(message: string, secret: string): Promise<string> {
   const encoder = new TextEncoder();
   const key = await crypto.subtle.importKey(
