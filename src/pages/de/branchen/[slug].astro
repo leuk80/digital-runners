@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Icon from '../../../components/Icon.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import FAQ from '../../../components/FAQ.astro';
 import { industries } from '../../../data/industries';
 import type { Industry } from '../../../data/industries';
 
@@ -17,18 +19,33 @@ interface Props {
 
 const { industry } = Astro.props;
 const c = industry.de;
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": c.title,
+  "description": c.metaDescription,
+  "provider": {
+    "@type": "Organization",
+    "name": "Digital Runners",
+    "url": "https://www.digital-runners.ch"
+  },
+  "areaServed": { "@type": "Country", "name": "Switzerland" },
+  "serviceType": c.name,
+  "url": `https://www.digital-runners.ch/de/branchen/${industry.slug}`
+};
 ---
 
 <BaseLayout lang="de" title={c.title} description={c.metaDescription} alternatePath={`/en/industries/${industry.enSlug}`}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <Breadcrumbs items={[
+    { label: 'Home', href: '/de/' },
+    { label: 'Branchen', href: '/de/referenzen' },
+    { label: c.name }
+  ]} />
   <!-- Hero -->
   <div class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <a
-        href="/de/referenzen"
-        class="inline-flex items-center gap-2 text-cyan-400 text-sm font-medium mb-6 hover:text-cyan-300 transition-colors"
-      >
-        ← Alle Branchen
-      </a>
       <div class="flex items-center gap-3 mb-4">
         <Icon name={industry.icon} class="h-10 w-10 text-cyan-400" />
         <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">Branche</span>
@@ -89,6 +106,10 @@ const c = industry.de;
       </div>
     </div>
   </section>
+
+  {c.faqs && c.faqs.length > 0 && (
+    <FAQ title="Häufige Fragen" items={c.faqs} />
+  )}
 
   <!-- CTA -->
   <section class="bg-cyan-500 py-16">

@@ -3,7 +3,7 @@ title: "Ubiquiti am MWC 2026: EFG Core, SuperLink HA, Fingerprint Reader und meh
 description: "Ubiquiti hat am Mobile World Congress in Barcelona neue Hardware gezeigt. Die spannendsten Ankündigungen im Überblick: EFG Core, SuperLink HA mit Thread-Support, Enterprise NAS und der Retro Reader Fingerprint."
 pubDate: 2026-03-10
 lang: de
-tags: "UniFi"", "MWC", "Enterprise", "SuperLink", "Access", "Thread", "Smart Home"
+tags: ["UniFi", "MWC", "Enterprise", "SuperLink", "Access", "Thread", "Smart Home"]
 author: "Digital Runners"
 ---
 

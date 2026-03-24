@@ -6,6 +6,7 @@ export interface IndustryContent {
   challenges: Array<{ icon: string; title: string; desc: string }>;
   solutions: string[];
   products: Array<{ icon: string; title: string; desc: string }>;
+  faqs?: Array<{ question: string; answer: string }>;
 }
 
 export interface Industry {
@@ -70,6 +71,20 @@ export const industries: Industry[] = [
           desc: 'Proaktives Monitoring und schnelle Reaktionszeiten für kritische Infrastruktur.',
         },
       ],
+      faqs: [
+        {
+          question: 'Wie wird das WLAN in einer Arztpraxis DSGVO-konform abgesichert?',
+          answer: 'Durch strikte VLAN-Segmentierung werden Patienten-, Personal- und Geräte-Netze voneinander getrennt. So können Patientendaten nicht über das Gäste-WLAN abgefangen werden. Zusätzlich sorgt WPA3-Verschlüsselung für sichere Verbindungen.',
+        },
+        {
+          question: 'Brauche ich eine eigene IT-Abteilung für UniFi?',
+          answer: 'Nein. UniFi lässt sich zentral über eine einfache Web-Oberfläche verwalten. Digital Runners übernimmt die Einrichtung und bietet laufenden Support, sodass keine eigene IT-Abteilung nötig ist.',
+        },
+        {
+          question: 'Was passiert bei einem Netzwerkausfall in einer Klinik?',
+          answer: 'Mit redundanten Access Points und automatischem Failover bleibt das Netzwerk auch beim Ausfall einzelner Komponenten verfügbar. Unser proaktives Monitoring erkennt Probleme, bevor sie sich auswirken.',
+        },
+      ],
     },
     en: {
       name: 'Healthcare',
@@ -118,6 +133,20 @@ export const industries: Industry[] = [
           icon: 'Help',
           title: 'Support & Maintenance',
           desc: 'Proactive monitoring and fast response times for critical infrastructure.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'How is WiFi in a medical practice secured in compliance with GDPR?',
+          answer: 'Through strict VLAN segmentation, patient, staff and device networks are separated from each other. This prevents patient data from being intercepted via the guest WiFi. Additionally, WPA3 encryption ensures secure connections.',
+        },
+        {
+          question: 'Do I need my own IT department for UniFi?',
+          answer: 'No. UniFi can be managed centrally via a simple web interface. Digital Runners handles the setup and provides ongoing support, so no in-house IT department is needed.',
+        },
+        {
+          question: 'What happens during a network outage in a clinic?',
+          answer: 'With redundant access points and automatic failover, the network remains available even when individual components fail. Our proactive monitoring detects issues before they have an impact.',
         },
       ],
     },
