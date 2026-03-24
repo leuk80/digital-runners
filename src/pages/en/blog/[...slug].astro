@@ -5,19 +5,31 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import { useTranslations } from '../../../i18n/utils';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => data.lang === 'en' && !data.draft);
-  return posts.map(post => ({
+  const allPosts = await getCollection('blog', ({ data }) => data.lang === 'en' && !data.draft);
+  return allPosts.map(post => ({
     params: { slug: post.slug.replace(/^en\//, '') },
-    props: { post },
+    props: { post, allPosts },
   }));
 }
 
-const { post } = Astro.props;
+const { post, allPosts } = Astro.props;
 const { Content } = await render(post);
 const lang = 'en' as const;
 const t = useTranslations(lang);
 const wordCount = post.body.split(/\s+/).length;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://www.digital-runners.ch');
+const postSlug = post.slug.replace(/^en\//, '');
+const ogImageUrl = post.data.image ?? `https://www.digital-runners.ch/og/en/${postSlug}.png`;
+
+const currentTags = post.data.tags ?? [];
+const relatedPosts = allPosts
+  .filter(p => p.slug !== post.slug && p.data.tags?.some(t => currentTags.includes(t)))
+  .sort((a, b) => {
+    const aOverlap = a.data.tags?.filter(t => currentTags.includes(t)).length ?? 0;
+    const bOverlap = b.data.tags?.filter(t => currentTags.includes(t)).length ?? 0;
+    return bOverlap - aOverlap || b.data.pubDate.getTime() - a.data.pubDate.getTime();
+  })
+  .slice(0, 3);
 
 const blogPostingSchema = {
   "@context": "https://schema.org",
@@ -40,7 +52,7 @@ const blogPostingSchema = {
   "inLanguage": "en",
   "wordCount": wordCount,
   ...(post.data.updatedDate ? { "dateModified": post.data.updatedDate.toISOString() } : {}),
-  ...(post.data.image ? { "image": post.data.image } : {}),
+  "image": ogImageUrl,
   ...(post.data.tags ? { "keywords": post.data.tags.join(", ") } : {})
 };
 ---
@@ -49,7 +61,7 @@ const blogPostingSchema = {
   lang={lang}
   title={post.data.title}
   description={post.data.description}
-  ogImage={post.data.image}
+  ogImage={ogImageUrl}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
   <Breadcrumbs items={[
@@ -72,7 +84,7 @@ const blogPostingSchema = {
       {post.data.tags && (
         <div class="flex flex-wrap gap-2 mt-4">
           {post.data.tags.map((tag: string) => (
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">{tag}</span>
+            <a href={`/en/blog/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`} class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full hover:bg-cyan-100 hover:text-cyan-700 transition-colors">{tag}</a>
           ))}
         </div>
       )}
@@ -81,5 +93,19 @@ const blogPostingSchema = {
     <div class="prose prose-slate prose-lg max-w-none prose-headings:font-bold prose-a:text-cyan-600">
       <Content />
     </div>
+
+    {relatedPosts.length > 0 && (
+      <aside class="mt-16 pt-10 border-t border-slate-200">
+        <h2 class="text-xl font-bold text-slate-900 mb-6">Related Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {relatedPosts.map(rp => (
+            <a href={`/en/blog/${rp.slug.replace(/^en\//, '')}`} class="group block bg-slate-50 rounded-xl p-5 hover:bg-white hover:shadow-sm transition-all border border-slate-100">
+              <time class="text-xs text-slate-400">{rp.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+              <h3 class="font-semibold text-slate-900 mt-1 text-sm group-hover:text-cyan-600 transition-colors">{rp.data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </aside>
+    )}
   </article>
 </BaseLayout>

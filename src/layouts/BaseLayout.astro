@@ -55,6 +55,7 @@ const ogLocaleAlt = lang === 'de' ? 'en_US' : 'de_CH';
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="Digital Runners Blog" href={`/${lang}/rss.xml`} />
     <title>{title} | Digital Runners</title>
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",

@@ -30,6 +30,18 @@ const t = useTranslations(lang);
     "knowsLanguage": ["de", "en"],
     "priceRange": "$$"
   })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Digital Runners",
+    "url": "https://www.digital-runners.ch",
+    "inLanguage": ["de", "en"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.digital-runners.ch/en/blog/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  })} />
   <Hero lang={lang} />
 
   <!-- Services overview -->
