@@ -6,12 +6,14 @@ export interface IndustryContent {
   challenges: Array<{ icon: string; title: string; desc: string }>;
   solutions: string[];
   products: Array<{ icon: string; title: string; desc: string }>;
+  faqs?: Array<{ question: string; answer: string }>;
 }
 
 export interface Industry {
   slug: string;
   enSlug: string;
   icon: string;
+  relatedTags?: string[];
   de: IndustryContent;
   en: IndustryContent;
 }
@@ -21,6 +23,7 @@ export const industries: Industry[] = [
     slug: 'gesundheitswesen',
     enSlug: 'healthcare',
     icon: 'FirstAid',
+    relatedTags: ['VLAN', 'DSGVO', 'Datenschutz', 'UniFi Protect', 'UniFi Access'],
     de: {
       name: 'Gesundheitswesen',
       title: 'UniFi für das Gesundheitswesen',
@@ -68,6 +71,20 @@ export const industries: Industry[] = [
           icon: 'Help',
           title: 'Support & Wartung',
           desc: 'Proaktives Monitoring und schnelle Reaktionszeiten für kritische Infrastruktur.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Wie wird das WLAN in einer Arztpraxis DSGVO-konform abgesichert?',
+          answer: 'Durch strikte VLAN-Segmentierung werden Patienten-, Personal- und Geräte-Netze voneinander getrennt. So können Patientendaten nicht über das Gäste-WLAN abgefangen werden. Zusätzlich sorgt WPA3-Verschlüsselung für sichere Verbindungen.',
+        },
+        {
+          question: 'Brauche ich eine eigene IT-Abteilung für UniFi?',
+          answer: 'Nein. UniFi lässt sich zentral über eine einfache Web-Oberfläche verwalten. Digital Runners übernimmt die Einrichtung und bietet laufenden Support, sodass keine eigene IT-Abteilung nötig ist.',
+        },
+        {
+          question: 'Was passiert bei einem Netzwerkausfall in einer Klinik?',
+          answer: 'Mit redundanten Access Points und automatischem Failover bleibt das Netzwerk auch beim Ausfall einzelner Komponenten verfügbar. Unser proaktives Monitoring erkennt Probleme, bevor sie sich auswirken.',
         },
       ],
     },
@@ -120,12 +137,27 @@ export const industries: Industry[] = [
           desc: 'Proactive monitoring and fast response times for critical infrastructure.',
         },
       ],
+      faqs: [
+        {
+          question: 'How is WiFi in a medical practice secured in compliance with GDPR?',
+          answer: 'Through strict VLAN segmentation, patient, staff and device networks are separated from each other. This prevents patient data from being intercepted via the guest WiFi. Additionally, WPA3 encryption ensures secure connections.',
+        },
+        {
+          question: 'Do I need my own IT department for UniFi?',
+          answer: 'No. UniFi can be managed centrally via a simple web interface. Digital Runners handles the setup and provides ongoing support, so no in-house IT department is needed.',
+        },
+        {
+          question: 'What happens during a network outage in a clinic?',
+          answer: 'With redundant access points and automatic failover, the network remains available even when individual components fail. Our proactive monitoring detects issues before they have an impact.',
+        },
+      ],
     },
   },
   {
     slug: 'hotellerie',
     enSlug: 'hospitality',
     icon: 'Building01',
+    relatedTags: ['WLAN', 'UniFi Protect', 'Videoüberwachung', 'UniFi Access'],
     de: {
       name: 'Hotellerie',
       title: 'UniFi für Hotels und Gastronomie',
@@ -173,6 +205,20 @@ export const industries: Industry[] = [
           icon: 'Camera',
           title: 'UniFi Protect',
           desc: 'Videoüberwachung für Lobby, Parkplatz und Aussenanlagen.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Wie funktioniert ein Voucher-System für Gäste-WLAN im Hotel?',
+          answer: 'Mit dem UniFi Hotspot Manager können an der Rezeption individuelle WLAN-Gutscheine mit Zeitlimit erstellt werden. Gäste erhalten bei Check-in einen Code und können sich über ein gebrandetes Portal einloggen. Der Zugang läuft automatisch ab.',
+        },
+        {
+          question: 'Können Gäste auf das interne Hotelnetz zugreifen?',
+          answer: 'Nein. Durch VLAN-Segmentierung sind Gästenetz und Betriebsnetz (PMS, POS, Buchungssystem) komplett voneinander getrennt. Gäste haben nur Internetzugang, keinen Zugriff auf interne Systeme.',
+        },
+        {
+          question: 'Wie wird WLAN in allen Zimmern sichergestellt?',
+          answer: 'Mit dezenten In-Wall Access Points, die pro Zimmer oder pro Flur montiert werden. So erreicht man optimale Signalqualität in jedem Zimmer, ohne sichtbare Kabel oder grosse Geräte.',
         },
       ],
     },
@@ -225,12 +271,27 @@ export const industries: Industry[] = [
           desc: 'Video surveillance for lobby, car park and outdoor facilities.',
         },
       ],
+      faqs: [
+        {
+          question: 'How does a voucher system for guest WiFi work in a hotel?',
+          answer: 'With the UniFi Hotspot Manager, individual WiFi vouchers with time limits can be created at reception. Guests receive a code at check-in and log in via a branded portal. Access expires automatically.',
+        },
+        {
+          question: 'Can guests access the internal hotel network?',
+          answer: 'No. Through VLAN segmentation, the guest network and operational network (PMS, POS, booking system) are completely separated. Guests only have internet access, not access to internal systems.',
+        },
+        {
+          question: 'How is WiFi ensured in every room?',
+          answer: 'With discreet in-wall access points mounted per room or per corridor. This achieves optimal signal quality in every room without visible cables or large devices.',
+        },
+      ],
     },
   },
   {
     slug: 'kanzleien',
     enSlug: 'law-firms',
     icon: 'Book',
+    relatedTags: ['VLAN', 'DSGVO', 'Datenschutz', 'Netzwerksicherheit', 'UniFi Access'],
     de: {
       name: 'Kanzleien',
       title: 'UniFi für Kanzleien und Beratungsunternehmen',
@@ -279,6 +340,20 @@ export const industries: Industry[] = [
           icon: 'Settings',
           title: 'Installation & Beratung',
           desc: 'Professionelle Planung und saubere Umsetzung – passend zum Kanzleiumfeld.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Wie schützt UniFi Mandantendaten in einer Kanzlei?',
+          answer: 'Durch VLAN-Segmentierung wird das Mandantennetz vom Mitarbeiter- und Druckernetz getrennt. Zusätzlich sorgt WPA3-Verschlüsselung und ein separates Gastnetz dafür, dass sensible Daten nicht abgefangen werden können.',
+        },
+        {
+          question: 'Können mehrere Kanzleistandorte sicher vernetzt werden?',
+          answer: 'Ja. UniFi unterstützt Site-to-Site VPN, womit mehrere Büros verschlüsselt über das Internet verbunden werden. So kann von jedem Standort sicher auf gemeinsame Ressourcen zugegriffen werden.',
+        },
+        {
+          question: 'Ist UniFi für eine kleine Kanzlei mit 5 Mitarbeitenden geeignet?',
+          answer: 'Absolut. UniFi skaliert von kleinen Büros bis zu grossen Kanzleien. Für eine kleine Kanzlei genügt oft ein Gateway, ein Switch und 1–2 Access Points – professionell, aber erschwinglich.',
         },
       ],
     },
@@ -332,12 +407,27 @@ export const industries: Industry[] = [
           desc: 'Professional planning and clean implementation – suited to a legal environment.',
         },
       ],
+      faqs: [
+        {
+          question: 'How does UniFi protect client data in a law firm?',
+          answer: 'Through VLAN segmentation, the client network is separated from the staff and printer networks. Additionally, WPA3 encryption and a separate guest network ensure sensitive data cannot be intercepted.',
+        },
+        {
+          question: 'Can multiple office locations be securely connected?',
+          answer: 'Yes. UniFi supports site-to-site VPN, which connects multiple offices via encrypted tunnels over the internet. This allows secure access to shared resources from any location.',
+        },
+        {
+          question: 'Is UniFi suitable for a small firm with 5 employees?',
+          answer: 'Absolutely. UniFi scales from small offices to large firms. For a small practice, a gateway, a switch and 1–2 access points are often sufficient – professional yet affordable.',
+        },
+      ],
     },
   },
   {
     slug: 'bueros',
     enSlug: 'offices',
     icon: 'Building02',
+    relatedTags: ['WLAN', 'Planung', 'WiFi', 'VLAN', 'UniFi Network'],
     de: {
       name: 'Büros',
       title: 'UniFi für Büros und Unternehmen',
@@ -386,6 +476,20 @@ export const industries: Industry[] = [
           icon: 'Help',
           title: 'Support & Wartung',
           desc: 'Kontinuierlicher Betrieb und schnelle Hilfe – auch ohne eigene IT.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Wie viele Geräte kann UniFi in einem Grossraumbüro gleichzeitig bedienen?',
+          answer: 'Ein einzelner UniFi WiFi 7 Access Point kann über 300 gleichzeitige Verbindungen verwalten. Für Grossraumbüros empfehlen wir mehrere High-density APs, die Bandbreite und Last automatisch verteilen.',
+        },
+        {
+          question: 'Funktionieren Videokonferenzen zuverlässig über UniFi WLAN?',
+          answer: 'Ja. Durch Quality-of-Service (QoS) Regeln kann Videokonferenz-Traffic priorisiert werden. In Kombination mit WiFi 6 oder WiFi 7 sind niedrige Latenz und stabile Verbindungen gewährleistet.',
+        },
+        {
+          question: 'Kann das Netzwerk mitwachsen, wenn wir mehr Mitarbeitende einstellen?',
+          answer: 'UniFi ist modular aufgebaut. Neue Access Points, Switches oder sogar Standorte lassen sich jederzeit hinzufügen und zentral über ein Dashboard verwalten – ohne Komplettumbau.',
         },
       ],
     },
@@ -439,12 +543,27 @@ export const industries: Industry[] = [
           desc: 'Continuous operation and fast assistance – even without in-house IT.',
         },
       ],
+      faqs: [
+        {
+          question: 'How many devices can UniFi handle simultaneously in an open-plan office?',
+          answer: 'A single UniFi WiFi 7 access point can manage over 300 simultaneous connections. For open-plan offices, we recommend multiple high-density APs that automatically distribute bandwidth and load.',
+        },
+        {
+          question: 'Do video conferences work reliably over UniFi WiFi?',
+          answer: 'Yes. Quality-of-Service (QoS) rules allow video conferencing traffic to be prioritised. Combined with WiFi 6 or WiFi 7, low latency and stable connections are guaranteed.',
+        },
+        {
+          question: 'Can the network grow as we hire more employees?',
+          answer: 'UniFi is modular. New access points, switches or even locations can be added at any time and managed centrally from a single dashboard – without a complete overhaul.',
+        },
+      ],
     },
   },
   {
     slug: 'lager-logistik',
     enSlug: 'warehousing-logistics',
     icon: 'Archive',
+    relatedTags: ['WLAN', 'UniFi Protect', 'Outdoor', 'UniFi Access'],
     de: {
       name: 'Lager & Logistik',
       title: 'UniFi für Lager und Logistik',
@@ -491,6 +610,20 @@ export const industries: Industry[] = [
           icon: 'Camera',
           title: 'UniFi Protect',
           desc: 'Umfassende Videoüberwachung für Lager, Tore und Aussengelände.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Funktioniert UniFi WLAN auch in hohen Lagerhallen?',
+          answer: 'Ja. Mit industrietauglichen Access Points, die für grosse Reichweiten und hohe Decken konzipiert sind, wird auch in 10–15 Meter hohen Hallen eine stabile Abdeckung erreicht.',
+        },
+        {
+          question: 'Können Barcode-Scanner ohne Unterbrechung im ganzen Lager verwendet werden?',
+          answer: 'Durch nahtloses Roaming (Fast Roaming / 802.11r) wechseln mobile Geräte automatisch zwischen Access Points, ohne die Verbindung zu verlieren. Das ist entscheidend für Scanner und Handhelds.',
+        },
+        {
+          question: 'Wie wird das WMS (Warehouse Management System) angebunden?',
+          answer: 'Das WMS wird über ein eigenes VLAN angebunden, getrennt vom allgemeinen Netz. So ist die Kommunikation zwischen WMS-Server und mobilen Scannern zuverlässig und sicher.',
         },
       ],
     },
@@ -542,12 +675,27 @@ export const industries: Industry[] = [
           desc: 'Comprehensive video surveillance for warehouses, gates and outdoor areas.',
         },
       ],
+      faqs: [
+        {
+          question: 'Does UniFi WiFi work in tall warehouse halls?',
+          answer: 'Yes. With industrial-grade access points designed for long range and high ceilings, stable coverage is achieved even in halls 10–15 metres high.',
+        },
+        {
+          question: 'Can barcode scanners be used without interruption throughout the warehouse?',
+          answer: 'Through seamless roaming (Fast Roaming / 802.11r), mobile devices automatically switch between access points without losing the connection. This is critical for scanners and handhelds.',
+        },
+        {
+          question: 'How is the WMS (Warehouse Management System) connected?',
+          answer: 'The WMS is connected via its own VLAN, separated from the general network. This ensures communication between the WMS server and mobile scanners is reliable and secure.',
+        },
+      ],
     },
   },
   {
     slug: 'museen',
     enSlug: 'museums',
     icon: 'Building03',
+    relatedTags: ['UniFi Protect', 'WLAN', 'Videoüberwachung', 'UniFi Access'],
     de: {
       name: 'Museen',
       title: 'UniFi für Museen und Kulturinstitutionen',
@@ -594,6 +742,20 @@ export const industries: Industry[] = [
           icon: 'Settings',
           title: 'Installation & Beratung',
           desc: 'Denkmalgerechte Planung und Montage mit Rücksicht auf historische Substanz.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Kann WLAN in einem denkmalgeschützten Gebäude installiert werden?',
+          answer: 'Ja. UniFi bietet dezente Access Points, die sich optisch ins Ambiente einfügen. Die Montage erfolgt ohne Eingriffe in die historische Substanz – z.B. über bestehende Kabelkanäle oder diskrete Aufputzmontage.',
+        },
+        {
+          question: 'Wie wird das Besucher-WLAN vom Museumsnetz getrennt?',
+          answer: 'Durch VLAN-Segmentierung erhalten Besucher ein eigenes Netz mit Captive Portal und Museums-Branding. Das interne Netz für Kassen, Sicherheitssysteme und Mitarbeitende bleibt vollständig isoliert.',
+        },
+        {
+          question: 'Können Kunstwerke mit UniFi Protect überwacht werden?',
+          answer: 'Ja. UniFi Protect Kameras bieten 24/7 Überwachung mit Bewegungserkennung und Benachrichtigungen. Die Kameras sind diskret und können in sensiblen Ausstellungsräumen montiert werden.',
         },
       ],
     },
@@ -645,12 +807,27 @@ export const industries: Industry[] = [
           desc: 'Heritage-sensitive planning and installation with respect for historic fabric.',
         },
       ],
+      faqs: [
+        {
+          question: 'Can WiFi be installed in a listed heritage building?',
+          answer: 'Yes. UniFi offers discreet access points that blend visually into the environment. Installation is carried out without interfering with the historic fabric – e.g. via existing cable ducts or discreet surface mounting.',
+        },
+        {
+          question: 'How is visitor WiFi separated from the museum network?',
+          answer: 'Through VLAN segmentation, visitors receive their own network with a captive portal and museum branding. The internal network for ticketing, security systems and staff remains fully isolated.',
+        },
+        {
+          question: 'Can artworks be monitored with UniFi Protect?',
+          answer: 'Yes. UniFi Protect cameras offer 24/7 surveillance with motion detection and notifications. The cameras are discreet and can be mounted in sensitive exhibition spaces.',
+        },
+      ],
     },
   },
   {
     slug: 'werkstaetten',
     enSlug: 'workshops',
     icon: 'Settings',
+    relatedTags: ['WLAN', 'UniFi Protect', 'Outdoor', 'VLAN'],
     de: {
       name: 'Werkstätten',
       title: 'UniFi für Werkstätten und Produktionsbetriebe',
@@ -696,6 +873,20 @@ export const industries: Industry[] = [
           icon: 'Camera',
           title: 'UniFi Protect',
           desc: 'Zuverlässige Überwachung für Werkstatt, Eingang und Lager.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Halten UniFi Access Points Staub und Feuchtigkeit aus?',
+          answer: 'Ja. UniFi bietet industrietaugliche Access Points mit IP-Schutzklassen, die für staubige und feuchte Umgebungen konzipiert sind. Diese sind ideal für Werkstätten und Produktionshallen.',
+        },
+        {
+          question: 'Wie werden CNC-Maschinen und IoT-Geräte sicher ins Netzwerk eingebunden?',
+          answer: 'Über ein separates IoT-VLAN werden Maschinen und Steuerungsgeräte vom restlichen Netzwerk isoliert. So können sie zuverlässig kommunizieren, ohne ein Sicherheitsrisiko für andere Systeme darzustellen.',
+        },
+        {
+          question: 'Funktioniert WLAN zuverlässig in einer grossen Werkhalle?',
+          answer: 'Mit der richtigen Platzierung von Access Points und nahtlosem Roaming können Mitarbeitende sich frei durch die Halle bewegen, ohne Verbindungsabbrüche zu erleben.',
         },
       ],
     },
@@ -746,12 +937,27 @@ export const industries: Industry[] = [
           desc: 'Reliable monitoring for workshop, entrance and storage areas.',
         },
       ],
+      faqs: [
+        {
+          question: 'Can UniFi access points withstand dust and moisture?',
+          answer: 'Yes. UniFi offers industrial-grade access points with IP protection ratings designed for dusty and humid environments. These are ideal for workshops and production halls.',
+        },
+        {
+          question: 'How are CNC machines and IoT devices securely integrated into the network?',
+          answer: 'Via a separate IoT VLAN, machines and control devices are isolated from the rest of the network. This allows them to communicate reliably without posing a security risk to other systems.',
+        },
+        {
+          question: 'Does WiFi work reliably in a large workshop hall?',
+          answer: 'With proper placement of access points and seamless roaming, employees can move freely throughout the hall without experiencing connection drops.',
+        },
+      ],
     },
   },
   {
     slug: 'salons',
     enSlug: 'salons',
     icon: 'EditPencil01',
+    relatedTags: ['UniFi Protect', 'WLAN', 'UniFi Network', 'Hardware'],
     de: {
       name: 'Salons',
       title: 'UniFi für Salons und Studios',
@@ -797,6 +1003,20 @@ export const industries: Industry[] = [
           icon: 'Settings',
           title: 'Installation & Beratung',
           desc: 'Komplett-Setup in einem halben Tag – betriebsbereit von Anfang an.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Was kostet ein UniFi-Setup für einen kleinen Salon?',
+          answer: 'Ein Basis-Setup mit Gateway, Switch und einem Access Point ist bereits ab wenigen hundert Franken erhältlich. Digital Runners berät Sie zur optimalen Konfiguration für Ihr Budget.',
+        },
+        {
+          question: 'Kann ich die Überwachungskameras vom Handy aus anschauen?',
+          answer: 'Ja. Mit der UniFi Protect App können Sie jederzeit und von überall live auf Ihre Kameras zugreifen, Aufnahmen zurückspulen und Benachrichtigungen bei Bewegung erhalten.',
+        },
+        {
+          question: 'Ist das Kunden-WLAN vom Kassensystem getrennt?',
+          answer: 'Ja. Das Kunden-WLAN läuft auf einem separaten VLAN und hat keinen Zugriff auf das Kassensystem oder andere interne Geräte. So bleibt Ihr POS-System sicher.',
         },
       ],
     },
@@ -847,12 +1067,27 @@ export const industries: Industry[] = [
           desc: 'Complete setup in half a day – ready to go from the start.',
         },
       ],
+      faqs: [
+        {
+          question: 'How much does a UniFi setup cost for a small salon?',
+          answer: 'A basic setup with gateway, switch and one access point is available from just a few hundred francs. Digital Runners advises you on the optimal configuration for your budget.',
+        },
+        {
+          question: 'Can I view the surveillance cameras from my phone?',
+          answer: 'Yes. With the UniFi Protect app, you can access your cameras live anytime and from anywhere, rewind recordings and receive motion notifications.',
+        },
+        {
+          question: 'Is the customer WiFi separated from the POS system?',
+          answer: 'Yes. Customer WiFi runs on a separate VLAN and has no access to the POS system or other internal devices. This keeps your checkout system secure.',
+        },
+      ],
     },
   },
   {
     slug: 'retail',
     enSlug: 'retail',
     icon: 'ShoppingCart01',
+    relatedTags: ['Retail', 'UniFi Protect', 'VLAN', 'People Counting', 'AI'],
     de: {
       name: 'Retail',
       title: 'UniFi für den Detailhandel',
@@ -899,6 +1134,20 @@ export const industries: Industry[] = [
           icon: 'Help',
           title: 'Support & Wartung',
           desc: 'Schnelle Reaktion bei Ausfällen – damit der Verkauf weiterläuft.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Was passiert, wenn das Netzwerk an der Kasse ausfällt?',
+          answer: 'Mit redundanter Netzwerkarchitektur und automatischem Failover bleibt das Kassensystem auch bei einem Teilausfall online. Unser proaktives Monitoring erkennt Probleme, bevor sie den Betrieb beeinträchtigen.',
+        },
+        {
+          question: 'Können mehrere Filialen zentral verwaltet werden?',
+          answer: 'Ja. Über das UniFi Dashboard können alle Standorte zentral überwacht und konfiguriert werden – inklusive Updates, Netzwerkänderungen und Sicherheitseinstellungen.',
+        },
+        {
+          question: 'Wie kann Kunden-WLAN für Marketing genutzt werden?',
+          answer: 'Mit dem UniFi Hotspot Portal können Kunden sich über eine gebrandete Seite anmelden. Dort können Treueprogramme, Angebote oder Social-Media-Logins integriert werden.',
         },
       ],
     },
@@ -950,12 +1199,27 @@ export const industries: Industry[] = [
           desc: 'Fast response to outages – so sales keep running.',
         },
       ],
+      faqs: [
+        {
+          question: 'What happens if the network at the checkout fails?',
+          answer: 'With redundant network architecture and automatic failover, the POS system stays online even during a partial outage. Our proactive monitoring detects problems before they affect operations.',
+        },
+        {
+          question: 'Can multiple store locations be managed centrally?',
+          answer: 'Yes. Via the UniFi Dashboard, all locations can be centrally monitored and configured – including updates, network changes and security settings.',
+        },
+        {
+          question: 'How can customer WiFi be used for marketing?',
+          answer: 'With the UniFi Hotspot Portal, customers log in via a branded page. Loyalty programmes, special offers or social media logins can be integrated there.',
+        },
+      ],
     },
   },
   {
     slug: 'bildungswesen',
     enSlug: 'education',
     icon: 'BookOpen',
+    relatedTags: ['WLAN', 'VLAN', 'WiFi', 'UniFi Protect', 'DSGVO'],
     de: {
       name: 'Bildungswesen',
       title: 'UniFi für Schulen und Bildungsinstitutionen',
@@ -1004,6 +1268,20 @@ export const industries: Industry[] = [
           icon: 'Help',
           title: 'Support & Wartung',
           desc: 'Verlässlicher Partner für Schulen – proaktiv und schnell bei Bedarf.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'Wie wird verhindert, dass Schüler auf ungeeignete Inhalte zugreifen?',
+          answer: 'Über DNS-basierte Content-Filterung im Schülernetz werden ungeeignete Websites blockiert. Die Filterregeln können pro Netzwerk (Schüler, Lehrer, Verwaltung) individuell konfiguriert werden.',
+        },
+        {
+          question: 'Kann UniFi mit BYOD (Bring Your Own Device) umgehen?',
+          answer: 'Ja. Über sichere Onboarding-Prozesse können Schüler und Lehrkräfte ihre eigenen Geräte verbinden. Separate VLANs stellen sicher, dass BYOD-Geräte keinen Zugriff auf das Verwaltungsnetz haben.',
+        },
+        {
+          question: 'Skaliert UniFi von einer kleinen Schule bis zur Universität?',
+          answer: 'Absolut. UniFi kann von einem einzelnen Schulhaus bis zu einem ganzen Campus mit Dutzenden Gebäuden skaliert werden – alles über ein zentrales Dashboard verwaltbar.',
         },
       ],
     },
@@ -1055,6 +1333,20 @@ export const industries: Industry[] = [
           icon: 'Help',
           title: 'Support & Maintenance',
           desc: 'Reliable partner for schools – proactive and fast when needed.',
+        },
+      ],
+      faqs: [
+        {
+          question: 'How do you prevent students from accessing inappropriate content?',
+          answer: 'Via DNS-based content filtering on the student network, inappropriate websites are blocked. Filter rules can be configured individually per network (students, teachers, administration).',
+        },
+        {
+          question: 'Can UniFi handle BYOD (Bring Your Own Device)?',
+          answer: 'Yes. Through secure onboarding processes, students and teachers can connect their own devices. Separate VLANs ensure BYOD devices have no access to the administrative network.',
+        },
+        {
+          question: 'Does UniFi scale from a small school to a university?',
+          answer: 'Absolutely. UniFi can scale from a single school building to an entire campus with dozens of buildings – all manageable from a single central dashboard.',
         },
       ],
     },

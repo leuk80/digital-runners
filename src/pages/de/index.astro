@@ -15,6 +15,21 @@ const t = useTranslations(lang);
   title="Startseite"
   description="Digital Runners – Ihr Schweizer UniFi Partner für professionelle Netzwerklösungen, UniFi Network und UniFi Protect."
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Digital Runners",
+    "description": "Ihr Schweizer UniFi Partner für professionelle Netzwerklösungen, UniFi Network und UniFi Protect.",
+    "url": "https://www.digital-runners.ch/de/",
+    "email": "info@digital-runners.ch",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Switzerland"
+    },
+    "serviceType": ["Netzwerkplanung", "UniFi Installation", "IT-Support", "Videoüberwachung", "Zutrittskontrolle"],
+    "knowsLanguage": ["de", "en"],
+    "priceRange": "$$"
+  })} />
   <Hero lang={lang} />
 
   <!-- Services overview -->

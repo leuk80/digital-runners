@@ -6,6 +6,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     lang: z.enum(['de', 'en']),
     tags: z.array(z.string()).optional(),
     author: z.string().default('Digital Runners'),
