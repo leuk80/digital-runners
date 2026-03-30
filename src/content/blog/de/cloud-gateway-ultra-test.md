@@ -80,7 +80,7 @@ Empfohlene First Steps:
 
 ## Praxistest: 4-Wochen-Review aus Zürich
 
-**Testsetup:** 1x UCG Ultra + 3x U7 Pro APs + 4x G5 Turret Kameras + 45 Clients (iPhones, PCs, Smart-Home). Nutzung: Home-Office, 4K-Streaming, Protect-Recording (2 TB Cloud).
+**Testsetup:** 1x UCG Ultra + 3x U7 Pro APs + 4x [G5 Turret Kameras](/de/blog/g5-turret-ultra-kamera-test) + 45 Clients (iPhones, PCs, Smart-Home). Nutzung: Home-Office, 4K-Streaming, Protect-Recording (2 TB Cloud).
 
 ### Performance-Messungen
 ```
@@ -149,4 +149,8 @@ Der UCG Ultra ist im EU-Store, bei Amazon und bei Digitec/Galaxus erhältlich.
 2. **Setup-Service?** Kontakt für Zürich-Installation
 3. **Fragen?** Kommentare oder mail@deinblog.ch
 
-**Mehr Tests:** [UDM Pro Max Vergleich →](#) | [WiFi 7 Guide →](#)
+**Mehr Tests:** [UDM Pro Max Vergleich →](/de/blog/udm-pro-max-vs-ucg-max) | [WiFi 7 Guide →](/de/blog/wifi-7-u7-pro-migration)
+
+---
+
+*Haben Sie Fragen zu Ihrem UniFi-Setup? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

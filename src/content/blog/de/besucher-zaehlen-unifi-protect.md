@@ -31,13 +31,13 @@ Dieser Beitrag zeigt im Detail:
 
 ## 1. Warum UniFi Protect für Besucherzählung spannend ist
 
-UniFi Protect ist in erster Linie eine Videoüberwachungs‑Plattform, hat aber in den letzten Releases massiv AI‑Funktionen ausgebaut:
+[UniFi Protect](/de/blog/unifi-protect-vs-consumer) ist in erster Linie eine Videoüberwachungs‑Plattform, hat aber in den letzten Releases massiv AI‑Funktionen ausgebaut:
 
 - Objekterkennung (Person, Fahrzeug, Tier)
 - Gesichtserkennung und Nummernschilderkennung auf unterstützter Hardware
 - **Line Crossing** und **Line Cross Counting**, um das Überqueren virtueller Linien zu erkennen und zu zählen
 
-Damit lässt sich ein typisches Retail‑Szenario abbilden:
+Damit lässt sich ein typisches [Retail](/de/branchen/retail)‑Szenario abbilden:
 
 - Kamera über dem Eingang
 - Virtuelle Linie direkt an der Türschwelle
@@ -268,3 +268,7 @@ Mit UniFi Protect, AI‑fähigen Kameras bzw. dem UniFi AI Port kannst du ein **
 Für ein großes Filialnetz ist das äußerst attraktiv: Die anfängliche Konzeption und Backend‑Implementierung kostet etwas Hirnschmalz, danach lässt sich jeder neue Laden weitgehend nach „Kochrezept“ einrichten.
 
 Wenn du möchtest, kann der nächste Schritt sein, das in ein konkretes Rollout‑Konzept zu gießen: z.B. „10 Läden mit je 2 Eingängen, zentrales UNVR in der Zentrale, AI Ports wo nötig, Datenmodell + Beispiel‑Dashboard (Conversion vs. Umsatz)“.
+
+---
+
+*Haben Sie Fragen zu People Counting? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

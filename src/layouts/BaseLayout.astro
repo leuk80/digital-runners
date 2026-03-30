@@ -14,7 +14,7 @@ interface Props {
 }
 
 const { title, description, lang, ogImage, alternatePath } = Astro.props;
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://www.digital-runners.ch');
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://digital-runners.ch');
 const otherLang = lang === 'de' ? 'en' : 'de';
 const otherPath = alternatePath ?? Astro.url.pathname.replace(`/${lang}`, `/${otherLang}`);
 const ogLocale = lang === 'de' ? 'de_CH' : 'en_US';
@@ -61,21 +61,29 @@ const ogLocaleAlt = lang === 'de' ? 'en_US' : 'de_CH';
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Digital Runners",
-      "url": "https://www.digital-runners.ch",
-      "logo": "https://www.digital-runners.ch/favicon.svg",
+      "url": "https://digital-runners.ch",
+      "logo": "https://digital-runners.ch/favicon.svg",
       "description": lang === 'de'
         ? "Ihr Schweizer UniFi Partner für professionelle Netzwerklösungen"
         : "Your Swiss UniFi Partner for professional network solutions",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zürich",
+        "addressCountry": "CH"
+      },
+      "telephone": "+41786089965",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "info@digital-runners.ch",
+        "telephone": "+41786089965",
         "contactType": "customer service",
         "availableLanguage": ["German", "English"]
       },
       "areaServed": {
         "@type": "Country",
         "name": "Switzerland"
-      }
+      },
+      "sameAs": []
     })} />
     <slot name="head" />
   </head>

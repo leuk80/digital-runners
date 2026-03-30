@@ -19,7 +19,7 @@ author: "Digital Runners"
 🔥 4K-QAM: 20% mehr Daten pro Symbol
 ```
 
-Im EU-Store erhältlich, lieferbar in 2 Tagen nach Zürich. Perfekt für UCG Ultra/UDM-Setups.
+Im EU-Store erhältlich, lieferbar in 2 Tagen nach Zürich. Perfekt für [UCG Ultra](/de/blog/cloud-gateway-ultra-test)/UDM-Setups.
 
 ## Technische Deep-Dive: U7 Pro Specs
 
@@ -250,4 +250,8 @@ Future-Proof: 10/10
 2. **Site Survey Service** – Zürich
 3. **Newsletter** – Wöchentliche WiFi-Optimierung
 
-**Weiterlesen:** [U7 Pro Max →](#) | [Network 9.0 →](#)
+**Weiterlesen:** [U7 Pro Max Outdoor →](/de/blog/u7-pro-max-outdoor-wifi) | [E7 Campus →](/de/blog/e7-campus-enterprise-wifi-7)
+
+---
+
+*Haben Sie Fragen zu WiFi 7 Migration? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

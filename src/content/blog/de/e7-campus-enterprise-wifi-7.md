@@ -9,7 +9,7 @@ author: "Digital Runners"
 
 ## WiFi 7 Enterprise: Wenn 500+ Clients gleichzeitig surfen
 
-Der **UniFi E7 Campus** ist 2025 als **High-Density WiFi 7 Monster** lanciert worden – speziell für Szenarien wo **1000+ Clients**, **500m² Coverage** und **6GHz Standard Power** (EU-legal) zusammenkommen. Für offene Büros, Universitäten, Stadien, Messen, Hotels und Fabrikhallen ist das der **Enterprise-Maßstab 2026**.
+Der **UniFi E7 Campus** ist 2025 als **High-Density WiFi 7 Monster** lanciert worden – speziell für Szenarien wo **1000+ Clients**, **500m² Coverage** und **6GHz Standard Power** (EU-legal) zusammenkommen. Für offene Büros, Universitäten, Stadien, Messen, [Hotels](/de/branchen/hotellerie) und Fabrikhallen ist das der **Enterprise-Maßstab 2026**.
 
 PoE++ powered, 10G Uplinks, für UDM Pro Max/UCG Max/Enterprise Fortress Gateway. Im EU-Store erhältlich, Lieferzeit Schweiz: 3-5 Tage.
 
@@ -100,7 +100,7 @@ Total Clients Peak: 2500
 → USW Enterprise Aggregation Switch
 ```
 
-**Design Center 2.1 Integration:**
+**[Design Center](/de/blog/unifi-design-center-2026) 2.1 Integration:**
 ```
 1. Floorplan → 2000m² upload
 2. E7 Campus ×25 platzieren
@@ -289,4 +289,8 @@ Value: 9/10
 2. **Enterprise Design** – Design Center 2.1
 3. **Newsletter** – High-Density Best Practices
 
-**Weiterlesen:** [U7 Pro Max Outdoor →](#) | [Network 9.0 →](#)
+**Weiterlesen:** [U7 Pro Max Outdoor →](/de/blog/u7-pro-max-outdoor-wifi) | [VLANs für KMU →](/de/blog/vlans-fuer-kmu)
+
+---
+
+*Haben Sie Fragen zu Enterprise WiFi? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

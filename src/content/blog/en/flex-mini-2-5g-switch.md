@@ -237,7 +237,7 @@ The Flex Mini 2.5G is available in the EU Store, at Digitec, and on Amazon.
 **Pro Bundle (Branch/Office-Ready):**
 - 2x Flex Mini
 - 2x U7 Pro
-- G5 Turret
+- [G5 Turret](/en/blog/g5-turret-ultra-camera-review)
 - UCG Ultra
 
 ## Pros & Cons: Desktop Switch Reality
@@ -293,4 +293,8 @@ Value: 10/10
 3. **Newsletter** – Weekly switch tips
 
 **Read More:**
-[E7 Campus →](#) | [UNAS Pro →](#) | [Network 9.0 →](#)
+[E7 Campus →](/en/blog/e7-campus-enterprise-wifi-7) | [UNAS 4 Desktop NAS →](/en/blog/unas-4-desktop-nas) | [VLANs for SMEs →](/en/blog/vlans-for-smes)
+
+---
+
+*Have questions about multi-gig networking? [Get in touch](/en/kontakt) for a free initial consultation.*

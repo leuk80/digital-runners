@@ -15,7 +15,7 @@ Cheap IP cameras are widely available online for very little money – and at fi
 
 Most cheap IP cameras store recordings on the manufacturer's cloud – often on servers outside Switzerland or the EU. This raises serious data protection questions: who can access your camera footage? How long is it stored? What happens if the provider shuts down their service?
 
-In a business context, this is a real problem. Both Switzerland's Data Protection Act (revDSG) and the GDPR require that personal data (and video recordings are personal data) is stored securely and traceably.
+In a business context, this is a real problem. Both Switzerland's Data Protection Act (revDSG) and the [GDPR](/en/blog/gdpr-local-storage) require that personal data (and video recordings are personal data) is stored securely and traceably.
 
 ### Limited Integration Possibilities
 
@@ -43,7 +43,7 @@ UniFi Protect offers AI-powered object recognition that distinguishes between pe
 
 ### Integration with the UniFi Ecosystem
 
-UniFi Protect integrates seamlessly into the entire UniFi ecosystem. Integration with **UniFi Access** means: when someone rings the doorbell, the camera view appears directly on the UniFi Access intercom or on your **UniFi Talk** phone. Everything from a single platform.
+UniFi Protect integrates seamlessly into the entire UniFi ecosystem. Integration with **[UniFi Access](/en/blog/unifi-access-control)** means: when someone rings the doorbell, the camera view appears directly on the UniFi Access intercom or on your **UniFi Talk** phone. Everything from a single platform.
 
 ### Professional Camera Models
 

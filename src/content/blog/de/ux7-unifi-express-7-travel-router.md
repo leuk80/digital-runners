@@ -212,4 +212,8 @@ Features: 9/10
 3. **Config-Pack** – 5 Travel-Templates gratis
 
 **Weiterlesen:**
-[Cloud Gateway Ultra →](#) | [UDM vs UCG →](#) | [WiFi 7 Guide →](#)
+[Cloud Gateway Ultra →](/de/blog/cloud-gateway-ultra-test) | [UDM vs UCG →](/de/blog/udm-pro-max-vs-ucg-max) | [WiFi 7 Guide →](/de/blog/wifi-7-u7-pro-migration)
+
+---
+
+*Haben Sie Fragen zu mobilen Netzwerklösungen? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

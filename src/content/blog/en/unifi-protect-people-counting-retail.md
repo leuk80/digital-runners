@@ -316,4 +316,8 @@ ROI: 10/10
 3. **Newsletter** – Weekly retail analytics
 
 **Read more:**
-[G5 Turret Ultra →](#) | [Store Network →](#) | [Multi-Site Guide →](#)
+[G5 Turret Ultra →](/en/blog/g5-turret-ultra-camera-review) | [Store Network →](/en/industries/retail) | [Multi-Site Guide →](/en/blog/unifi-fabrics-multi-site)
+
+---
+
+*Have questions about retail analytics? [Get in touch](/en/kontakt) for a free initial consultation.*

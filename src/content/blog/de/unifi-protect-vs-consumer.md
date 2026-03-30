@@ -15,7 +15,7 @@ Günstige IP-Kameras gibt es im Onlinehandel für wenige Franken – und auf den
 
 Die meisten günstigen IP-Kameras speichern ihre Aufzeichnungen in der Cloud des Herstellers – oft auf Servern ausserhalb der Schweiz oder der EU. Das wirft erhebliche Datenschutzfragen auf: Wer hat Zugriff auf Ihre Kameradaten? Wie lange werden sie gespeichert? Was passiert, wenn der Anbieter seinen Service einstellt?
 
-Im Unternehmensumfeld ist das ein ernstes Problem. Das Schweizer Datenschutzgesetz und die DSGVO verlangen, dass personenbezogene Daten (und Videoaufnahmen sind personenbezogene Daten) sicher und nachvollziehbar gespeichert werden.
+Im Unternehmensumfeld ist das ein ernstes Problem. Das Schweizer Datenschutzgesetz und die [DSGVO](/de/blog/dsgvo-lokaler-speicher) verlangen, dass personenbezogene Daten (und Videoaufnahmen sind personenbezogene Daten) sicher und nachvollziehbar gespeichert werden.
 
 ### Begrenzte Integrationsmöglichkeiten
 
@@ -43,7 +43,7 @@ UniFi Protect bietet KI-gestützte Objekterkennung, die zwischen Menschen, Fahrz
 
 ### Integration mit dem UniFi-Ökosystem
 
-UniFi Protect ist nahtlos in das gesamte UniFi-Ökosystem eingebunden. Integration mit **UniFi Access** bedeutet: Wenn jemand an der Türklingel klingelt, erscheint die Kameraansicht direkt auf dem UniFi Access Intercom oder auf dem **UniFi Talk** Telefon. Alles aus einer Hand.
+UniFi Protect ist nahtlos in das gesamte UniFi-Ökosystem eingebunden. Integration mit **[UniFi Access](/de/blog/unifi-access-zutrittskontrolle)** bedeutet: Wenn jemand an der Türklingel klingelt, erscheint die Kameraansicht direkt auf dem UniFi Access Intercom oder auf dem **UniFi Talk** Telefon. Alles aus einer Hand.
 
 ### Professionelle Kameramodelle
 

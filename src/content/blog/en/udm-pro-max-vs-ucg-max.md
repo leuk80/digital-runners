@@ -88,7 +88,7 @@ Config: Settings → System → HA → Shadow Mode
 
 ## Real-World Testing: 6-Week Head-to-Head
 
-**Zurich Test Lab:** 45x U7 Pro APs, 120 clients, 12x G5 Turret cameras, 10G WAN, multi-site setup.
+**Zurich Test Lab:** 45x U7 Pro APs, 120 clients, 12x [G5 Turret](/en/blog/g5-turret-ultra-camera-review) cameras, 10G WAN, multi-site setup.
 
 ### 🏃‍♂️ **Performance Measurements**
 ```
@@ -189,4 +189,8 @@ Time required: 15-45 min per site
 2. **Setup Service** – Zurich installation
 3. **Config Template** – Free download
 
-**Read more:** [Cloud Gateway Ultra →](#) | [WiFi 7 Guide →](#)
+**Read more:** [Cloud Gateway Ultra →](/en/blog/cloud-gateway-ultra-review) | [WiFi 7 Guide →](/en/blog/wifi-7-u7-pro-migration)
+
+---
+
+*Have questions about gateway selection? [Get in touch](/en/kontakt) for a free initial consultation.*

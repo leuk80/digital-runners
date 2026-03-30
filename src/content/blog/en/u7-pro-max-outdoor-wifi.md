@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 The **UniFi U7 Pro Max Outdoor** brings **WiFi 7 outside** in 2026 – weatherproof (IP67), 6GHz Standard Power, 300m² coverage, and **MLO** for seamless roaming from the living room to the garden. For smart home (pools, garage doors, cameras), home office (patio), events, or branch terraces, this is the **game changer**.
 
-Includes PoE++ injector, pole-mountable, available in the EU Store with 2-3 day delivery to Switzerland. Perfect for UCG Ultra/UDM setups with outdoor needs.
+Includes PoE++ injector, pole-mountable, available in the EU Store with 2-3 day delivery to Switzerland. Perfect for [UCG Ultra](/en/blog/cloud-gateway-ultra-review)/UDM setups with outdoor needs.
 
 **The problem it solves:**
 ```
@@ -163,7 +163,7 @@ Smart Home Integration:
 | U7 Outdoor | WiFi 7 | 250m² | IP67 | PoE+ |
 | Netgear Orbi 970 | WiFi 7 | 400m² | IP66 | Proprietary |
 
-**UniFi wins:** Management, VLANs, roaming, future-proof.
+**UniFi wins:** Management, [VLANs](/en/blog/vlans-for-smes), roaming, future-proof.
 
 ## Mounting Tips for Swiss Homes
 
@@ -260,4 +260,8 @@ Value: 9/10
 3. **Newsletter** – Weekly outdoor tips
 
 **Read More:**
-[U7 Pro Indoor →](#) | [Protect Outdoor →](#) | [Network 9.0 →](#)
+[U7 Pro Indoor →](/en/blog/wifi-7-u7-pro-migration) | [G5 Turret Ultra →](/en/blog/g5-turret-ultra-camera-review) | [WiFi Planning →](/en/blog/wifi-planning-offices)
+
+---
+
+*Have questions about outdoor WiFi? [Get in touch](/en/kontakt) for a free initial consultation.*

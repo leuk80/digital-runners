@@ -88,7 +88,7 @@ Config: Settings → System → HA → Shadow Mode
 
 ## Praxistest: 6-Wochen-Head-to-Head
 
-**Testlab Zürich:** 45x U7 Pro APs, 120 Clients, 12x G5 Turret Kameras, 10G WAN, Multi-Site Setup.
+**Testlab Zürich:** 45x U7 Pro APs, 120 Clients, 12x [G5 Turret Kameras](/de/blog/g5-turret-ultra-kamera-test), 10G WAN, Multi-Site Setup.
 
 ### 🏃‍♂️ **Performance-Messungen**
 ```
@@ -189,4 +189,8 @@ Zeitaufwand: 15-45 Min pro Site
 2. **Setup-Service** – Zürich-Installation
 3. **Config-Template** – Kostenloser Download
 
-**Weiterlesen:** [Cloud Gateway Ultra →](#) | [WiFi 7 Guide →](#)
+**Weiterlesen:** [Cloud Gateway Ultra →](/de/blog/cloud-gateway-ultra-test) | [WiFi 7 Guide →](/de/blog/wifi-7-u7-pro-migration)
+
+---
+
+*Haben Sie Fragen zu Gateway-Auswahl? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

@@ -33,11 +33,11 @@ const serviceSchema = {
   "provider": {
     "@type": "Organization",
     "name": "Digital Runners",
-    "url": "https://www.digital-runners.ch"
+    "url": "https://digital-runners.ch"
   },
   "areaServed": { "@type": "Country", "name": "Switzerland" },
   "serviceType": c.name,
-  "url": `https://www.digital-runners.ch/de/branchen/${industry.slug}`
+  "url": `https://digital-runners.ch/de/branchen/${industry.slug}`
 };
 ---
 
@@ -111,6 +111,61 @@ const serviceSchema = {
       </div>
     </div>
   </section>
+
+  {c.recommendedEquipment && c.recommendedEquipment.length > 0 && (
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-10">Typische Ausstattung</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-xl border border-slate-100 shadow-sm">
+            <thead>
+              <tr class="border-b border-slate-100">
+                <th class="text-left px-6 py-4 text-sm font-semibold text-slate-900">Produkt</th>
+                <th class="text-left px-6 py-4 text-sm font-semibold text-slate-900">Anzahl</th>
+                <th class="text-left px-6 py-4 text-sm font-semibold text-slate-900">Einsatzzweck</th>
+              </tr>
+            </thead>
+            <tbody>
+              {c.recommendedEquipment.map((eq, i) => (
+                <tr class:list={[i % 2 === 0 ? 'bg-white' : 'bg-slate-50', 'border-b border-slate-50']}>
+                  <td class="px-6 py-3 text-sm font-medium text-slate-900">{eq.product}</td>
+                  <td class="px-6 py-3 text-sm text-slate-600">{eq.quantity}</td>
+                  <td class="px-6 py-3 text-sm text-slate-600">{eq.purpose}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {c.typicalProject && (
+    <section class="py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 text-center mb-10">Typisches Projekt</h2>
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <div class="bg-gradient-to-r from-cyan-500 to-cyan-600 px-8 py-5">
+            <h3 class="text-lg font-bold text-white">{c.typicalProject.title}</h3>
+          </div>
+          <div class="p-8 space-y-6">
+            <div>
+              <h4 class="text-sm font-semibold text-cyan-600 uppercase tracking-wider mb-2">Ausgangslage</h4>
+              <p class="text-slate-700 leading-relaxed">{c.typicalProject.situation}</p>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold text-cyan-600 uppercase tracking-wider mb-2">Lösung</h4>
+              <p class="text-slate-700 leading-relaxed">{c.typicalProject.solution}</p>
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold text-cyan-600 uppercase tracking-wider mb-2">Ergebnis</h4>
+              <p class="text-slate-700 leading-relaxed">{c.typicalProject.result}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
 
   {relatedPosts.length > 0 && (
     <section class="py-16">

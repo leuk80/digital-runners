@@ -19,7 +19,7 @@ The result: employees at the far end of the office struggle with slow connection
 
 ### 1. Floor Plan and Room Layout
 
-As a baseline, a current-generation UniFi access point (for example the U7 Pro or U6+) can cover up to 250–300 m² in an open environment. In an open-plan office without partitions that's realistic – but the moment walls, doors and other obstacles appear, effective range shrinks considerably.
+As a baseline, a current-generation UniFi access point (for example the [U7 Pro](/en/blog/wifi-7-u7-pro-migration) or U6+) can cover up to 250–300 m² in an open environment. In an open-plan office without partitions that's realistic – but the moment walls, doors and other obstacles appear, effective range shrinks considerably.
 
 A rough rule of thumb: plan one access point per enclosed room (meeting rooms, private offices, server rooms). For open-plan offices, expect one AP per 80–120 m² under normal conditions.
 

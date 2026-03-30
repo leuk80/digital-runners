@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 The **G5 Turret Ultra** is Ubiquiti's **low-light monster** for 2026 – built for **retail stores, homes, offices, and industrial settings** with the highest demands for **4K image quality in zero light**. With **AI People/Vehicle Detection**, **optical zoom (3x)**, **weatherproof IP67**, and **24/7 Color Night Vision**, it replaces 2-3 older cameras at once.
 
-PoE powered, immediately available in the EU Store. The **best choice** for Protect setups with UCG Ultra/UDM Pro Max.
+PoE powered, immediately available in the EU Store. The **best choice** for Protect setups with UCG Ultra/[UDM Pro Max](/en/blog/udm-pro-max-vs-ucg-max).
 
 **The camera problem it solves:**
 ```
@@ -302,4 +302,8 @@ Value: 10/10
 3. **Newsletter** – Weekly Protect tips
 
 **Read More:**
-[EFG Security →](#) | [People Counting Guide →](#) | [G6 Series →](#)
+[EFG Security →](/en/blog/enterprise-fortress-gateway-25g) | [People Counting Guide →](/en/blog/unifi-protect-people-counting-retail) | [G6 Entry →](/en/blog/unifi-g6-entry-doorbell)
+
+---
+
+*Have questions about video surveillance? [Get in touch](/en/kontakt) for a free initial consultation.*

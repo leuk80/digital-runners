@@ -30,13 +30,13 @@ This article covers in detail:
 
 ## 1. Why UniFi Protect Is Compelling for Visitor Counting
 
-UniFi Protect is primarily a video surveillance platform, but recent releases have massively expanded its AI capabilities:
+[UniFi Protect](/en/blog/unifi-protect-vs-consumer) is primarily a video surveillance platform, but recent releases have massively expanded its AI capabilities:
 
 - Object detection (person, vehicle, animal)
 - Face recognition and license plate recognition on supported hardware
 - **Line Crossing** and **Line Cross Counting** to detect and count crossings of virtual lines
 
-This lets you model a typical retail scenario:
+This lets you model a typical [retail](/en/industries/retail) scenario:
 
 - Camera above the entrance
 - Virtual line right at the door threshold
@@ -267,3 +267,7 @@ With UniFi Protect, AI-capable cameras, or the UniFi AI Port, you can build a **
 For a large store network, this is extremely attractive: the initial design and backend implementation takes some thought, but after that, each new location can be set up largely by following a recipe.
 
 If you'd like, the next step could be turning this into a concrete rollout plan: e.g., "10 stores with 2 entrances each, central UNVR at headquarters, AI Ports where needed, data model + sample dashboard (conversion vs. revenue)."
+
+---
+
+*Have questions about people counting? [Get in touch](/en/kontakt) for a free initial consultation.*

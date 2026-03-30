@@ -11,7 +11,7 @@ author: "Digital Runners"
 
 The **Enterprise Fortress Gateway (EFG)** is Ubiquiti's **25G security monster** for 2026 – built for **MSPs, campus networks, factories, and retail chains** with **zero-trust requirements**. With **NeXT AI Inspection** (SSL/TLS deep packet inspection), **Shadow Mode HA**, and **12.5 Gbps IDS/IPS**, it sets new standards for enterprise networking.
 
-Dual 25G SFP28, 2x 10G copper, designed for UXG Enterprise/UDM Pro Max environments. Available in the EU Store, delivery to Switzerland: 5-7 days.
+Dual 25G SFP28, 2x 10G copper, designed for UXG Enterprise/[UDM Pro Max](/en/blog/udm-pro-max-vs-ucg-max) environments. Available in the EU Store, delivery to Switzerland: 5-7 days.
 
 **The enterprise security problem:**
 ```
@@ -295,4 +295,8 @@ Value: 9.5/10
 3. **Newsletter** – Zero-trust best practices
 
 **Read More:**
-[Flex Mini 2.5G →](#) | [E7 Campus →](#) | [Network 9.0 →](#)
+[Flex Mini 2.5G →](/en/blog/flex-mini-2-5g-switch) | [E7 Campus →](/en/blog/e7-campus-enterprise-wifi-7) | [GDPR & Privacy →](/en/blog/gdpr-local-storage)
+
+---
+
+*Have questions about enterprise security? [Get in touch](/en/kontakt) for a free initial consultation.*

@@ -43,7 +43,7 @@ The key innovation:
 In practice, this means:
 
 - **360° coverage** for nearby client devices (smartphones, laptops, IoT)
-- **Targeted directional beam** for the mesh link to the "next" UniFi AP – for example, to a U7 Pro or another U7 model
+- **Targeted directional beam** for the mesh link to the "next" UniFi AP – for example, to a [U7 Pro](/en/blog/wifi-7-u7-pro-migration) or another U7 model
 - **Significantly more distance**, without the mesh connection collapsing when obstacles are in the way or the gap increases
 
 This makes the U7 Mesh particularly suitable for scenarios that previously required either awkward workarounds (powerline, repeaters) or expensive cabling.
@@ -55,7 +55,7 @@ This makes the U7 Mesh particularly suitable for scenarios that previously requi
 In the video, Ubiquiti highlights that **WiFi 7 in the U7 Mesh "unlocks next generation throughput and efficiency"** – meaning more data throughput and more efficient use of the radio spectrum. This is crucial for mesh backhaul in particular:
 
 - **More net bandwidth for the uplink**: Even when a device is connected "only" via mesh, there's still enough capacity left for connected clients.
-- **More stable performance with many clients**: WiFi 7 is designed for higher device densities, which makes a direct difference in outdoor areas with many visitors (events, hospitality, hotels).
+- **More stable performance with many clients**: WiFi 7 is designed for higher device densities, which makes a direct difference in outdoor areas with many visitors (events, [hospitality](/en/industries/hospitality), hotels).
 - **Better efficiency**: Improved modulation and scheduling mean available airtime is used more effectively.
 
 An external review notes that the U7 Mesh is **ideal as a mesh node at the network periphery**: The access point can be powered via PoE injector and operated either with a wired backhaul or purely wirelessly as a mesh node. This keeps the architecture flexible – from "quick outdoor test" to permanent, clean installation.
@@ -87,7 +87,7 @@ Specifically, this means:
 - **Automatic channel optimization**: The RF engine helps choose channels and transmit power levels to minimize inter-AP interference.
 - **New Site Manager**: Multiple locations (e.g., different company branches) can be orchestrated with centralized visibility and control – **completely license-free**, as Ubiquiti emphasizes.
 
-An external review additionally points out that the U7 Mesh **works best with a UniFi Cloud Gateway**, but can also be integrated into existing networks with third-party routers – especially when connected via cable. This is ideal for gradual migrations toward UniFi.
+An external review additionally points out that the U7 Mesh **works best with a UniFi [Cloud Gateway](/en/blog/cloud-gateway-ultra-review)**, but can also be integrated into existing networks with third-party routers – especially when connected via cable. This is ideal for gradual migrations toward UniFi.
 
 ---
 
@@ -114,7 +114,7 @@ The U7 Mesh reaches its full potential when combined with other **U7 APs (e.g., 
 
 - **Indoors** are covered by ceiling or in-wall APs with high client density.
 - **U7 Mesh nodes** extend the network into "difficult" zones – outdoors or in remote corners.
-- **UniFi Network** manages everything centrally: SSIDs, VLANs, guest portals, PPSK, roaming, mesh policies.
+- **UniFi Network** manages everything centrally: SSIDs, [VLAN](/en/blog/vlans-for-smes)s, guest portals, PPSK, roaming, mesh policies.
 
 This creates an architecture that is
 
@@ -147,3 +147,7 @@ If you're planning to take your WiFi to the next level with WiFi 7 and mesh, or 
 4. **Security & segmentation**: Cleanly separate guest networks, internal networks, and IoT segments (VLAN, PPSK, captive portal).
 
 Digital Runners supports you with planning, hardware selection, configuration, and operation of your UniFi environment – including WiFi 7 mesh with the new U7 Mesh.
+
+---
+
+*Have questions about WiFi 7 mesh? [Get in touch](/en/kontakt) for a free initial consultation.*

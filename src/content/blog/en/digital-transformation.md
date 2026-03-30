@@ -25,7 +25,7 @@ UniFi grows with you. Start with a simple setup and expand step by step – with
 
 ### Professional Features
 
-VLANs for network segmentation, VPN connectivity, detailed traffic monitoring, guest networks with captive portal – everything is included and available at no extra cost.
+[VLANs for network segmentation](/en/blog/vlans-for-smes), VPN connectivity, detailed traffic monitoring, guest networks with captive portal – everything is included and available at no extra cost.
 
 ### Reliability
 
@@ -33,7 +33,7 @@ UniFi devices are built for continuous operation. Regular firmware updates conti
 
 ## Who is UniFi suitable for?
 
-UniFi is suitable for almost any business size and industry: from small offices to hotels, medical practices, and large industrial and logistics facilities. Wherever a reliable, professionally managed network is required.
+UniFi is suitable for almost any business size and industry: from small offices to hotels, medical practices, and large industrial and logistics facilities. Wherever a [reliable, professionally managed network](/en/blog/wifi-planning-offices) is required.
 
 ## Conclusion
 

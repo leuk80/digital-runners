@@ -35,7 +35,7 @@ UniFi Access Reader mit Kamera (z. B. der UA-Intercom Pro) bieten eine integrier
 
 ### Integration mit UniFi Protect
 
-Wenn jemand an der Türklingel klingelt, erscheint das Bild der Access-Kamera automatisch auf dem UniFi Protect Dashboard und auf verbundenen UniFi Talk Telefonen. Eine echte Ende-zu-Ende-Integration – Klingel, Video und Türöffner in einer Oberfläche.
+Wenn jemand an der Türklingel klingelt, erscheint das Bild der Access-Kamera automatisch auf dem [UniFi Protect](/de/blog/unifi-protect-vs-consumer) Dashboard und auf verbundenen UniFi Talk Telefonen. Eine echte Ende-zu-Ende-Integration – Klingel, Video und Türöffner in einer Oberfläche.
 
 ### Zutrittsrechte und Zeitpläne
 
@@ -53,11 +53,11 @@ Jeder Zutrittsversuch wird protokolliert: wer, wann, an welcher Tür, mit welche
 
 ## Typische Einsatzbereiche
 
-**Büros und Kanzleien**: Mitarbeitende öffnen mit der eigenen Karte, Besucher erhalten Tages-Badges. Serverräume und Archive sind nur für autorisierte Personen zugänglich.
+[**Büros und Kanzleien**](/de/branchen/bueros): Mitarbeitende öffnen mit der eigenen Karte, Besucher erhalten Tages-Badges. Serverräume und Archive sind nur für autorisierte Personen zugänglich.
 
-**Gesundheitswesen**: Medikamentenlager und Behandlungsräume werden nur für das berechtigte Personal geöffnet. Der Zugang ist vollständig protokolliert und revisionssicher.
+[**Gesundheitswesen**](/de/branchen/gesundheitswesen): Medikamentenlager und Behandlungsräume werden nur für das berechtigte Personal geöffnet. Der Zugang ist vollständig protokolliert und revisionssicher.
 
-**Hotels**: Gäste erhalten beim Check-in eine digitale Schlüsselkarte. Nach dem Check-out wird der Zugang automatisch deaktiviert – kein manuelles Einsammeln von Karten nötig.
+[**Hotels**](/de/branchen/hotellerie): Gäste erhalten beim Check-in eine digitale Schlüsselkarte. Nach dem Check-out wird der Zugang automatisch deaktiviert – kein manuelles Einsammeln von Karten nötig.
 
 **Lager und Produktion**: Zutritt zu Hochsicherheitsbereichen oder dem Materiallager nur für bestimmte Schichten oder Teams.
 

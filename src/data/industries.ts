@@ -6,6 +6,13 @@ export interface IndustryContent {
   challenges: Array<{ icon: string; title: string; desc: string }>;
   solutions: string[];
   products: Array<{ icon: string; title: string; desc: string }>;
+  typicalProject?: {
+    title: string;
+    situation: string;
+    solution: string;
+    result: string;
+  };
+  recommendedEquipment?: Array<{ product: string; quantity: string; purpose: string }>;
   faqs?: Array<{ question: string; answer: string }>;
 }
 
@@ -73,6 +80,20 @@ export const industries: Industry[] = [
           desc: 'Proaktives Monitoring und schnelle Reaktionszeiten für kritische Infrastruktur.',
         },
       ],
+      typicalProject: {
+        title: 'Arztpraxis mit 5 Behandlungsräumen',
+        situation: 'Eine Gemeinschaftspraxis in Zürich mit 3 Ärztinnen, 4 MPAs und 5 Behandlungsräumen hatte ein veraltetes Consumer-WLAN. Patientendaten liefen über dasselbe Netz wie das Gäste-WLAN – ein DSGVO-Risiko. Verbindungsabbrüche bei der Nutzung des Praxisinformationssystems (PIS) führten zu Frustration im Alltag.',
+        solution: 'Digital Runners installierte ein UniFi Cloud Gateway Ultra als zentrale Firewall, einen Switch Pro 24 PoE für die strukturierte Verkabelung, sowie 4 U7 Pro Access Points – einen pro Behandlungsraum und einen im Empfangsbereich. Drei VLANs wurden eingerichtet: Medizingeräte, Personal und Gäste-WLAN. Zwei G5 Turret Ultra Kameras sichern den Eingang und das Medikamentenlager.',
+        result: 'Die Praxis hat jetzt ein vollständig DSGVO-konformes Netzwerk mit stabiler WLAN-Abdeckung in jedem Raum. Das PIS läuft ohne Unterbrechungen, und Patienten nutzen ein sicheres, getrenntes Gäste-WLAN. Die Investition betrug ca. CHF 4’500 inklusive Installation.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Zentrale Firewall und VLAN-Management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '1', purpose: 'PoE-Versorgung aller Access Points und Kameras' },
+        { product: 'UniFi U7 Pro', quantity: '4', purpose: 'WLAN-Abdeckung in Behandlungsräumen und Empfang' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '2', purpose: 'Videoüberwachung Eingang und Medikamentenlager' },
+        { product: 'UniFi Access Reader G2', quantity: '1', purpose: 'Zugangskontrolle Medikamentenlager' },
+        { product: 'UniFi Access Hub', quantity: '1', purpose: 'Steuerung der Zutrittskontrolle' },
+      ],
       faqs: [
         {
           question: 'Wie wird das WLAN in einer Arztpraxis DSGVO-konform abgesichert?',
@@ -85,6 +106,14 @@ export const industries: Industry[] = [
         {
           question: 'Was passiert bei einem Netzwerkausfall in einer Klinik?',
           answer: 'Mit redundanten Access Points und automatischem Failover bleibt das Netzwerk auch beim Ausfall einzelner Komponenten verfügbar. Unser proaktives Monitoring erkennt Probleme, bevor sie sich auswirken.',
+        },
+        {
+          question: 'Mit welchen Kosten muss eine Arztpraxis für ein UniFi-Netzwerk rechnen?',
+          answer: 'Für eine typische Praxis mit 3–5 Behandlungsräumen liegt die Investition zwischen CHF 3’500 und CHF 6’000 inklusive Hardware und Installation. Laufende Kosten für Wartung und Support können optional als Servicevertrag dazugebucht werden.',
+        },
+        {
+          question: 'Wie lange dauert die Installation in einer laufenden Praxis?',
+          answer: 'In der Regel kann die komplette Installation an einem Wochenende oder ausserhalb der Sprechzeiten durchgeführt werden. Die Vorbereitung (Planung, Konfiguration) erfolgt vorab, sodass die Ausfallzeit auf ein Minimum reduziert wird.',
         },
       ],
     },
@@ -137,6 +166,20 @@ export const industries: Industry[] = [
           desc: 'Proactive monitoring and fast response times for critical infrastructure.',
         },
       ],
+      typicalProject: {
+        title: 'Medical Practice with 5 Treatment Rooms',
+        situation: 'A group practice in Zurich with 3 doctors, 4 medical assistants and 5 treatment rooms had an outdated consumer WiFi setup. Patient data was running on the same network as guest WiFi -- a GDPR risk. Connection drops while using the practice information system (PIS) caused daily frustration.',
+        solution: 'Digital Runners installed a UniFi Cloud Gateway Ultra as the central firewall, a Switch Pro 24 PoE for structured cabling, and 4 U7 Pro access points -- one per treatment room and one in the reception area. Three VLANs were configured: medical devices, staff and guest WiFi. Two G5 Turret Ultra cameras secure the entrance and medication storage.',
+        result: 'The practice now has a fully GDPR-compliant network with stable WiFi coverage in every room. The PIS runs without interruptions, and patients use a secure, separated guest WiFi. The investment was approximately CHF 4,500 including installation.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Central firewall and VLAN management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '1', purpose: 'PoE power for all access points and cameras' },
+        { product: 'UniFi U7 Pro', quantity: '4', purpose: 'WiFi coverage in treatment rooms and reception' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '2', purpose: 'Video surveillance for entrance and medication storage' },
+        { product: 'UniFi Access Reader G2', quantity: '1', purpose: 'Access control for medication storage' },
+        { product: 'UniFi Access Hub', quantity: '1', purpose: 'Access control management' },
+      ],
       faqs: [
         {
           question: 'How is WiFi in a medical practice secured in compliance with GDPR?',
@@ -149,6 +192,14 @@ export const industries: Industry[] = [
         {
           question: 'What happens during a network outage in a clinic?',
           answer: 'With redundant access points and automatic failover, the network remains available even when individual components fail. Our proactive monitoring detects issues before they have an impact.',
+        },
+        {
+          question: 'What are the costs for a UniFi network in a medical practice?',
+          answer: 'For a typical practice with 3-5 treatment rooms, the investment ranges between CHF 3,500 and CHF 6,000 including hardware and installation. Ongoing maintenance and support costs can optionally be added as a service contract.',
+        },
+        {
+          question: 'How long does installation take in an operating practice?',
+          answer: 'Typically, the complete installation can be carried out over a weekend or outside consultation hours. Preparation (planning, configuration) is done in advance, minimising downtime.',
         },
       ],
     },
@@ -207,6 +258,20 @@ export const industries: Industry[] = [
           desc: 'Videoüberwachung für Lobby, Parkplatz und Aussenanlagen.',
         },
       ],
+      typicalProject: {
+        title: 'Boutique-Hotel mit 32 Zimmern in Luzern',
+        situation: 'Ein Boutique-Hotel mit 32 Zimmern auf 4 Etagen in der Luzerner Altstadt hatte ständig Beschwerden über schlechtes WLAN. Die bestehende Lösung mit 3 Consumer-Routern konnte die Zimmergäste nicht zufriedenstellen. Zudem fehlte eine saubere Trennung zwischen Gäste-WLAN und dem Buchungssystem.',
+        solution: 'Digital Runners rüstete das Hotel mit einem UniFi Dream Machine Pro Max, zwei Switch Pro 24 PoE und 34 U6 In-Wall Access Points aus – einen pro Zimmer plus je einen in Lobby und Restaurant. Ein Voucher-System wurde für das Gäste-WLAN eingerichtet, und das PMS erhielt ein eigenes VLAN. Vier G5 Bullet Kameras überwachen Eingang, Parkplatz und Hintereingang.',
+        result: 'Die Gästezufriedenheit beim WLAN stieg von 2.8 auf 4.7 Sterne (Booking.com). Jedes Zimmer hat jetzt stabiles, schnelles WLAN. Das PMS ist komplett isoliert, und die Rezeption verwaltet Vouchers mit einem Klick. Gesamtinvestition: ca. CHF 18’000.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Dream Machine Pro Max', quantity: '1', purpose: 'Zentrales Gateway mit NVR-Funktion' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '2', purpose: 'PoE-Versorgung aller APs auf 4 Etagen' },
+        { product: 'UniFi U6 In-Wall', quantity: '34', purpose: 'Diskrete WLAN-Abdeckung pro Zimmer und Gemeinschaftsbereich' },
+        { product: 'UniFi G5 Bullet', quantity: '4', purpose: 'Aussenüberwachung Eingang, Parkplatz und Hintereingang' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Zugangskontrolle Personal- und Lagerbereich' },
+        { product: 'UniFi PoE+ Switch Flex Mini', quantity: '4', purpose: 'Zusätzliche Ports in Rezeption und Backoffice' },
+      ],
       faqs: [
         {
           question: 'Wie funktioniert ein Voucher-System für Gäste-WLAN im Hotel?',
@@ -219,6 +284,14 @@ export const industries: Industry[] = [
         {
           question: 'Wie wird WLAN in allen Zimmern sichergestellt?',
           answer: 'Mit dezenten In-Wall Access Points, die pro Zimmer oder pro Flur montiert werden. So erreicht man optimale Signalqualität in jedem Zimmer, ohne sichtbare Kabel oder grosse Geräte.',
+        },
+        {
+          question: 'Was kostet eine komplette WLAN-Aufrüstung für ein Hotel mit 30 Zimmern?',
+          answer: 'Je nach Anforderungen liegt die Investition zwischen CHF 15’000 und CHF 25’000, inklusive In-Wall APs pro Zimmer, Switches, Gateway und Installation. Die laufenden Kosten beschränken sich auf Strom und optionalen Support.',
+        },
+        {
+          question: 'Kann das Gäste-WLAN mit dem Hotel-Branding versehen werden?',
+          answer: 'Ja. Das UniFi Captive Portal lässt sich vollständig an das Hotel-Design anpassen – mit Logo, Farben und Willkommensnachricht. Auch mehrsprachige Portale für internationale Gäste sind möglich.',
         },
       ],
     },
@@ -271,6 +344,20 @@ export const industries: Industry[] = [
           desc: 'Video surveillance for lobby, car park and outdoor facilities.',
         },
       ],
+      typicalProject: {
+        title: 'Boutique Hotel with 32 Rooms in Lucerne',
+        situation: 'A boutique hotel with 32 rooms across 4 floors in Lucerne\'s old town had constant complaints about poor WiFi. The existing setup with 3 consumer routers could not satisfy guests. Additionally, there was no clean separation between guest WiFi and the booking system.',
+        solution: 'Digital Runners equipped the hotel with a UniFi Dream Machine Pro Max, two Switch Pro 24 PoE units and 34 U6 In-Wall access points -- one per room plus one each in the lobby and restaurant. A voucher system was set up for guest WiFi, and the PMS received its own VLAN. Four G5 Bullet cameras monitor the entrance, car park and rear entrance.',
+        result: 'Guest satisfaction with WiFi rose from 2.8 to 4.7 stars (Booking.com). Every room now has stable, fast WiFi. The PMS is completely isolated, and reception manages vouchers with a single click. Total investment: approximately CHF 18,000.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Dream Machine Pro Max', quantity: '1', purpose: 'Central gateway with NVR functionality' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '2', purpose: 'PoE power for all APs across 4 floors' },
+        { product: 'UniFi U6 In-Wall', quantity: '34', purpose: 'Discreet per-room WiFi coverage and common areas' },
+        { product: 'UniFi G5 Bullet', quantity: '4', purpose: 'Outdoor surveillance for entrance, car park and rear entrance' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Access control for staff and storage areas' },
+        { product: 'UniFi PoE+ Switch Flex Mini', quantity: '4', purpose: 'Additional ports at reception and back office' },
+      ],
       faqs: [
         {
           question: 'How does a voucher system for guest WiFi work in a hotel?',
@@ -283,6 +370,14 @@ export const industries: Industry[] = [
         {
           question: 'How is WiFi ensured in every room?',
           answer: 'With discreet in-wall access points mounted per room or per corridor. This achieves optimal signal quality in every room without visible cables or large devices.',
+        },
+        {
+          question: 'What does a complete WiFi upgrade cost for a hotel with 30 rooms?',
+          answer: 'Depending on requirements, the investment ranges between CHF 15,000 and CHF 25,000, including in-wall APs per room, switches, gateway and installation. Ongoing costs are limited to electricity and optional support.',
+        },
+        {
+          question: 'Can the guest WiFi portal be customised with hotel branding?',
+          answer: 'Yes. The UniFi captive portal can be fully customised to match the hotel\'s design -- with logo, colours and welcome message. Multi-language portals for international guests are also possible.',
         },
       ],
     },
@@ -342,6 +437,19 @@ export const industries: Industry[] = [
           desc: 'Professionelle Planung und saubere Umsetzung – passend zum Kanzleiumfeld.',
         },
       ],
+      typicalProject: {
+        title: 'Anwaltskanzlei mit 8 Mitarbeitenden und 2 Standorten',
+        situation: 'Eine mittelgrosse Anwaltskanzlei in Bern mit 8 Mitarbeitenden an zwei Standorten hatte keine sichere Verbindung zwischen den Büros. Mandantenakten wurden per E-Mail verschickt, und das WLAN war ein einfacher Consumer-Router ohne Netzwerktrennung. Ein Compliance-Audit hatte Handlungsbedarf aufgezeigt.',
+        solution: 'Digital Runners richtete an beiden Standorten je ein UniFi Cloud Gateway Ultra mit Site-to-Site VPN ein. Zwei Switch Pro 24 PoE versorgen die kabelgebundenen Arbeitsplätze und 3 U7 Pro Access Points. Drei VLANs trennen Mandanten-, Mitarbeiter- und Druckernetze. Ein UNAS Pro dient als lokaler, verschlüsselter Dateiserver für Mandantenakten.',
+        result: 'Die Kanzlei bestand das nächste Compliance-Audit problemlos. Beide Standorte sind sicher per VPN verbunden, und Mandantenakten werden lokal auf dem UNAS Pro gespeichert. Die Investition lag bei ca. CHF 5’800 für beide Standorte.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '2', purpose: 'Gateway mit Site-to-Site VPN pro Standort' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '2', purpose: 'Strukturierte Verkabelung und PoE an beiden Standorten' },
+        { product: 'UniFi U7 Pro', quantity: '3', purpose: 'WLAN-Abdeckung in Büros und Besprechungsräumen' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '2', purpose: 'Videoüberwachung Eingangsbereiche' },
+        { product: 'UniFi UNAS Pro', quantity: '1', purpose: 'Lokaler Dateiserver für Mandantenakten' },
+      ],
       faqs: [
         {
           question: 'Wie schützt UniFi Mandantendaten in einer Kanzlei?',
@@ -354,6 +462,14 @@ export const industries: Industry[] = [
         {
           question: 'Ist UniFi für eine kleine Kanzlei mit 5 Mitarbeitenden geeignet?',
           answer: 'Absolut. UniFi skaliert von kleinen Büros bis zu grossen Kanzleien. Für eine kleine Kanzlei genügt oft ein Gateway, ein Switch und 1–2 Access Points – professionell, aber erschwinglich.',
+        },
+        {
+          question: 'Wie sicher ist das Site-to-Site VPN zwischen zwei Kanzleistandorten?',
+          answer: 'UniFi verwendet WireGuard oder IPsec für Site-to-Site VPN – beides sind bewährte, stark verschlüsselte Protokolle. Die Verbindung ist mindestens so sicher wie eine dedizierte Standleitung, aber deutlich günstiger.',
+        },
+        {
+          question: 'Kann das Netzwerk ohne IT-Kenntnisse gewartet werden?',
+          answer: 'Ja, für den täglichen Betrieb sind keine IT-Kenntnisse nötig. Digital Runners übernimmt die Ersteinrichtung und bietet einen optionalen Wartungsvertrag. Kleinere Anpassungen wie das Hinzufügen neuer Geräte sind über die intuitive UniFi-App möglich.',
         },
       ],
     },
@@ -407,6 +523,19 @@ export const industries: Industry[] = [
           desc: 'Professional planning and clean implementation – suited to a legal environment.',
         },
       ],
+      typicalProject: {
+        title: 'Law Firm with 8 Employees and 2 Locations',
+        situation: 'A mid-sized law firm in Bern with 8 employees across two locations had no secure connection between offices. Client files were being sent via email, and the WiFi was a simple consumer router with no network separation. A compliance audit had flagged the need for action.',
+        solution: 'Digital Runners set up a UniFi Cloud Gateway Ultra with site-to-site VPN at each location. Two Switch Pro 24 PoE units supply the wired workstations and 3 U7 Pro access points. Three VLANs separate client, staff and printer networks. A UNAS Pro serves as a local, encrypted file server for client files.',
+        result: 'The firm passed its next compliance audit without issues. Both locations are securely connected via VPN, and client files are stored locally on the UNAS Pro. The investment was approximately CHF 5,800 for both locations.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '2', purpose: 'Gateway with site-to-site VPN per location' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '2', purpose: 'Structured cabling and PoE at both locations' },
+        { product: 'UniFi U7 Pro', quantity: '3', purpose: 'WiFi coverage in offices and meeting rooms' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '2', purpose: 'Video surveillance for entrance areas' },
+        { product: 'UniFi UNAS Pro', quantity: '1', purpose: 'Local file server for client records' },
+      ],
       faqs: [
         {
           question: 'How does UniFi protect client data in a law firm?',
@@ -419,6 +548,14 @@ export const industries: Industry[] = [
         {
           question: 'Is UniFi suitable for a small firm with 5 employees?',
           answer: 'Absolutely. UniFi scales from small offices to large firms. For a small practice, a gateway, a switch and 1–2 access points are often sufficient – professional yet affordable.',
+        },
+        {
+          question: 'How secure is the site-to-site VPN between two office locations?',
+          answer: 'UniFi uses WireGuard or IPsec for site-to-site VPN -- both are proven, strongly encrypted protocols. The connection is at least as secure as a dedicated leased line, but significantly more cost-effective.',
+        },
+        {
+          question: 'Can the network be maintained without IT expertise?',
+          answer: 'Yes, no IT expertise is needed for day-to-day operation. Digital Runners handles the initial setup and offers an optional maintenance contract. Minor adjustments such as adding new devices can be done via the intuitive UniFi app.',
         },
       ],
     },
@@ -478,6 +615,20 @@ export const industries: Industry[] = [
           desc: 'Kontinuierlicher Betrieb und schnelle Hilfe – auch ohne eigene IT.',
         },
       ],
+      typicalProject: {
+        title: 'Startup-Büro mit 45 Arbeitsplätzen in Zürich',
+        situation: 'Ein wachsendes Tech-Startup in Zürich-West hatte 45 Mitarbeitende auf einer offenen Bürofläche von 400 m². Das bestehende WLAN brach bei Video-Calls regelmässig zusammen, besonders wenn viele Mitarbeitende gleichzeitig in Meetings waren. Neue Mitarbeitende konnten nur umständlich ins Netz eingebunden werden.',
+        solution: 'Digital Runners installierte ein UniFi Cloud Gateway Ultra, einen Switch Enterprise 48 PoE für das Backbone, und 4 U7 Pro Max Access Points für die High-Density-Umgebung. Drei VLANs trennen Mitarbeiter, Gäste und IoT-Geräte. Ein weiterer U7 Pro wurde im Meetingraum-Bereich platziert. QoS-Regeln priorisieren Video-Traffic.',
+        result: 'Video-Calls laufen jetzt unterbrechungsfrei, auch bei Vollbesetzung. Neue Mitarbeitende werden in 2 Minuten über das Self-Service-Portal eingebunden. Das Netzwerk ist für bis zu 100 Arbeitsplätze ausgelegt. Investition: ca. CHF 5’200.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Zentrale Firewall, Routing und VLAN-Management' },
+        { product: 'UniFi Switch Enterprise 48 PoE', quantity: '1', purpose: 'Backbone-Switch für alle Arbeitsplätze und APs' },
+        { product: 'UniFi U7 Pro Max', quantity: '4', purpose: 'High-Density WLAN für Grossraumbüro' },
+        { product: 'UniFi U7 Pro', quantity: '1', purpose: 'Dedizierter AP für Meetingraum-Zone' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '2', purpose: 'Videoüberwachung Eingang und Serverraum' },
+        { product: 'UniFi Access Reader G2', quantity: '1', purpose: 'Zugangskontrolle Eingang' },
+      ],
       faqs: [
         {
           question: 'Wie viele Geräte kann UniFi in einem Grossraumbüro gleichzeitig bedienen?',
@@ -490,6 +641,14 @@ export const industries: Industry[] = [
         {
           question: 'Kann das Netzwerk mitwachsen, wenn wir mehr Mitarbeitende einstellen?',
           answer: 'UniFi ist modular aufgebaut. Neue Access Points, Switches oder sogar Standorte lassen sich jederzeit hinzufügen und zentral über ein Dashboard verwalten – ohne Komplettumbau.',
+        },
+        {
+          question: 'Wie schnell ist die Installation in einem bestehenden Büro?',
+          answer: 'Die meisten Büro-Installationen sind innerhalb von 1–2 Tagen abgeschlossen. Die Vorkonfiguration erfolgt bei uns im Büro, sodass vor Ort nur noch die Hardware montiert und das Netzwerk aktiviert werden muss.',
+        },
+        {
+          question: 'Können Mitarbeitende im Home Office sicher auf das Firmennetz zugreifen?',
+          answer: 'Ja. Über den integrierten VPN-Server im UniFi Gateway können Mitarbeitende von zu Hause oder unterwegs eine verschlüsselte Verbindung zum Firmennetz aufbauen – genau so, als wären sie im Büro.',
         },
       ],
     },
@@ -543,6 +702,20 @@ export const industries: Industry[] = [
           desc: 'Continuous operation and fast assistance – even without in-house IT.',
         },
       ],
+      typicalProject: {
+        title: 'Startup Office with 45 Workstations in Zurich',
+        situation: 'A growing tech startup in Zurich-West had 45 employees in an open-plan office of 400 m2. The existing WiFi regularly dropped during video calls, especially when many employees were in meetings simultaneously. Onboarding new employees to the network was cumbersome.',
+        solution: 'Digital Runners installed a UniFi Cloud Gateway Ultra, a Switch Enterprise 48 PoE for the backbone, and 4 U7 Pro Max access points for the high-density environment. Three VLANs separate staff, guests and IoT devices. An additional U7 Pro was placed in the meeting room area. QoS rules prioritise video traffic.',
+        result: 'Video calls now run without interruptions, even at full occupancy. New employees are onboarded in 2 minutes via the self-service portal. The network is designed for up to 100 workstations. Investment: approximately CHF 5,200.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Central firewall, routing and VLAN management' },
+        { product: 'UniFi Switch Enterprise 48 PoE', quantity: '1', purpose: 'Backbone switch for all workstations and APs' },
+        { product: 'UniFi U7 Pro Max', quantity: '4', purpose: 'High-density WiFi for open-plan office' },
+        { product: 'UniFi U7 Pro', quantity: '1', purpose: 'Dedicated AP for meeting room zone' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '2', purpose: 'Video surveillance for entrance and server room' },
+        { product: 'UniFi Access Reader G2', quantity: '1', purpose: 'Access control for entrance' },
+      ],
       faqs: [
         {
           question: 'How many devices can UniFi handle simultaneously in an open-plan office?',
@@ -555,6 +728,14 @@ export const industries: Industry[] = [
         {
           question: 'Can the network grow as we hire more employees?',
           answer: 'UniFi is modular. New access points, switches or even locations can be added at any time and managed centrally from a single dashboard – without a complete overhaul.',
+        },
+        {
+          question: 'How fast is installation in an existing office?',
+          answer: 'Most office installations are completed within 1-2 days. Pre-configuration is done at our premises, so on-site work is limited to mounting hardware and activating the network.',
+        },
+        {
+          question: 'Can employees securely access the company network from home?',
+          answer: 'Yes. Via the integrated VPN server in the UniFi gateway, employees can establish an encrypted connection to the company network from home or on the go -- just as if they were in the office.',
         },
       ],
     },
@@ -612,6 +793,20 @@ export const industries: Industry[] = [
           desc: 'Umfassende Videoüberwachung für Lager, Tore und Aussengelände.',
         },
       ],
+      typicalProject: {
+        title: 'Logistikzentrum mit 3’000 m² Lagerfläche bei Basel',
+        situation: 'Ein Logistikunternehmen bei Basel betreibt eine 3’000 m² grosse Lagerhalle mit 12 Meter Deckenhöhe. 15 Mitarbeitende nutzen Handscanner für die Kommissionierung, doch das WLAN fiel regelmässig aus. Beim Wechsel zwischen Hallenbereichen verloren die Scanner die Verbindung, was zu Fehlbuchungen im WMS führte.',
+        solution: 'Digital Runners installierte ein UniFi Cloud Gateway Ultra, zwei Switch Pro 24 PoE und 6 U7 Outdoor Access Points an der Hallendecke für maximale Reichweite. Fast Roaming (802.11r) wurde aktiviert, damit Scanner nahtlos zwischen APs wechseln. Das WMS erhielt ein eigenes VLAN. Vier G5 Bullet Kameras überwachen die Ladetore und das Aussengelände.',
+        result: 'Die WLAN-Abdeckung ist jetzt lückenlos in der gesamten Halle. Die Handscanner arbeiten ohne Verbindungsabbrüche, und Fehlbuchungen sind um 95% zurückgegangen. Die Videoüberwachung schützt Waren und dokumentiert den Warenein- und -ausgang. Investition: ca. CHF 7’500.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Zentrale Firewall und VLAN-Management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '2', purpose: 'PoE-Versorgung für APs und Kameras' },
+        { product: 'UniFi U7 Outdoor', quantity: '6', purpose: 'Weitreichende WLAN-Abdeckung in hoher Lagerhalle' },
+        { product: 'UniFi G5 Bullet', quantity: '4', purpose: 'Outdoor-Überwachung Ladetore und Aussengelände' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Zugangskontrolle Ladetore und Sicherheitsbereich' },
+        { product: 'UniFi Access Hub', quantity: '1', purpose: 'Steuerung der Zutrittskontrolle' },
+      ],
       faqs: [
         {
           question: 'Funktioniert UniFi WLAN auch in hohen Lagerhallen?',
@@ -624,6 +819,14 @@ export const industries: Industry[] = [
         {
           question: 'Wie wird das WMS (Warehouse Management System) angebunden?',
           answer: 'Das WMS wird über ein eigenes VLAN angebunden, getrennt vom allgemeinen Netz. So ist die Kommunikation zwischen WMS-Server und mobilen Scannern zuverlässig und sicher.',
+        },
+        {
+          question: 'Was kostet eine WLAN-Aufrüstung für eine Lagerhalle?',
+          answer: 'Für eine Lagerhalle mit 2’000–5’000 m² liegt die Investition typischerweise zwischen CHF 6’000 und CHF 12’000, je nach Deckenhöhe, Anzahl APs und gewünschter Kameraüberwachung. Ein Vor-Ort-Survey ist empfehlenswert.',
+        },
+        {
+          question: 'Wie robust sind die Access Points gegenüber Staplern und Erschütterungen?',
+          answer: 'Die APs werden an der Decke oder an Stahlträgern montiert, ausserhalb der Reichweite von Staplern. UniFi Outdoor-APs sind für raue Umgebungen ausgelegt und vertragen Temperaturschwankungen, Staub und Vibrationen problemlos.',
         },
       ],
     },
@@ -675,6 +878,20 @@ export const industries: Industry[] = [
           desc: 'Comprehensive video surveillance for warehouses, gates and outdoor areas.',
         },
       ],
+      typicalProject: {
+        title: 'Logistics Centre with 3,000 m2 Warehouse Space near Basel',
+        situation: 'A logistics company near Basel operates a 3,000 m2 warehouse with 12-metre ceilings. 15 employees use handheld scanners for order picking, but the WiFi regularly dropped out. When moving between hall sections, scanners lost their connection, leading to mis-bookings in the WMS.',
+        solution: 'Digital Runners installed a UniFi Cloud Gateway Ultra, two Switch Pro 24 PoE units and 6 U7 Outdoor access points mounted on the ceiling for maximum range. Fast Roaming (802.11r) was enabled so scanners switch seamlessly between APs. The WMS received its own VLAN. Four G5 Bullet cameras monitor the loading docks and outdoor area.',
+        result: 'WiFi coverage is now seamless throughout the entire hall. Handheld scanners work without connection drops, and mis-bookings have decreased by 95%. Video surveillance protects goods and documents incoming and outgoing shipments. Investment: approximately CHF 7,500.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Central firewall and VLAN management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '2', purpose: 'PoE power for APs and cameras' },
+        { product: 'UniFi U7 Outdoor', quantity: '6', purpose: 'Long-range WiFi coverage in tall warehouse' },
+        { product: 'UniFi G5 Bullet', quantity: '4', purpose: 'Outdoor surveillance for loading docks and yard' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Access control for loading docks and secure area' },
+        { product: 'UniFi Access Hub', quantity: '1', purpose: 'Access control management' },
+      ],
       faqs: [
         {
           question: 'Does UniFi WiFi work in tall warehouse halls?',
@@ -687,6 +904,14 @@ export const industries: Industry[] = [
         {
           question: 'How is the WMS (Warehouse Management System) connected?',
           answer: 'The WMS is connected via its own VLAN, separated from the general network. This ensures communication between the WMS server and mobile scanners is reliable and secure.',
+        },
+        {
+          question: 'What does a WiFi upgrade cost for a warehouse?',
+          answer: 'For a warehouse of 2,000-5,000 m2, the investment typically ranges between CHF 6,000 and CHF 12,000, depending on ceiling height, number of APs and desired camera coverage. An on-site survey is recommended.',
+        },
+        {
+          question: 'How robust are the access points against forklifts and vibrations?',
+          answer: 'The APs are mounted on ceilings or steel beams, out of reach of forklifts. UniFi outdoor APs are designed for harsh environments and can easily withstand temperature fluctuations, dust and vibrations.',
         },
       ],
     },
@@ -744,6 +969,19 @@ export const industries: Industry[] = [
           desc: 'Denkmalgerechte Planung und Montage mit Rücksicht auf historische Substanz.',
         },
       ],
+      typicalProject: {
+        title: 'Regionalmuseum mit 6 Ausstellungsräumen in Winterthur',
+        situation: 'Ein Regionalmuseum in einem denkmalgeschützten Gebäude in Winterthur mit 6 Ausstellungsräumen, einem Shop und einem Veranstaltungsraum hatte kein WLAN für Besucher und keine digitale Infrastruktur für interaktive Exponate. Die Denkmalpflege verbot sichtbare Kabel und grosse Wandmontagen.',
+        solution: 'Digital Runners plante eine minimalinvasive Installation mit einem UniFi Cloud Gateway Ultra und 5 U7 Pro Access Points, die in bestehende Kabelkanäle und abgehängte Decken integriert wurden. Ein Besucher-WLAN mit Museums-Branding wurde eingerichtet. Drei UniFi AI Theta Kameras überwachen die wertvollsten Exponate mit KI-gestützter Bewegungserkennung.',
+        result: 'Das Museum bietet jetzt interaktive Audio-Guides per Smartphone, ein gebrandetes Besucher-WLAN und lückenlose Überwachung der Sammlung. Die Denkmalpflege genehmigte die Installation ohne Auflagen. Investition: ca. CHF 6’200.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Zentrale Firewall und Netzwerkmanagement' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '1', purpose: 'PoE-Versorgung für APs und Kameras' },
+        { product: 'UniFi U7 Pro', quantity: '5', purpose: 'Diskrete WLAN-Abdeckung in Ausstellungsräumen' },
+        { product: 'UniFi AI Theta', quantity: '3', purpose: 'KI-gestützte Überwachung wertvoller Exponate' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Zugangskontrolle Depot und Mitarbeiterbereiche' },
+      ],
       faqs: [
         {
           question: 'Kann WLAN in einem denkmalgeschützten Gebäude installiert werden?',
@@ -756,6 +994,14 @@ export const industries: Industry[] = [
         {
           question: 'Können Kunstwerke mit UniFi Protect überwacht werden?',
           answer: 'Ja. UniFi Protect Kameras bieten 24/7 Überwachung mit Bewegungserkennung und Benachrichtigungen. Die Kameras sind diskret und können in sensiblen Ausstellungsräumen montiert werden.',
+        },
+        {
+          question: 'Welche Möglichkeiten bietet das Besucher-WLAN für das Museum?',
+          answer: 'Über das Captive Portal können Besucher beim Anmelden Informationen zum aktuellen Programm sehen. Zudem ermöglicht das WLAN smartphone-basierte Audio-Guides, interaktive Exponate und digitale Wegführung – ohne zusätzliche Hardware.',
+        },
+        {
+          question: 'Wie wird die Überwachung nachts und ausserhalb der Öffnungszeiten gehandhabt?',
+          answer: 'UniFi Protect kann zeitbasierte Regeln erstellen: Während der Öffnungszeiten wird nur bei ungewöhnlichen Bewegungen gemeldet, nachts wird jede Bewegung als Alarm registriert. Push-Benachrichtigungen gehen direkt auf das Smartphone des Sicherheitsverantwortlichen.',
         },
       ],
     },
@@ -807,6 +1053,19 @@ export const industries: Industry[] = [
           desc: 'Heritage-sensitive planning and installation with respect for historic fabric.',
         },
       ],
+      typicalProject: {
+        title: 'Regional Museum with 6 Exhibition Rooms in Winterthur',
+        situation: 'A regional museum in a listed heritage building in Winterthur with 6 exhibition rooms, a shop and an event space had no visitor WiFi and no digital infrastructure for interactive exhibits. Heritage authorities prohibited visible cables and large wall mountings.',
+        solution: 'Digital Runners planned a minimally invasive installation with a UniFi Cloud Gateway Ultra and 5 U7 Pro access points, integrated into existing cable ducts and suspended ceilings. A visitor WiFi with museum branding was set up. Three UniFi AI Theta cameras monitor the most valuable exhibits with AI-powered motion detection.',
+        result: 'The museum now offers interactive smartphone-based audio guides, branded visitor WiFi and seamless surveillance of its collection. The heritage authority approved the installation without conditions. Investment: approximately CHF 6,200.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Central firewall and network management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '1', purpose: 'PoE power for APs and cameras' },
+        { product: 'UniFi U7 Pro', quantity: '5', purpose: 'Discreet WiFi coverage in exhibition rooms' },
+        { product: 'UniFi AI Theta', quantity: '3', purpose: 'AI-powered surveillance of valuable exhibits' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Access control for depot and staff areas' },
+      ],
       faqs: [
         {
           question: 'Can WiFi be installed in a listed heritage building?',
@@ -819,6 +1078,14 @@ export const industries: Industry[] = [
         {
           question: 'Can artworks be monitored with UniFi Protect?',
           answer: 'Yes. UniFi Protect cameras offer 24/7 surveillance with motion detection and notifications. The cameras are discreet and can be mounted in sensitive exhibition spaces.',
+        },
+        {
+          question: 'What options does visitor WiFi offer for the museum?',
+          answer: 'Via the captive portal, visitors can see information about the current programme when logging in. The WiFi also enables smartphone-based audio guides, interactive exhibits and digital wayfinding -- without additional hardware.',
+        },
+        {
+          question: 'How is surveillance handled at night and outside opening hours?',
+          answer: 'UniFi Protect can create time-based rules: during opening hours, only unusual movements trigger alerts, while at night every movement is registered as an alarm. Push notifications go directly to the security manager\'s smartphone.',
         },
       ],
     },
@@ -875,6 +1142,19 @@ export const industries: Industry[] = [
           desc: 'Zuverlässige Überwachung für Werkstatt, Eingang und Lager.',
         },
       ],
+      typicalProject: {
+        title: 'Schreinerei mit 800 m² Werkstatt und Bürotrakt',
+        situation: 'Eine Schreinerei in Aarau mit 12 Mitarbeitenden hatte eine 800 m² Werkstatt und einen angrenzenden Bürotrakt. In der Werkstatt gab es kein WLAN – digitale Zeichnungen mussten am Büro-PC angesehen und ausgedruckt werden. Die CNC-Fräse war nur per USB-Stick ansteuerbar, und eine Kameraüberwachung fehlte trotz wertvollem Maschinenpark.',
+        solution: 'Digital Runners installierte ein UniFi Cloud Gateway Ultra, einen Switch Pro 24 PoE und 3 U7 Outdoor Access Points in der Werkstatt (staubresistent). Ein U7 Pro deckt den Bürotrakt ab. Ein IoT-VLAN verbindet die CNC-Fräse und den Laser-Cutter direkt mit dem Netzwerk. Zwei G5 Bullet Kameras überwachen den Eingang und die Werkstatt.',
+        result: 'Mitarbeitende können Zeichnungen jetzt direkt am Tablet in der Werkstatt öffnen. Die CNC-Fräse empfängt Aufträge drahtlos, und der Betriebsleiter kann die Werkstatt per App überwachen. Investition: ca. CHF 4’800.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Zentrale Firewall und VLAN-Management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '1', purpose: 'PoE-Versorgung für alle Geräte' },
+        { product: 'UniFi U7 Outdoor', quantity: '3', purpose: 'Staubresistente WLAN-Abdeckung in der Werkstatt' },
+        { product: 'UniFi U7 Pro', quantity: '1', purpose: 'WLAN-Abdeckung im Bürotrakt' },
+        { product: 'UniFi G5 Bullet', quantity: '2', purpose: 'Videoüberwachung Eingang und Werkstatt' },
+      ],
       faqs: [
         {
           question: 'Halten UniFi Access Points Staub und Feuchtigkeit aus?',
@@ -887,6 +1167,14 @@ export const industries: Industry[] = [
         {
           question: 'Funktioniert WLAN zuverlässig in einer grossen Werkhalle?',
           answer: 'Mit der richtigen Platzierung von Access Points und nahtlosem Roaming können Mitarbeitende sich frei durch die Halle bewegen, ohne Verbindungsabbrüche zu erleben.',
+        },
+        {
+          question: 'Was kostet ein WLAN-Setup für eine mittelgrosse Werkstatt?',
+          answer: 'Für eine Werkstatt mit 500–1’000 m² plus Bürobereich rechnen wir mit CHF 3’500 bis CHF 6’000, inklusive staubresistenter APs, Gateway, Switch und Installation. Ein Vor-Ort-Besuch klärt die genauen Anforderungen.',
+        },
+        {
+          question: 'Können Maschinen automatisch Statusmeldungen senden?',
+          answer: 'Ja. Über das IoT-VLAN können vernetzte Maschinen Statusmeldungen, Fehlermeldungen oder Produktionsdaten an ein zentrales System senden. Dies ermöglicht vorausschauende Wartung und reduziert Ausfallzeiten.',
         },
       ],
     },
@@ -937,6 +1225,19 @@ export const industries: Industry[] = [
           desc: 'Reliable monitoring for workshop, entrance and storage areas.',
         },
       ],
+      typicalProject: {
+        title: 'Carpentry Workshop with 800 m2 Floor Space and Office Wing',
+        situation: 'A carpentry workshop in Aarau with 12 employees had an 800 m2 workshop floor and an adjacent office wing. There was no WiFi in the workshop -- digital drawings had to be viewed on the office PC and printed out. The CNC router could only be controlled via USB stick, and there was no camera surveillance despite a valuable machine park.',
+        solution: 'Digital Runners installed a UniFi Cloud Gateway Ultra, a Switch Pro 24 PoE and 3 U7 Outdoor access points in the workshop (dust-resistant). A U7 Pro covers the office wing. An IoT VLAN connects the CNC router and laser cutter directly to the network. Two G5 Bullet cameras monitor the entrance and workshop floor.',
+        result: 'Employees can now open drawings directly on tablets in the workshop. The CNC router receives jobs wirelessly, and the operations manager can monitor the workshop via app. Investment: approximately CHF 4,800.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Central firewall and VLAN management' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '1', purpose: 'PoE power for all devices' },
+        { product: 'UniFi U7 Outdoor', quantity: '3', purpose: 'Dust-resistant WiFi coverage in workshop' },
+        { product: 'UniFi U7 Pro', quantity: '1', purpose: 'WiFi coverage in office wing' },
+        { product: 'UniFi G5 Bullet', quantity: '2', purpose: 'Video surveillance for entrance and workshop' },
+      ],
       faqs: [
         {
           question: 'Can UniFi access points withstand dust and moisture?',
@@ -949,6 +1250,14 @@ export const industries: Industry[] = [
         {
           question: 'Does WiFi work reliably in a large workshop hall?',
           answer: 'With proper placement of access points and seamless roaming, employees can move freely throughout the hall without experiencing connection drops.',
+        },
+        {
+          question: 'What does a WiFi setup cost for a mid-sized workshop?',
+          answer: 'For a workshop of 500-1,000 m2 plus office area, we estimate CHF 3,500 to CHF 6,000, including dust-resistant APs, gateway, switch and installation. An on-site visit clarifies the exact requirements.',
+        },
+        {
+          question: 'Can machines automatically send status updates?',
+          answer: 'Yes. Via the IoT VLAN, connected machines can send status updates, error messages or production data to a central system. This enables predictive maintenance and reduces downtime.',
         },
       ],
     },
@@ -1005,6 +1314,18 @@ export const industries: Industry[] = [
           desc: 'Komplett-Setup in einem halben Tag – betriebsbereit von Anfang an.',
         },
       ],
+      typicalProject: {
+        title: 'Friseursalon mit 4 Bedienplätzen in St. Gallen',
+        situation: 'Ein Friseursalon in St. Gallen mit 4 Bedienplätzen und 3 Mitarbeitenden hatte einen alten Router vom Internetanbieter. Das WLAN war langsam, und Kunden beschwerten sich. Das iPad-basierte Kassensystem fiel regelmässig aus, und es gab keine Überwachungskamera trotz Bargeldverkehr.',
+        solution: 'Digital Runners installierte ein kompaktes Setup: Ein UniFi Cloud Gateway Ultra, ein PoE+ Switch Flex Mini und einen U7 Pro Access Point für den gesamten Salon. Das Kunden-WLAN wurde per VLAN vom Kassennetz getrennt. Eine G5 Turret Ultra Kamera überwacht den Eingangsbereich und die Kasse.',
+        result: 'Kunden geniessen jetzt schnelles, stabiles WLAN. Das Kassensystem läuft ohne Ausfälle, und die Salonbesitzerin kann den Eingang per App von zu Hause überwachen. Die gesamte Installation dauerte 3 Stunden. Investition: ca. CHF 1’200.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Kompakte Firewall und Netzwerkmanagement' },
+        { product: 'UniFi PoE+ Switch Flex Mini', quantity: '1', purpose: 'Kompakter Switch für AP und Kamera' },
+        { product: 'UniFi U7 Pro', quantity: '1', purpose: 'WLAN-Abdeckung für den gesamten Salon' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '1', purpose: 'Videoüberwachung Eingang und Kassenbereich' },
+      ],
       faqs: [
         {
           question: 'Was kostet ein UniFi-Setup für einen kleinen Salon?',
@@ -1017,6 +1338,14 @@ export const industries: Industry[] = [
         {
           question: 'Ist das Kunden-WLAN vom Kassensystem getrennt?',
           answer: 'Ja. Das Kunden-WLAN läuft auf einem separaten VLAN und hat keinen Zugriff auf das Kassensystem oder andere interne Geräte. So bleibt Ihr POS-System sicher.',
+        },
+        {
+          question: 'Wie lange dauert die Installation in einem laufenden Salon?',
+          answer: 'In der Regel ist die komplette Installation innerhalb von 2–4 Stunden erledigt – idealerweise am Montagvormittag oder an einem anderen ruhigen Zeitpunkt. Der Betrieb wird kaum unterbrochen.',
+        },
+        {
+          question: 'Braucht ein kleiner Salon wirklich eine professionelle Netzwerklösung?',
+          answer: 'Gerade kleine Betriebe profitieren von einem zuverlässigen Setup: Ein stabiles Kassensystem, zufriedene Kunden dank gutem WLAN und eine Kamera für die Sicherheit – all das für eine überschaubare Einmalinvestition ab ca. CHF 1’000.',
         },
       ],
     },
@@ -1064,8 +1393,20 @@ export const industries: Industry[] = [
         {
           icon: 'Settings',
           title: 'Installation & Consulting',
-          desc: 'Complete setup in half a day – ready to go from the start.',
+          desc: 'Complete setup in half a day -- ready to go from the start.',
         },
+      ],
+      typicalProject: {
+        title: 'Hair Salon with 4 Styling Stations in St. Gallen',
+        situation: 'A hair salon in St. Gallen with 4 styling stations and 3 employees had an old ISP-provided router. The WiFi was slow, and customers complained. The iPad-based POS system regularly went offline, and there was no security camera despite cash transactions.',
+        solution: 'Digital Runners installed a compact setup: a UniFi Cloud Gateway Ultra, a PoE+ Switch Flex Mini and a U7 Pro access point for the entire salon. Customer WiFi was separated from the POS network via VLAN. A G5 Turret Ultra camera monitors the entrance and checkout area.',
+        result: 'Customers now enjoy fast, stable WiFi. The POS system runs without outages, and the salon owner can monitor the entrance via app from home. The entire installation took 3 hours. Investment: approximately CHF 1,200.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '1', purpose: 'Compact firewall and network management' },
+        { product: 'UniFi PoE+ Switch Flex Mini', quantity: '1', purpose: 'Compact switch for AP and camera' },
+        { product: 'UniFi U7 Pro', quantity: '1', purpose: 'WiFi coverage for the entire salon' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '1', purpose: 'Video surveillance for entrance and checkout' },
       ],
       faqs: [
         {
@@ -1079,6 +1420,14 @@ export const industries: Industry[] = [
         {
           question: 'Is the customer WiFi separated from the POS system?',
           answer: 'Yes. Customer WiFi runs on a separate VLAN and has no access to the POS system or other internal devices. This keeps your checkout system secure.',
+        },
+        {
+          question: 'How long does installation take in an operating salon?',
+          answer: 'Typically, the complete installation is done within 2-4 hours -- ideally on a Monday morning or another quiet time. Business operations are barely interrupted.',
+        },
+        {
+          question: 'Does a small salon really need a professional network solution?',
+          answer: 'Small businesses benefit greatly from a reliable setup: a stable POS system, satisfied customers thanks to good WiFi and a camera for security -- all for a manageable one-time investment from approximately CHF 1,000.',
         },
       ],
     },
@@ -1136,6 +1485,20 @@ export const industries: Industry[] = [
           desc: 'Schnelle Reaktion bei Ausfällen – damit der Verkauf weiterläuft.',
         },
       ],
+      typicalProject: {
+        title: 'Modekette mit 3 Filialen in der Deutschschweiz',
+        situation: 'Eine Schweizer Modekette mit 3 Filialen in Zürich, Basel und Bern hatte an jedem Standort unterschiedliche Netzwerklösungen. Die IT wurde von verschiedenen lokalen Anbietern betreut, was zu inkonsistenten Konfigurationen und häufigen Kassenproblemen führte. Ein einheitliches Kunden-WLAN mit Treueprogramm-Anbindung fehlte.',
+        solution: 'Digital Runners standardisierte alle 3 Standorte mit je einem UniFi Cloud Gateway Ultra, einem Switch Pro 24 PoE und 2–3 U7 Pro Max Access Points. Drei VLANs trennen Kassennetz, Kunden-WLAN und Backoffice. Ein zentrales Dashboard ermöglicht die Verwaltung aller Filialen. UniFi AI Theta Kameras mit People Counting überwachen Eingänge und Verkaufsflächen.',
+        result: 'Alle 3 Filialen laufen jetzt auf einer einheitlichen Plattform. Kassenausfälle gehören der Vergangenheit an, und das Kunden-WLAN mit Treueprogramm steigert die Kundenbindung. Die IT-Kosten sanken um 40%. Gesamtinvestition: ca. CHF 14’000 für alle 3 Standorte.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '3', purpose: 'Ein Gateway pro Filiale' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '3', purpose: 'Strukturierte Verkabelung pro Standort' },
+        { product: 'UniFi U7 Pro Max', quantity: '8', purpose: 'High-Density WLAN in Verkaufsflächen' },
+        { product: 'UniFi AI Theta', quantity: '3', purpose: 'KI-Kamera mit People Counting pro Filiale' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '6', purpose: 'Videoüberwachung Kasse und Lager' },
+        { product: 'UniFi Access Reader G2', quantity: '3', purpose: 'Zugangskontrolle Lager pro Filiale' },
+      ],
       faqs: [
         {
           question: 'Was passiert, wenn das Netzwerk an der Kasse ausfällt?',
@@ -1148,6 +1511,14 @@ export const industries: Industry[] = [
         {
           question: 'Wie kann Kunden-WLAN für Marketing genutzt werden?',
           answer: 'Mit dem UniFi Hotspot Portal können Kunden sich über eine gebrandete Seite anmelden. Dort können Treueprogramme, Angebote oder Social-Media-Logins integriert werden.',
+        },
+        {
+          question: 'Was kostet die Netzwerk-Standardisierung für eine kleine Filialkette?',
+          answer: 'Für 3–5 Filialen liegt die Investition typischerweise zwischen CHF 12’000 und CHF 25’000, je nach Grösse der Verkaufsflächen und Anzahl der Kameras. Die langfristigen Einsparungen durch zentrale Verwaltung und weniger Ausfälle übersteigen die Investition meist innerhalb von 18 Monaten.',
+        },
+        {
+          question: 'Kann UniFi die Kundenfrequenz in meinem Laden messen?',
+          answer: 'Ja. Mit UniFi AI Theta Kameras und der integrierten People-Counting-Funktion können Sie die Besucherfrequenz pro Filiale, Tag und Stunde auswerten. Diese Daten helfen bei der Personalplanung und der Bewertung von Marketingmassnahmen.',
         },
       ],
     },
@@ -1196,8 +1567,22 @@ export const industries: Industry[] = [
         {
           icon: 'Help',
           title: 'Support & Maintenance',
-          desc: 'Fast response to outages – so sales keep running.',
+          desc: 'Fast response to outages -- so sales keep running.',
         },
+      ],
+      typicalProject: {
+        title: 'Fashion Chain with 3 Stores in German-Speaking Switzerland',
+        situation: 'A Swiss fashion chain with 3 stores in Zurich, Basel and Bern had different network solutions at each location. IT was managed by various local providers, leading to inconsistent configurations and frequent POS issues. A unified customer WiFi with loyalty programme integration was missing.',
+        solution: 'Digital Runners standardised all 3 locations with a UniFi Cloud Gateway Ultra, a Switch Pro 24 PoE and 2-3 U7 Pro Max access points each. Three VLANs separate the POS network, customer WiFi and back office. A central dashboard enables management of all stores. UniFi AI Theta cameras with people counting monitor entrances and sales floors.',
+        result: 'All 3 stores now run on a unified platform. POS outages are a thing of the past, and customer WiFi with loyalty programme integration boosts customer retention. IT costs dropped by 40%. Total investment: approximately CHF 14,000 for all 3 locations.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Cloud Gateway Ultra', quantity: '3', purpose: 'One gateway per store' },
+        { product: 'UniFi Switch Pro 24 PoE', quantity: '3', purpose: 'Structured cabling per location' },
+        { product: 'UniFi U7 Pro Max', quantity: '8', purpose: 'High-density WiFi across sales floors' },
+        { product: 'UniFi AI Theta', quantity: '3', purpose: 'AI camera with people counting per store' },
+        { product: 'UniFi G5 Turret Ultra', quantity: '6', purpose: 'Video surveillance for checkout and storage' },
+        { product: 'UniFi Access Reader G2', quantity: '3', purpose: 'Access control for storage per store' },
       ],
       faqs: [
         {
@@ -1211,6 +1596,14 @@ export const industries: Industry[] = [
         {
           question: 'How can customer WiFi be used for marketing?',
           answer: 'With the UniFi Hotspot Portal, customers log in via a branded page. Loyalty programmes, special offers or social media logins can be integrated there.',
+        },
+        {
+          question: 'What does network standardisation cost for a small retail chain?',
+          answer: 'For 3-5 stores, the investment typically ranges between CHF 12,000 and CHF 25,000, depending on sales floor sizes and number of cameras. The long-term savings from central management and fewer outages usually exceed the investment within 18 months.',
+        },
+        {
+          question: 'Can UniFi measure customer footfall in my store?',
+          answer: 'Yes. With UniFi AI Theta cameras and the integrated people counting feature, you can analyse visitor frequency per store, day and hour. This data helps with staff planning and evaluating marketing campaigns.',
         },
       ],
     },
@@ -1270,6 +1663,20 @@ export const industries: Industry[] = [
           desc: 'Verlässlicher Partner für Schulen – proaktiv und schnell bei Bedarf.',
         },
       ],
+      typicalProject: {
+        title: 'Primarschule mit 12 Klassenzimmern und Turnhalle',
+        situation: 'Eine Primarschule im Kanton Aargau mit 12 Klassenzimmern, einer Turnhalle und 280 Schülerinnen und Schülern hatte ein veraltetes WLAN-Netz, das nur in 4 Räumen funktionierte. Die 1:1-iPad-Initiative der Gemeinde erforderte flächendeckendes WLAN. Es gab keine Trennung zwischen Lehrer- und Schülernetz und keine Content-Filterung.',
+        solution: 'Digital Runners installierte ein UniFi Enterprise Fortress Gateway für den gesamten Campus, zwei Switch Enterprise 48 PoE für die Stockwerke und 14 U7 Pro Max Access Points – einen pro Klassenzimmer plus je einen in Aula und Turnhalle. Drei VLANs trennen Schüler, Lehrkräfte und Verwaltung. DNS-basierte Content-Filterung schützt das Schülernetz. Vier G5 Bullet Kameras überwachen die Aussenbereiche.',
+        result: 'Alle 280 iPads verbinden sich gleichzeitig ohne Probleme. Lehrkräfte haben ein separates, schnelles Netz, und die Verwaltung ist komplett isoliert. Die Content-Filterung blockiert ungeeignete Inhalte automatisch. Investition: ca. CHF 16’500, teilfinanziert durch die Gemeinde.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Enterprise Fortress Gateway', quantity: '1', purpose: 'Leistungsstarkes Gateway für den gesamten Schulcampus' },
+        { product: 'UniFi Switch Enterprise 48 PoE', quantity: '2', purpose: 'PoE-Versorgung für APs und Kameras auf zwei Stockwerken' },
+        { product: 'UniFi U7 Pro Max', quantity: '14', purpose: 'High-Density WLAN pro Klassenzimmer und Gemeinschaftsräume' },
+        { product: 'UniFi G5 Bullet', quantity: '4', purpose: 'Outdoor-Überwachung Schulhof und Eingänge' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Zugangskontrolle Serverraum und Lehrerzimmer' },
+        { product: 'UniFi UNAS Pro', quantity: '1', purpose: 'Lokaler Schul-Dateiserver für DSGVO-konforme Speicherung' },
+      ],
       faqs: [
         {
           question: 'Wie wird verhindert, dass Schüler auf ungeeignete Inhalte zugreifen?',
@@ -1282,6 +1689,14 @@ export const industries: Industry[] = [
         {
           question: 'Skaliert UniFi von einer kleinen Schule bis zur Universität?',
           answer: 'Absolut. UniFi kann von einem einzelnen Schulhaus bis zu einem ganzen Campus mit Dutzenden Gebäuden skaliert werden – alles über ein zentrales Dashboard verwaltbar.',
+        },
+        {
+          question: 'Was kostet eine WLAN-Aufrüstung für eine Schule mit 12 Klassenzimmern?',
+          answer: 'Für eine typische Primarschule mit 12 Klassenzimmern liegt die Investition zwischen CHF 14’000 und CHF 20’000, inklusive Gateway, Switches, APs und Installation. Viele Gemeinden bieten Förderprogramme für die Digitalisierung von Schulen an.',
+        },
+        {
+          question: 'Wie wird sichergestellt, dass 300 Geräte gleichzeitig funktionieren?',
+          answer: 'UniFi U7 Pro Max Access Points sind für High-Density-Umgebungen konzipiert und können jeweils über 300 gleichzeitige Verbindungen verwalten. Pro Klassenzimmer wird ein dedizierter AP installiert, damit die Bandbreite optimal verteilt wird.',
         },
       ],
     },
@@ -1332,8 +1747,22 @@ export const industries: Industry[] = [
         {
           icon: 'Help',
           title: 'Support & Maintenance',
-          desc: 'Reliable partner for schools – proactive and fast when needed.',
+          desc: 'Reliable partner for schools -- proactive and fast when needed.',
         },
+      ],
+      typicalProject: {
+        title: 'Primary School with 12 Classrooms and Gymnasium',
+        situation: 'A primary school in Canton Aargau with 12 classrooms, a gymnasium and 280 students had an outdated WiFi network that only worked in 4 rooms. The municipality\'s 1:1 iPad initiative required comprehensive WiFi coverage. There was no separation between teacher and student networks and no content filtering.',
+        solution: 'Digital Runners installed a UniFi Enterprise Fortress Gateway for the entire campus, two Switch Enterprise 48 PoE units for the floors and 14 U7 Pro Max access points -- one per classroom plus one each in the assembly hall and gymnasium. Three VLANs separate students, teachers and administration. DNS-based content filtering protects the student network. Four G5 Bullet cameras monitor the outdoor areas.',
+        result: 'All 280 iPads connect simultaneously without issues. Teachers have a separate, fast network, and administration is completely isolated. Content filtering blocks inappropriate content automatically. Investment: approximately CHF 16,500, partially funded by the municipality.',
+      },
+      recommendedEquipment: [
+        { product: 'UniFi Enterprise Fortress Gateway', quantity: '1', purpose: 'High-performance gateway for the entire school campus' },
+        { product: 'UniFi Switch Enterprise 48 PoE', quantity: '2', purpose: 'PoE power for APs and cameras across two floors' },
+        { product: 'UniFi U7 Pro Max', quantity: '14', purpose: 'High-density WiFi per classroom and common areas' },
+        { product: 'UniFi G5 Bullet', quantity: '4', purpose: 'Outdoor surveillance for schoolyard and entrances' },
+        { product: 'UniFi Access Reader G2', quantity: '2', purpose: 'Access control for server room and staff room' },
+        { product: 'UniFi UNAS Pro', quantity: '1', purpose: 'Local school file server for GDPR-compliant storage' },
       ],
       faqs: [
         {
@@ -1346,7 +1775,15 @@ export const industries: Industry[] = [
         },
         {
           question: 'Does UniFi scale from a small school to a university?',
-          answer: 'Absolutely. UniFi can scale from a single school building to an entire campus with dozens of buildings – all manageable from a single central dashboard.',
+          answer: 'Absolutely. UniFi can scale from a single school building to an entire campus with dozens of buildings -- all manageable from a single central dashboard.',
+        },
+        {
+          question: 'What does a WiFi upgrade cost for a school with 12 classrooms?',
+          answer: 'For a typical primary school with 12 classrooms, the investment ranges between CHF 14,000 and CHF 20,000, including gateway, switches, APs and installation. Many municipalities offer funding programmes for school digitalisation.',
+        },
+        {
+          question: 'How do you ensure 300 devices work simultaneously?',
+          answer: 'UniFi U7 Pro Max access points are designed for high-density environments and can each manage over 300 simultaneous connections. A dedicated AP is installed per classroom to ensure optimal bandwidth distribution.',
         },
       ],
     },
