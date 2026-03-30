@@ -9,7 +9,7 @@ author: "Digital Runners"
 
 ## Neue Schlösser für UniFi Access
 
-Ubiquiti hat zwei neue Bolt Locks für das UniFi Access System vorgestellt. Die beiden elektromagnetischen Riegelschlösser ergänzen das bestehende Angebot an Strike Locks und Electric Locks und bieten eine weitere Möglichkeit, Türen in das UniFi-Zutrittskontrollsystem einzubinden.
+Ubiquiti hat zwei neue Bolt Locks für das [UniFi Access System](/de/blog/unifi-access-zutrittskontrolle) vorgestellt. Die beiden elektromagnetischen Riegelschlösser ergänzen das bestehende Angebot an Strike Locks und Electric Locks und bieten eine weitere Möglichkeit, Türen in das UniFi-Zutrittskontrollsystem einzubinden.
 
 Ein Bolt Lock arbeitet mit einem Solenoid, der einen Metallriegel elektromagnetisch ausfährt oder zurückzieht. Sobald ein Signal vom UniFi Access Hub kommt, wird der Riegel eingezogen und die Tür lässt sich öffnen. Ohne Signal bleibt der Riegel in seiner Ruheposition. Welche Ruheposition das ist, hängt davon ab, ob man die Fail-Secure oder die Fail-Safe Variante wählt.
 
@@ -51,9 +51,9 @@ Die Verkabelung erfolgt zum UniFi Access Hub, der bis zu 150 Meter entfernt sein
 
 Die Bolt Locks sind Teil des UniFi Access Ökosystems und werden über den Access Hub gesteuert. Für den Betrieb braucht man mindestens:
 
-- Eine UniFi Konsole (Cloud Gateway, Dream Machine oder vergleichbar) mit installierter UniFi Access Anwendung
+- Eine UniFi Konsole ([Cloud Gateway](/de/blog/cloud-gateway-ultra-test), Dream Machine oder vergleichbar) mit installierter UniFi Access Anwendung
 - Einen UniFi Access Hub als Steuereinheit
-- Einen UniFi Access Reader (z. B. Access Reader G2, G6 Entry oder Retrofit Reader) als Eingabegerät
+- Einen UniFi Access Reader (z. B. Access Reader G2, [G6 Entry](/de/blog/unifi-g6-entry-videoklingel) oder Retrofit Reader) als Eingabegerät
 
 Die Türöffnung kann dann über verschiedene Methoden erfolgen: NFC-Karten, Apple Wallet, Google Wallet, Gesichtserkennung, Mobile Unlock über die App, PIN-Code oder TouchPass. Welche Methoden verfügbar sind, hängt vom eingesetzten Reader ab.
 
@@ -81,3 +81,7 @@ Mit den neuen Bolt Locks bietet Ubiquiti nun drei verschiedene Schlosstypen für
 ## Fazit
 
 Die neuen Bolt Locks schliessen eine Lücke im UniFi Access Sortiment. Für alle, die ihre Zutrittskontrolle mit Ubiquiti aufbauen oder erweitern, gibt es jetzt eine weitere Schlossart, die sich je nach Tür und Sicherheitsanforderung flexibel einsetzen lässt. Mit rund 89 bis 99 Euro pro Schloss bleibt der Einstieg bezahlbar, vorausgesetzt man hat die nötige Infrastruktur aus Konsole, Access Hub und Reader bereits im Einsatz.
+
+---
+
+*Haben Sie Fragen zu Zutrittskontrolle? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

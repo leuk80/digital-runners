@@ -35,7 +35,7 @@ The key specs:
 
 ## Setup in UniFi Network
 
-Setup is straightforward. In the UniFi Network app, the AirWire appears as a new device with "Pending Adoption" status. Once adopted, it shows up in the device list.
+Setup is straightforward. In the [UniFi Network app](/en/blog/unifi-network-10-1-wifi-doctor), the AirWire appears as a new device with "Pending Adoption" status. Once adopted, it shows up in the device list.
 
 Under the WiFi settings, you should check whether "Mesh eMLO" is enabled (currently still under Labs). If you have a WiFi 7 access point with 320 MHz on 6 GHz, you should enable that as well. In the AirWire overview, you then see both connections: 80 MHz on 5 GHz and 320 MHz on 6 GHz.
 
@@ -43,7 +43,7 @@ You can set the Mesh Parent in the settings, specifying which access point shoul
 
 ## Speed Test Results
 
-Mactelecom Networks tested the AirWire on a Mac Mini that normally connects via its built-in WiFi. An E7 access point with 10 GbE uplink served as the counterpart. Here are the comparative results:
+Mactelecom Networks tested the AirWire on a Mac Mini that normally connects via its built-in WiFi. An [E7 access point](/en/blog/e7-campus-enterprise-wifi-7) with 10 GbE uplink served as the counterpart. Here are the comparative results:
 
 **Basement (approx. 5 meters from AP):**
 
@@ -82,8 +82,12 @@ The AirWire showed temperatures around 47 to 48 degrees Celsius (about 117 degre
 
 The AirWire is a niche product. It costs 199 USD and is larger than a typical WiFi adapter. But for certain scenarios it makes sense: if you have a stationary computer that cannot get an Ethernet cable and you still need high throughput (for example, video editing from a NAS), the AirWire can be an alternative to running cable. Running that cable would cost more than 199 USD in many cases anyway.
 
-You do need a UniFi access point though. And for full STR MLO, it must be a WiFi 7 model -- a U7 or E7. Older access points are supported but will not deliver MLO.
+You do need a UniFi access point though. And for full STR MLO, it must be a WiFi 7 model -- a [U7 or E7](/en/blog/wifi-7-u7-pro-migration). Older access points are supported but will not deliver MLO.
 
 ## Conclusion
 
 The AirWire solves a specific problem: current WiFi 7 clients do not tap the full potential of the standard because they only support EMLSR. With the AirWire, you get true STR MLO on the client side, and the test results show that the difference is substantial in practice. If you have already invested in UniFi WiFi 7 and need more wireless performance at a given location than your laptop's built-in WiFi can provide, this is a viable solution.
+
+---
+
+*Have questions about WiFi 7? [Get in touch](/en/kontakt) for a free initial consultation.*

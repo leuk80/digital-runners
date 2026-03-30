@@ -15,11 +15,11 @@ Ubiquiti war diese Woche am Mobile World Congress in Barcelona mit einem Stand v
 
 ## Enterprise Fortress Gateway Core
 
-Der bestehende Enterprise Fortress Gateway (EFG) ist mit rund 2'000 Dollar und einem Rack-Format nicht gerade etwas für kleinere Setups. Am MWC war nun ein Gerät zu sehen, das als "Enterprise Fortress Gateway Core" bezeichnet wird.
+Der bestehende [Enterprise Fortress Gateway (EFG)](/de/blog/enterprise-fortress-gateway-25g) ist mit rund 2'000 Dollar und einem Rack-Format nicht gerade etwas für kleinere Setups. Am MWC war nun ein Gerät zu sehen, das als "Enterprise Fortress Gateway Core" bezeichnet wird.
 
 Details sind noch dünn. Was man vom Messestand weiss: Es handelt sich um eine kompaktere Version des EFG, gedacht für Umgebungen, die die Enterprise-Security-Features brauchen, aber nicht das volle 25G-Rack-Gerät. Das bestehende EFG bietet 12.5 Gbps IDS/IPS, NeXT AI Inspection (SSL/TLS Deep Packet Inspection) und Shadow Mode HA. Ob der Core all das in kleiner mitbringt oder ob Ubiquiti bei bestimmten Features abspeckt, ist noch unklar.
 
-Für Firmen, die bisher zwischen dem UDM Pro Max und dem EFG hängengeblieben sind, könnte der Core genau die Lücke füllen.
+Für Firmen, die bisher zwischen dem [UDM Pro Max](/de/blog/udm-pro-max-vs-ucg-max) und dem EFG hängengeblieben sind, könnte der Core genau die Lücke füllen.
 
 ---
 
@@ -57,7 +57,7 @@ Ob das Gerät auch mit bestehenden Drittanbieter-Sensoren kompatibel ist oder nu
 
 ## Retro Reader Fingerprint
 
-UniFi Access bietet seit einer Weile Zutrittskontrolle per NFC und PIN. Am MWC war ein neuer Leser zu sehen, der Fingerabdruck-Erkennung nachrüstet: der Retro Reader Fingerprint.
+[UniFi Access](/de/blog/unifi-access-zutrittskontrolle) bietet seit einer Weile Zutrittskontrolle per NFC und PIN. Am MWC war ein neuer Leser zu sehen, der Fingerabdruck-Erkennung nachrüstet: der Retro Reader Fingerprint.
 
 Der Name "Retro" bezieht sich auf "Retrofit". Es geht darum, bestehende Türinstallationen um biometrische Zutrittskontrolle zu ergänzen, ohne die komplette Hardware tauschen zu müssen. Der Leser läuft über PoE, braucht also keine separate Stromverkabelung.
 
@@ -71,4 +71,6 @@ Ubiquiti baut das UniFi-Ökosystem in mehrere Richtungen gleichzeitig aus: Enter
 
 Sobald Ubiquiti offizielle Spezifikationen veröffentlicht, aktualisieren wir die Details hier auf Digital Runners. Bei Fragen zu deinem UniFi-Setup oder zur Planung mit den kommenden Produkten: melde dich bei uns.
 
+---
 
+*Haben Sie Fragen zu den neuen UniFi-Produkten? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

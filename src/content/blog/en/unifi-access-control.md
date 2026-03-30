@@ -35,7 +35,7 @@ UniFi Access readers with camera (such as the UA-Intercom Pro) include an integr
 
 ### Integration with UniFi Protect
 
-When someone rings the doorbell, the camera image from the access reader automatically appears on the UniFi Protect dashboard and on connected UniFi Talk phones. True end-to-end integration – doorbell, video and door release in one interface.
+When someone rings the doorbell, the camera image from the access reader automatically appears on the [UniFi Protect](/en/blog/unifi-protect-vs-consumer) dashboard and on connected UniFi Talk phones. True end-to-end integration – doorbell, video and door release in one interface.
 
 ### Access Rights and Schedules
 
@@ -53,11 +53,11 @@ Every access attempt is logged: who, when, at which door, using which authentica
 
 ## Typical Use Cases
 
-**Offices and law firms**: Employees use their own card, visitors receive day badges. Server rooms and archives are accessible only to authorised personnel.
+[**Offices and law firms**](/en/industries/offices): Employees use their own card, visitors receive day badges. Server rooms and archives are accessible only to authorised personnel.
 
-**Healthcare**: Medication stores and treatment rooms are opened only for the authorised staff. Access is fully logged and audit-ready.
+[**Healthcare**](/en/industries/healthcare): Medication stores and treatment rooms are opened only for the authorised staff. Access is fully logged and audit-ready.
 
-**Hotels**: Guests receive a digital room key card at check-in. After check-out, access is automatically deactivated – no manual card collection needed.
+[**Hotels**](/en/industries/hospitality): Guests receive a digital room key card at check-in. After check-out, access is automatically deactivated – no manual card collection needed.
 
 **Warehouses and production facilities**: Access to high-security areas or material stores is limited to specific shifts or teams.
 

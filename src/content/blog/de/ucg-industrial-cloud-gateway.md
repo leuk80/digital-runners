@@ -19,7 +19,7 @@ Kein Lüfter heisst kein bewegliches Teil, das ausfallen kann, und kein Staub, d
 
 ## Anschlüsse und Netzwerk
 
-Das UCG Industrial hat einen breiten Anschlussmix: einen SFP+-Port für 10G-Glasfaser oder DAC, einen 10GbE-RJ45-Port, vier 2.5GbE-Ports und mehrere PoE+++-Ports mit jeweils bis zu 90 Watt. Das gesamte PoE-Budget beträgt 270 Watt. WiFi 7 ist integriert, allerdings nur auf 2.4 GHz und 5 GHz (kein 6-GHz-Band).
+Das UCG Industrial hat einen breiten Anschlussmix: einen SFP+-Port für 10G-Glasfaser oder DAC, einen 10GbE-RJ45-Port, vier 2.5GbE-Ports und mehrere PoE+++-Ports mit jeweils bis zu 90 Watt. Das gesamte PoE-Budget beträgt 270 Watt. [WiFi 7](/de/blog/wifi-7-u7-pro-migration) ist integriert, allerdings nur auf 2.4 GHz und 5 GHz (kein 6-GHz-Band).
 
 Damit lassen sich in kleinen bis mittleren Installationen alle Geräte direkt am Gateway anschliessen, ohne zusätzlichen Switch. Access Points, Kameras, VoIP-Telefone, alles über ein Gerät mit PoE versorgt.
 
@@ -33,7 +33,7 @@ Die 5G-Anbindung ist als Failover oder als Primärverbindung an Standorten ohne 
 
 Das UCG Industrial läuft mit der gesamten UniFi-Software: Network, Protect, Access und Talk. Es ist also nicht nur ein Router, sondern eine vollwertige Konsole, die bis zu 50 UniFi-Geräte und über 500 gleichzeitige Nutzer verwalten kann.
 
-Speicher gibt es über einen MicroSD-Slot. RAM sind 3 GB verbaut. Für Protect-Aufnahmen reicht das für kürzere Retention-Zeiträume. Wer mehr Speicher braucht, muss auf ein UNAS oder NVR ausweichen.
+Speicher gibt es über einen MicroSD-Slot. RAM sind 3 GB verbaut. Für Protect-Aufnahmen reicht das für kürzere Retention-Zeiträume. Wer mehr Speicher braucht, muss auf ein [UNAS](/de/blog/unas-4-desktop-nas) oder NVR ausweichen.
 
 ## Montage
 
@@ -45,6 +45,10 @@ Das UCG Industrial kostet 579 USD.
 
 ## Fazit
 
-Das UCG Industrial ist kein Gerät für das Homelab. Es ist für Umgebungen gedacht, in denen normale Hardware nicht lange überlebt. Das lüfterlose Design und der breite Temperaturbereich sind der Hauptgrund, es statt eines UDM Pro Max zu wählen. Das PoE-Budget von 270 Watt und die integrierten 10G-Ports machen es gleichzeitig zum kompakten Allrounder für kleinere Standorte, die ohne separaten Switch auskommen wollen.
+Das UCG Industrial ist kein Gerät für das Homelab. Es ist für Umgebungen gedacht, in denen normale Hardware nicht lange überlebt. Das lüfterlose Design und der breite Temperaturbereich sind der Hauptgrund, es statt eines [UDM Pro Max](/de/blog/udm-pro-max-vs-ucg-max) zu wählen. Das PoE-Budget von 270 Watt und die integrierten 10G-Ports machen es gleichzeitig zum kompakten Allrounder für kleinere Standorte, die ohne separaten Switch auskommen wollen.
 
 Ubiquiti hat angekündigt, dass weitere Industrial-Produkte folgen sollen, darunter Switches und Access Points mit externen Antennen.
+
+---
+
+*Haben Sie Fragen zu dem UCG Industrial? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

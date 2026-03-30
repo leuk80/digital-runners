@@ -23,7 +23,7 @@ Das Ganze läuft über den Site Manager und braucht keine zusätzlichen Lizenzen
 
 Unter "Consolidated People Management" lässt sich ein externer Identity Provider anbinden. Unterstützt werden Google Workspace, Microsoft Entra (ehemals Azure AD), JumpCloud, Active Directory und LDAP.
 
-Einmal verbunden, werden Benutzer zentral synchronisiert. Dafür läuft auf dem Master-Standort ein Identity Sync Service, der Berechtigungen über alle Standorte im Fabric hinweg abgleicht. Der Master-Standort ist dabei der primäre Gateway (etwa ein UDM Pro Max), über den die Synchronisation koordiniert wird.
+Einmal verbunden, werden Benutzer zentral synchronisiert. Dafür läuft auf dem Master-Standort ein Identity Sync Service, der Berechtigungen über alle Standorte im Fabric hinweg abgleicht. Der Master-Standort ist dabei der primäre Gateway (etwa ein [UDM Pro Max](/de/blog/udm-pro-max-vs-ucg-max)), über den die Synchronisation koordiniert wird.
 
 Für die Verbindung zwischen den Sites gibt es zwei Optionen: manuelles Port-Forwarding oder die Nutzung eines Ubiquiti-eigenen Relay-Dienstes.
 
@@ -35,7 +35,7 @@ Sobald ein Netzwerk über das Fabric verteilt wird, ist es auf den einzelnen Sit
 
 ## Zutrittskontrolle über mehrere Standorte
 
-Für alle, die UniFi Access einsetzen, ist das hier wohl das interessanteste Feature. Über Fabrics lassen sich Türzugangsrichtlinien standortübergreifend verwalten. Man kann benutzerdefinierte Rollen anlegen (z.B. "Türwächter"), diese auf bestimmte Standorte einschränken und den Zugang zu spezifischen Türen regeln.
+Für alle, die [UniFi Access](/de/blog/unifi-access-zutrittskontrolle) einsetzen, ist das hier wohl das interessanteste Feature. Über Fabrics lassen sich Türzugangsrichtlinien standortübergreifend verwalten. Man kann benutzerdefinierte Rollen anlegen (z.B. "Türwächter"), diese auf bestimmte Standorte einschränken und den Zugang zu spezifischen Türen regeln.
 
 Dazu kommt eine Neuerung bei der UniFi Identity App: Remote Unlock. Bisher musste man sich in Bluetooth-Reichweite befinden, um eine Tür per App zu öffnen. Über Fabrics funktioniert das jetzt auch aus der Ferne. In der Identity-Endpoint-App sieht ein Benutzer alle Türen, zu denen er Zugang hat, auch wenn diese an verschiedenen Standorten sind.
 
@@ -43,7 +43,7 @@ Für MSPs, die mehrere Kunden mit UniFi Access betreuen, ist das ein echter Zeit
 
 ## Physische Sicherheit und Protect
 
-Neben der Zutrittskontrolle bringt Fabrics auch die physische Sicherheit (Kameras) in die zentrale Verwaltung. Im gezeigten Setup waren sowohl UDM-Pro-Max-Standorte als auch ein UNVR Pro Teil des Fabrics, sodass sich die Protect-Überwachung ebenfalls standortübergreifend einsehen lässt.
+Neben der Zutrittskontrolle bringt Fabrics auch die physische Sicherheit (Kameras) in die zentrale Verwaltung. Im gezeigten Setup waren sowohl UDM-Pro-Max-Standorte als auch ein UNVR Pro Teil des Fabrics, sodass sich die [Protect](/de/blog/unifi-protect-vs-consumer)-Überwachung ebenfalls standortübergreifend einsehen lässt.
 
 ## Was noch kommt
 
@@ -54,3 +54,7 @@ Einiges ist noch als "Coming Soon" markiert. Dazu gehören Device Templates für
 UniFi Fabrics löst ein konkretes Problem: die aufwändige Verwaltung mehrerer Standorte. Statt die gleichen Einstellungen an jedem Standort einzeln vorzunehmen, definiert man sie einmal und verteilt sie. Die Integration der Zutrittskontrolle über Standorte hinweg war längst überfällig, und dass das Ganze ohne Lizenzkosten auskommt, macht es auch für kleinere MSP-Setups attraktiv.
 
 Fabrics ist noch in der Early-Access-Phase, funktioniert aber laut dem gezeigten Walkthrough von Mactelecom Networks bereits stabil. Wer mehrere UniFi-Sites verwaltet, sollte sich das anschauen.
+
+---
+
+*Haben Sie Fragen zu Multi-Site-Verwaltung? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

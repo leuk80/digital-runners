@@ -9,7 +9,7 @@ author: "Digital Runners"
 
 ## More Than a Doorbell
 
-Ubiquiti has introduced the G6 Entry, a doorbell that does far more than ring and show a camera feed. The device combines three functions in a single enclosure: video doorbell, surveillance camera, and access control reader. If you already run UniFi Protect and UniFi Access, you get a device that integrates seamlessly into both systems.
+Ubiquiti has introduced the G6 Entry, a doorbell that does far more than ring and show a camera feed. The device combines three functions in a single enclosure: video doorbell, surveillance camera, and access control reader. If you already run [UniFi Protect](/en/blog/unifi-protect-vs-consumer) and [UniFi Access](/en/blog/unifi-access-control), you get a device that integrates seamlessly into both systems.
 
 What sets the G6 Entry apart is the combination of face recognition and license plate recognition (LPR) with a built-in Access reader. You can open the front door not only via app or NFC card but also by face. This works directly through UniFi Access, without needing a separate card reader at the door.
 
@@ -60,3 +60,7 @@ The G6 Entry is aimed at users who are already in the UniFi ecosystem and want t
 The major advantage over Ring, Google Nest, and others: there is no subscription. All recordings stay local on your own NVR. AI detection runs on the device itself. And there is no cloud dependency where third parties could potentially access video data.
 
 If you do not yet use UniFi Access, keep in mind that the access features require an Access Hub. That is an additional investment that mainly pays off when you want to manage multiple doors or access points.
+
+---
+
+*Have questions about doorbells and access control? [Get in touch](/en/kontakt) for a free initial consultation.*

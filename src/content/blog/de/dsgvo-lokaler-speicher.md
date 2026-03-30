@@ -40,7 +40,7 @@ Letzterer Punkt ist bei US-Cloud-Diensten besonders heikel. Das EU-Recht kennt z
 
 ## UniFi Drive: Lokaler NAS im UniFi-Ökosystem
 
-**UniFi Drive** (UNAS – UniFi Network Attached Storage) ist Ubiquitis Antwort auf den Bedarf nach lokaler, verwaltbarer Speicherinfrastruktur. Das Besondere: Es wird direkt im UniFi Controller administriert – dieselbe Oberfläche, die Sie für Ihr Netzwerk, Ihre Kameras und Ihre Zutrittskontrolle nutzen.
+**UniFi Drive** (UNAS – UniFi Network Attached Storage) ist Ubiquitis Antwort auf den Bedarf nach lokaler, verwaltbarer Speicherinfrastruktur. Das Besondere: Es wird direkt im UniFi Controller administriert – dieselbe Oberfläche, die Sie für Ihr Netzwerk, Ihre Kameras und Ihre [Zutrittskontrolle](/de/blog/unifi-access-zutrittskontrolle) nutzen.
 
 ### Was UniFi Drive bietet
 
@@ -52,7 +52,7 @@ Letzterer Punkt ist bei US-Cloud-Diensten besonders heikel. Das EU-Recht kennt z
 
 ### Das UNAS Pro – die aktuelle Hardware
 
-Der **UNAS Pro** von Ubiquiti bietet 7 Festplatten-Bays für 3,5"-HDDs oder 2,5"-SSDs, zwei 10GbE-Netzwerkports für schnelle Übertragungsraten und ist auf dauerhaften Betrieb in einem Serverrack oder als Desktop ausgelegt.
+Der **[UNAS Pro](/de/blog/unas-4-desktop-nas)** von Ubiquiti bietet 7 Festplatten-Bays für 3,5"-HDDs oder 2,5"-SSDs, zwei 10GbE-Netzwerkports für schnelle Übertragungsraten und ist auf dauerhaften Betrieb in einem Serverrack oder als Desktop ausgelegt.
 
 ## Hybride Ansätze: Lokal und Cloud kombinieren
 

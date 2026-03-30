@@ -15,11 +15,11 @@ Ubiquiti was present at Mobile World Congress in Barcelona this week with a boot
 
 ## Enterprise Fortress Gateway Core
 
-The existing Enterprise Fortress Gateway (EFG) at around $2,000 and in a rack form factor is not exactly aimed at smaller setups. At MWC, a device labeled "Enterprise Fortress Gateway Core" was on display.
+The existing [Enterprise Fortress Gateway (EFG)](/en/blog/enterprise-fortress-gateway-25g) at around $2,000 and in a rack form factor is not exactly aimed at smaller setups. At MWC, a device labeled "Enterprise Fortress Gateway Core" was on display.
 
 Details are still sparse. What we know from the booth: it is a more compact version of the EFG, designed for environments that need enterprise-grade security features but not the full 25G rack unit. The existing EFG offers 12.5 Gbps IDS/IPS, NeXT AI Inspection (SSL/TLS deep packet inspection), and Shadow Mode HA. Whether the Core brings all of that in a smaller package or whether Ubiquiti cuts certain features remains unclear.
 
-For businesses that have been stuck choosing between the UDM Pro Max and the EFG, the Core could fill exactly that gap.
+For businesses that have been stuck choosing between the [UDM Pro Max](/en/blog/udm-pro-max-vs-ucg-max) and the EFG, the Core could fill exactly that gap.
 
 ---
 
@@ -57,7 +57,7 @@ Whether the device is also compatible with existing third-party sensors or only 
 
 ## Retro Reader Fingerprint
 
-UniFi Access has offered access control via NFC and PIN for a while now. At MWC, a new reader was shown that adds fingerprint recognition: the Retro Reader Fingerprint.
+[UniFi Access](/en/blog/unifi-access-control) has offered access control via NFC and PIN for a while now. At MWC, a new reader was shown that adds fingerprint recognition: the Retro Reader Fingerprint.
 
 The "Retro" in the name refers to "retrofit." The idea is to add biometric access control to existing door installations without having to replace the entire hardware. The reader runs on PoE, so no separate power cabling is needed.
 
@@ -70,3 +70,7 @@ Two-factor authentication becomes possible: NFC card plus fingerprint, or PIN pl
 Ubiquiti is expanding the UniFi ecosystem in multiple directions at once: enterprise security (EFG Core), storage (NAS/NVR), smart home and IoT (SuperLink HA with Thread), traditional security (Alarm Hub), and access control (Fingerprint Reader). None of these products have an official datasheet or price yet. They are prototypes and pre-announcements from the show floor.
 
 As soon as Ubiquiti publishes official specifications, we will update the details here on Digital Runners. If you have questions about your UniFi setup or planning with the upcoming products, get in touch with us.
+
+---
+
+*Have questions about the new UniFi products? [Get in touch](/en/kontakt) for a free initial consultation.*

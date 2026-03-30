@@ -29,7 +29,7 @@ Both 2.5-inch and 3.5-inch SATA drives are supported. SSDs work in the SATA bays
 
 ## Software: UniFi Drive
 
-The UNAS 4 runs UniFi Drive, Ubiquiti's own NAS software. No license fees, no subscriptions. Management is handled through the familiar UniFi dashboard. Anyone already managing switches, access points, or cameras through UniFi will feel right at home.
+The UNAS 4 runs [UniFi Drive](/en/blog/unifi-drive-4-backup), Ubiquiti's own NAS software. No license fees, no subscriptions. Management is handled through the familiar UniFi dashboard. Anyone already managing switches, access points, or cameras through UniFi will feel right at home.
 
 Drive 4.0 features include personal and shared drives, snapshots, file encryption, Time Machine backups for Macs, share links for individual files, and cloud backup to Google Drive, OneDrive, Dropbox, Amazon S3, Backblaze B2, or Wasabi.
 
@@ -45,8 +45,12 @@ The UNAS Pro 4 sits at 499 USD and targets rack mounting. It offers 10 GbE SFP+ 
 
 ## Who Should Consider the UNAS 4?
 
-Anyone already running a UniFi network with 2.5 Gigabit switches who needs local storage for backups, file shares, or Protect recordings gets a device that fits seamlessly into the ecosystem. Installation and management run through the same dashboard as the rest of the infrastructure.
+Anyone already running a UniFi network with 2.5 Gigabit switches who needs local storage for backups, file shares, or [Protect recordings](/en/blog/unifi-protect-vs-consumer) gets a device that fits seamlessly into the ecosystem. Installation and management run through the same dashboard as the rest of the infrastructure.
 
 If you only need two drives, the UNAS 2 is the more economical choice. If you have a 10 Gigabit network or need rack mounting, the UNAS Pro 4 is the way to go. The UNAS 4 sits right in between: more storage and redundancy than the entry-level model, without the Pro price tag.
 
 One more thing: the device is currently only available in white and frequently sells out in the Ubiquiti Store. If you want one, enabling restock notifications is a good idea.
+
+---
+
+*Have questions about NAS and local storage? [Get in touch](/en/kontakt) for a free initial consultation.*

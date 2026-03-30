@@ -9,7 +9,7 @@ author: "Digital Runners"
 
 ## New Locks for UniFi Access
 
-Ubiquiti has introduced two new Bolt Locks for the UniFi Access system. These electromagnetic bolt locks complement the existing Strike Locks and Electric Locks, offering another way to integrate doors into the UniFi access control system.
+Ubiquiti has introduced two new Bolt Locks for the [UniFi Access](/en/blog/unifi-access-control) system. These electromagnetic bolt locks complement the existing Strike Locks and Electric Locks, offering another way to integrate doors into the UniFi access control system.
 
 A Bolt Lock uses a solenoid that electromagnetically extends or retracts a metal bolt. When a signal comes from the UniFi Access Hub, the bolt retracts and the door can be opened. Without a signal, the bolt stays in its resting position. Which resting position that is depends on whether you choose the fail-secure or fail-safe variant.
 
@@ -51,9 +51,9 @@ Wiring runs to the UniFi Access Hub, which can be up to 150 meters away (with 18
 
 The Bolt Locks are part of the UniFi Access ecosystem and are controlled through the Access Hub. At a minimum, you need:
 
-- A UniFi Console (Cloud Gateway, Dream Machine, or equivalent) with the UniFi Access application installed
+- A UniFi Console ([Cloud Gateway](/en/blog/cloud-gateway-ultra-review), Dream Machine, or equivalent) with the UniFi Access application installed
 - A UniFi Access Hub as the controller
-- A UniFi Access Reader (e.g., Access Reader G2, G6 Entry, or Retrofit Reader) as the input device
+- A UniFi Access Reader (e.g., Access Reader G2, [G6 Entry](/en/blog/unifi-g6-entry-doorbell), or Retrofit Reader) as the input device
 
 Door unlocking can then happen through various methods: NFC cards, Apple Wallet, Google Wallet, facial recognition, Mobile Unlock via the app, PIN code, or TouchPass. Which methods are available depends on the reader being used.
 
@@ -81,3 +81,7 @@ With the new Bolt Locks, Ubiquiti now offers three different lock types for UniF
 ## Conclusion
 
 The new Bolt Locks fill a gap in the UniFi Access lineup. For anyone building or expanding their access control with Ubiquiti, there is now another lock type that can be flexibly deployed depending on the door and security requirements. At around 99 USD per lock, the entry point remains affordable -- provided you already have the necessary infrastructure of console, Access Hub, and Reader in place.
+
+---
+
+*Have questions about access control? [Get in touch](/en/kontakt) for a free initial consultation.*

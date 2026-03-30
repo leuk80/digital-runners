@@ -13,7 +13,7 @@ Mitte März hat Ubiquiti UniFi Network 10.2 veröffentlicht. Das Update bringt e
 
 ## Time Machine für Switches
 
-Im Port Manager gibt es jetzt eine 24-Stunden-Timeline, die zeigt, wann welcher Port aktiv war, wann ein Gerät verbunden wurde und wann etwas ausgefallen ist. Das Ganze sieht aus wie die Aufnahme-Zeitleiste in UniFi Protect und funktioniert auch ähnlich: Man scrollt zurück und sieht auf einen Blick, was wann passiert ist.
+Im Port Manager gibt es jetzt eine 24-Stunden-Timeline, die zeigt, wann welcher Port aktiv war, wann ein Gerät verbunden wurde und wann etwas ausgefallen ist. Das Ganze sieht aus wie die Aufnahme-Zeitleiste in [UniFi Protect](/de/blog/unifi-protect-vs-consumer) und funktioniert auch ähnlich: Man scrollt zurück und sieht auf einen Blick, was wann passiert ist.
 
 Wer schon mal nachts einen Switch-Port-Ausfall debuggen musste und am nächsten Morgen keine Ahnung hatte, wann genau das Problem angefangen hat, wird das zu schätzen wissen. VLAN-Änderungen tauchen allerdings noch nicht auf der Timeline auf, das fehlt noch.
 
@@ -21,7 +21,7 @@ Wer schon mal nachts einen Switch-Port-Ausfall debuggen musste und am nächsten 
 
 Unter einem neuen Tab namens "Infrastructure" gibt es jetzt eine Darstellung, die das physische Rack-Setup abbildet. Man sieht die WAN-Verbindung, das Gateway und alle Downstream-Geräte als digitalen Zwilling. Klickt man auf eine Verbindung, bekommt man Gesundheitsmetriken und Traffic-Daten.
 
-Das Digital-Twin-Panel zeigt gleichzeitig Firmware-Versionen, CPU-Last, RAM-Auslastung, Stromverbrauch und PoE-Budgets aller sichtbaren Geräte an. Man kann Geräte in benannte Gruppen organisieren, etwa "Core" und "Access Layer". Für Installationen mit mehreren Switches und einem strukturierten Rack-Aufbau ist das deutlich übersichtlicher als die bisherige flache Geräteliste.
+Das Digital-Twin-Panel zeigt gleichzeitig Firmware-Versionen, CPU-Last, RAM-Auslastung, Stromverbrauch und [PoE](/de/blog/flex-mini-2-5g-switch)-Budgets aller sichtbaren Geräte an. Man kann Geräte in benannte Gruppen organisieren, etwa "Core" und "Access Layer". Für Installationen mit mehreren Switches und einem strukturierten Rack-Aufbau ist das deutlich übersichtlicher als die bisherige flache Geräteliste.
 
 ## Device Supervisor
 
@@ -35,7 +35,7 @@ Wer Access Points oder Kameras an schwer zugänglichen Stellen montiert hat, spa
 
 Offene WLAN-Netzwerke können jetzt verschlüsselt werden, ohne dass ein Passwort nötig ist. Es gibt drei Modi: klassisch offen (unverschlüsselt), Enhanced Open (alles verschlüsselt via OWE) und Enhanced Open mit Transition Mode. Der Transition Mode verschlüsselt für kompatible Geräte und fällt bei älteren Geräten auf unverschlüsselt zurück.
 
-Für Gäste-WLANs in Hotels, Cafés oder Büros ist das ein sinnvoller Zwischenschritt. Der Traffic zwischen Client und Access Point wird auf WPA3-Niveau verschlüsselt, ohne dass jemand ein Passwort eintippen muss.
+Für [Gäste-WLANs](/de/blog/vlans-fuer-kmu) in Hotels, Cafés oder Büros ist das ein sinnvoller Zwischenschritt. Der Traffic zwischen Client und Access Point wird auf WPA3-Niveau verschlüsselt, ohne dass jemand ein Passwort eintippen muss.
 
 ## STP Edge Mode und BPDU Guard
 
@@ -56,3 +56,7 @@ WireGuard-VPN-Server unterstützen jetzt IPv6-Adressen. Bisher war nur IPv4 mög
 Network 10.2 ist ein solides Release mit ein paar Funktionen, die lange gefehlt haben. Die Time Machine und der Digital Twin machen das Troubleshooting bei Switch-Problemen deutlich einfacher. Der Device Supervisor nimmt manuelles Power-Cycling ab. Und Enhanced Open war überfällig für alle, die offene Gäste-WLANs betreiben.
 
 Das Update läuft auf allen UniFi Cloud Gateways, einschliesslich der UDM-Reihe.
+
+---
+
+*Haben Sie Fragen zu Netzwerkmanagement? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

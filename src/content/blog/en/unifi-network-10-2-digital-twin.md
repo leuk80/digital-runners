@@ -13,7 +13,7 @@ Ubiquiti released UniFi Network 10.2 in mid-March. The update delivers several f
 
 ## Time Machine for Switches
 
-The Port Manager now has a 24-hour timeline showing when each port was active, when a device connected, and when something went down. It looks and works like the recording timeline in UniFi Protect: you scroll back and see at a glance what happened when.
+The Port Manager now has a 24-hour timeline showing when each port was active, when a device connected, and when something went down. It looks and works like the recording timeline in [UniFi Protect](/en/blog/unifi-protect-vs-consumer): you scroll back and see at a glance what happened when.
 
 Anyone who has debugged a switch port outage overnight and had no idea the next morning when the problem started will appreciate this. VLAN changes do not appear on the timeline yet -- that is still missing.
 
@@ -21,7 +21,7 @@ Anyone who has debugged a switch port outage overnight and had no idea the next 
 
 Under a new "Infrastructure" tab, there is now a view that represents the physical rack setup. You see the WAN connection, the gateway, and all downstream devices as a digital twin. Clicking on a connection reveals health metrics and traffic data.
 
-The Digital Twin panel simultaneously shows firmware versions, CPU load, RAM usage, power consumption, and PoE budgets for all visible devices. You can organize devices into named groups, such as "Core" and "Access Layer." For installations with multiple switches and a structured rack layout, this is significantly clearer than the previous flat device list.
+The Digital Twin panel simultaneously shows firmware versions, CPU load, RAM usage, power consumption, and [PoE](/en/blog/flex-mini-2-5g-switch) budgets for all visible devices. You can organize devices into named groups, such as "Core" and "Access Layer." For installations with multiple switches and a structured rack layout, this is significantly clearer than the previous flat device list.
 
 ## Device Supervisor
 
@@ -35,7 +35,7 @@ For anyone with access points or cameras mounted in hard-to-reach locations, thi
 
 Open WiFi networks can now be encrypted without requiring a password. There are three modes: classic open (unencrypted), Enhanced Open (everything encrypted via OWE), and Enhanced Open with Transition Mode. Transition Mode encrypts for compatible devices and falls back to unencrypted for older ones.
 
-For guest WiFi in hotels, cafes, or offices, this is a sensible middle ground. Traffic between client and access point is encrypted at WPA3 level without anyone needing to type a password.
+For [guest WiFi](/en/blog/vlans-for-smes) in hotels, cafes, or offices, this is a sensible middle ground. Traffic between client and access point is encrypted at WPA3 level without anyone needing to type a password.
 
 ## STP Edge Mode and BPDU Guard
 
@@ -56,3 +56,7 @@ WireGuard VPN servers now support IPv6 addresses. Previously, only IPv4 was poss
 Network 10.2 is a solid release with features that have been missing for a while. The Time Machine and Digital Twin make switch troubleshooting considerably easier. The Device Supervisor removes manual power cycling. And Enhanced Open was overdue for anyone running open guest WiFi.
 
 The update runs on all UniFi Cloud Gateways, including the UDM lineup.
+
+---
+
+*Have questions about network management? [Get in touch](/en/kontakt) for a free initial consultation.*

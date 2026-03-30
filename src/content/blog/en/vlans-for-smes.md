@@ -43,7 +43,7 @@ VLAN 40 – IoT / smart devices (displays, cameras, door systems)
 VLAN 50 – Servers and NAS
 ```
 
-### Medical Practice / Healthcare
+### Medical Practice / [Healthcare](/en/industries/healthcare)
 
 ```
 VLAN 10 – Medical workstations (practice software, PACS)
@@ -52,7 +52,7 @@ VLAN 30 – Patient WiFi (captive portal)
 VLAN 40 – Medical devices (IoT, isolated for security)
 ```
 
-### Hotel
+### [Hotel](/en/industries/hospitality)
 
 ```
 VLAN 10 – Hotel software / PMS (Property Management System)

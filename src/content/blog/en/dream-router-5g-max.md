@@ -23,7 +23,7 @@ The device has two nano-SIM slots and also supports eSIM. Insert two SIM cards f
 
 ## WiFi 7 and Ports
 
-The router delivers WiFi 7 (BE10700) across three bands: 2.4 GHz at 688 Mbps, 5 GHz at 4.3 Gbps, and 6 GHz at 5.7 Gbps. That is the same class as a U7 Pro access point, packaged in a cylindrical desktop enclosure.
+The router delivers [WiFi 7](/en/blog/wifi-7-u7-pro-migration) (BE10700) across three bands: 2.4 GHz at 688 Mbps, 5 GHz at 4.3 Gbps, and 6 GHz at 5.7 Gbps. That is the same class as a U7 Pro access point, packaged in a cylindrical desktop enclosure.
 
 For wired connections, there is one 10G SFP+ port and four 2.5 GbE RJ45 ports. One of the RJ45 ports delivers PoE, which lets you power an access point or camera directly from the router without a separate PoE switch. This is practical for small sites where you do not want to deploy an extra switch.
 
@@ -35,7 +35,7 @@ The enclosure measures 110 x 110 x 250 mm and has the typical cylindrical shape 
 
 Like any Cloud Gateway, the UDR 5G Max runs UniFi OS. That means Network, Protect, Access, and the other UniFi applications run directly on the device. If you already have UniFi hardware deployed, you manage everything through the familiar dashboard.
 
-The device also functions as a small NVR (Network Video Recorder) for UniFi Protect. A few cameras can record to the SD card slot, but anyone running more than three or four cameras will need a dedicated UNVR or UNAS.
+The device also functions as a small NVR (Network Video Recorder) for [UniFi Protect](/en/blog/unifi-protect-vs-consumer). A few cameras can record to the SD card slot, but anyone running more than three or four cameras will need a dedicated UNVR or UNAS.
 
 ## 5G as Backup or Primary Connection
 
@@ -49,6 +49,10 @@ Ubiquiti also offers two standalone 5G modems alongside the UDR 5G Max: the UniF
 
 499 USD for a router with a built-in 5G modem, WiFi 7, and 10G SFP+ is not cheap, but it is also not unreasonable when you consider what comparable devices from Cradlepoint or Peplink cost. Those quickly run into four figures.
 
-If you already run a Dream Machine Pro or an Enterprise Gateway and are happy with it, you do not need the UDR 5G Max. The device is aimed at people who either have no wired internet or want a simple failover solution without modifying their existing infrastructure.
+If you already run a [Dream Machine Pro](/en/blog/udm-pro-max-vs-ucg-max) or an Enterprise Gateway and are happy with it, you do not need the UDR 5G Max. The device is aimed at people who either have no wired internet or want a simple failover solution without modifying their existing infrastructure.
 
 If you want to order: it is available in the Ubiquiti Store, but historically it sells out quickly. Setting up restock notifications is worthwhile.
+
+---
+
+*Have questions about the Dream Router 5G Max? [Get in touch](/en/kontakt) for a free initial consultation.*

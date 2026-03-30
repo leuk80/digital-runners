@@ -9,13 +9,13 @@ author: "Digital Runners"
 
 ## What Is the UniFi Design Center?
 
-The UniFi Design Center is a free, browser-based tool at design.ui.com. It lets you plan network installations before purchasing equipment or running cables. You upload a floor plan, draw in walls, place access points, cameras, and switches, and get an estimate of WiFi coverage, cable paths, and required hardware.
+The UniFi Design Center is a free, browser-based tool at design.ui.com. It lets you plan network installations before purchasing equipment or running cables. You upload a floor plan, draw in walls, place access points, cameras, and switches, and get an estimate of [WiFi coverage](/en/blog/wifi-planning-offices), cable paths, and required hardware.
 
 The tool is aimed at installers and IT managers who want to know how many APs they need and where they should go before starting a new installation or expansion. It is overkill for home networks, but for offices, warehouses, or multi-unit buildings, it saves time and prevents costly mistakes.
 
 ## Project Wizard
 
-When creating a new project, a wizard walks you through the basic configuration: Should WiFi be included? Which product line (e.g., Enterprise E7)? Are cameras or access control needed? Based on the answers, the tool suggests an initial equipment list, including gateway and switch.
+When creating a new project, a wizard walks you through the basic configuration: Should WiFi be included? Which product line (e.g., Enterprise E7)? Are cameras or [access control](/en/blog/unifi-access-control) needed? Based on the answers, the tool suggests an initial equipment list, including gateway and switch.
 
 This is a useful starting point, especially if you are not familiar with the entire Ubiquiti product lineup. Everything can be adjusted afterward, but the initial selection provides direction.
 
@@ -37,7 +37,7 @@ Hovering the cursor over the floor plan shows the estimated signal strength and 
 
 ## Cameras and Access Control
 
-Beyond WiFi, camera planning can also be done in the Design Center. You select a camera model (e.g., G5 Bullet, G5 Turret Ultra) and place it on the floor plan. The tool shows the viewing angle and covered area, making it easy to spot blind spots at a glance.
+Beyond WiFi, camera planning can also be done in the Design Center. You select a camera model (e.g., G5 Bullet, [G5 Turret Ultra](/en/blog/g5-turret-ultra-camera-review)) and place it on the floor plan. The tool shows the viewing angle and covered area, making it easy to spot blind spots at a glance.
 
 Access control works similarly: place Enterprise Access Hubs, then position readers (G3 Reader Pro, Reader Flex) at doors. The G3 Reader Pro units have a built-in camera whose coverage area is also displayed.
 
@@ -76,3 +76,7 @@ For client proposals, this is practical: you export the plan with heatmap and bi
 The UniFi Design Center has evolved from a simple heatmap tool into comprehensive network planning software. Having WiFi simulation, camera planning, cabling, and rack configuration in a single free tool is unusual. Comparable software from Ekahau or iBwave costs four figures per year.
 
 The accuracy of the WiFi heatmap depends heavily on how precisely you enter wall materials and scale. Cut corners here, and you get optimistic results. Take the time to do it right, and you get a useful preliminary assessment that reduces the effort of on-site manual surveying.
+
+---
+
+*Have questions about network planning? [Get in touch](/en/kontakt) for a free initial consultation.*

@@ -17,7 +17,7 @@ Ubiquiti hat mit UniFi Protect 7.0 ein grösseres Update veröffentlicht, das ei
 
 Das wohl wichtigste neue Feature für viele Admins: UniFi Protect zeigt jetzt im linken Bereich neben der ältesten Aufnahme auch die aktuelle Firmware-Version an. Und direkt daneben gibt es einen neuen Button, mit dem sich die vorherige Firmware-Version wiederherstellen lässt.
 
-Wer also nach einem Update auf Probleme stösst oder versehentlich aktualisiert hat, kann einfach auf die vorherige Version zurückrollen. Optional lässt sich dabei ein Support-File an Ubiquiti senden, was bei der Fehleranalyse hilft. Das Ganze lässt sich aber auch abwählen. Es wird klar angezeigt, auf welche Version zurückgesetzt wird.
+Wer also nach einem Update auf Probleme stösst oder versehentlich aktualisiert hat, kann einfach auf die vorherige Version zurückrollen. Auch die [G5 Turret Ultra](/de/blog/g5-turret-ultra-kamera-test) profitiert davon. Optional lässt sich dabei ein Support-File an Ubiquiti senden, was bei der Fehleranalyse hilft. Das Ganze lässt sich aber auch abwählen. Es wird klar angezeigt, auf welche Version zurückgesetzt wird.
 
 Hoffentlich bringt Ubiquiti diese Rollback-Funktion bald auch in die anderen UniFi-Anwendungen.
 
@@ -74,7 +74,7 @@ Im Video-Test von Mactelecom Networks wurde ein Thumbnail-Bild hochgeladen und d
 
 Im neuen **Intelligence-Bereich** gibt es jetzt ein Flussdiagramm, das die AI-Policies visualisiert. Es zeigt, wie Kameras (sowohl moderne AI-Kameras als auch Legacy-Kameras über LPR) in die AI-Verarbeitung eingebunden sind und wie daraus Alarme und Benachrichtigungen entstehen.
 
-Das **Offsite-Archiving** hat ebenfalls eine visuelle Darstellung bekommen. Der Datenfluss von Kamera über On-Site-Storage (z.B. UDM Pro Max oder UMVR) bis hin zu Cloud-Diensten wie Google Drive, OneDrive, Dropbox oder einem NAS wird übersichtlich dargestellt. Laut der Anzeige ist „Continuous Recording Scheduled Uploads" als Feature noch in Arbeit.
+Das **Offsite-Archiving** hat ebenfalls eine visuelle Darstellung bekommen. Der Datenfluss von Kamera über On-Site-Storage (z.B. [UDM Pro Max](/de/blog/udm-pro-max-vs-ucg-max) oder UMVR) bis hin zu Cloud-Diensten wie Google Drive, OneDrive, Dropbox oder einem NAS wird übersichtlich dargestellt. Laut der Anzeige ist „Continuous Recording Scheduled Uploads" als Feature noch in Arbeit.
 
 ***
 
@@ -108,3 +108,7 @@ Die Version 7.0.73 ist aktuell noch ein Release Candidate. Wer auf Nummer sicher
 ***
 
 *Quellen: [UniFi Protect 7.0.73 Release Notes](https://community.ui.com/releases/UniFi-Protect-Application-7-0-73/128d7f05-7605-4cd2-8b28-659439be1418) | Video: [Mactelecom Networks – UniFi Protect 7](https://www.youtube.com/watch?v=Eq0u-GnEr4I)*
+
+---
+
+*Haben Sie Fragen zu UniFi Protect? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

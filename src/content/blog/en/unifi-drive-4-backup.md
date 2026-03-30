@@ -37,14 +37,14 @@ On top of that, there are extended audit logs. Every file operation is logged: u
 
 ## What Hardware Is Required?
 
-UniFi Drive 4.0 runs on Ubiquiti's UNAS devices. Currently available:
+UniFi Drive 4.0 runs on Ubiquiti's [UNAS devices](/en/blog/unas-4-desktop-nas). Currently available:
 
 - UNAS Pro (7 bays, SFP+, approx. 499 USD)
 - UNAS Pro 8 (8 bays, SFP+ and RJ45, approx. 799 USD)
 
 Additionally announced are the UNAS 4 (approx. 379 USD) and the UNAS Pro 4 (approx. 499 USD) with NVMe caching.
 
-Important to know: for remote access via the UniFi Endpoint app, you need a UniFi Cloud Gateway on your network (for example, UDM Pro, Dream Router 7, or Cloud Gateway Max). The UNAS alone is not enough.
+Important to know: for remote access via the UniFi Endpoint app, you need a [UniFi Cloud Gateway](/en/blog/cloud-gateway-ultra-review) on your network (for example, UDM Pro, Dream Router 7, or Cloud Gateway Max). The UNAS alone is not enough.
 
 ## Where Are the Limitations?
 
@@ -59,3 +59,7 @@ That said, if you already run a UniFi network, Drive 4.0 gives you a backup solu
 With Drive 4.0, the UNAS becomes significantly more useful than it was six months ago. Especially for small offices and SMBs that want to back up OneDrive data and iPhone photos without a cloud subscription, it fits well.
 
 However, if you need containers, VMs, or complete M365 coverage, Drive 4.0 alone will not get you far. In that case, a Synology or QNAP remains the safer choice.
+
+---
+
+*Have questions about backup solutions? [Get in touch](/en/kontakt) for a free initial consultation.*

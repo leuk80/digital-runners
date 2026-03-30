@@ -35,7 +35,7 @@ Die wichtigsten Eckdaten:
 
 ## Einrichtung im UniFi Network
 
-Die Einrichtung ist unkompliziert. In der UniFi Network App erscheint der AirWire als neues Gerät mit dem Status "Pending Adoption". Einmal adoptiert, taucht er in der Geräteliste auf.
+Die Einrichtung ist unkompliziert. In der [UniFi Network App](/de/blog/unifi-network-10-1-wifi-doctor) erscheint der AirWire als neues Gerät mit dem Status "Pending Adoption". Einmal adoptiert, taucht er in der Geräteliste auf.
 
 Unter den WLAN-Einstellungen sollte man prüfen, ob "Mesh eMlo" aktiviert ist (steht aktuell noch unter Labs). Wer einen WiFi-7-Access-Point mit 320 MHz auf 6 GHz hat, sollte auch das aktivieren. In der AirWire-Übersicht sieht man dann beide Verbindungen: 80 MHz auf 5 GHz und 320 MHz auf 6 GHz.
 
@@ -43,7 +43,7 @@ Man kann in den Einstellungen den Mesh Parent festlegen, also welcher Access Poi
 
 ## Speedtest-Ergebnisse
 
-Mactelecom Networks hat den AirWire an einem Mac Mini getestet, der normalerweise über das eingebaute WLAN verbunden ist. Als Gegenstelle diente ein E7 Access Point mit 10-GbE-Anbindung. Hier die Ergebnisse im Vergleich:
+Mactelecom Networks hat den AirWire an einem Mac Mini getestet, der normalerweise über das eingebaute WLAN verbunden ist. Als Gegenstelle diente ein [E7 Access Point](/de/blog/e7-campus-enterprise-wifi-7) mit 10-GbE-Anbindung. Hier die Ergebnisse im Vergleich:
 
 **Im Keller (ca. 5 Meter zum AP):**
 
@@ -82,8 +82,12 @@ Bei den Temperaturen zeigte der AirWire Werte um die 47 bis 48 °C (ca. 117 °F)
 
 Der AirWire ist ein Nischenprodukt. Er kostet 199 Dollar und ist grösser als ein normaler WLAN-Adapter. Aber für bestimmte Szenarien ist er sinnvoll: Wenn man einen stationären Rechner hat, der kein Ethernet-Kabel bekommen kann, und trotzdem hohen Durchsatz braucht (etwa für Videobearbeitung ab einem NAS), dann kann der AirWire eine Alternative zur Kabelverlegung sein. Das Kabel zu verlegen würde in vielen Fällen ohnehin mehr als 199 Dollar kosten.
 
-Man braucht dafür allerdings einen UniFi Access Point. Und für das volle STR MLO muss es ein WiFi-7-Modell sein, also ein U7 oder E7. Ältere Access Points werden unterstützt, liefern aber kein MLO.
+Man braucht dafür allerdings einen UniFi Access Point. Und für das volle STR MLO muss es ein WiFi-7-Modell sein, also ein [U7 oder E7](/de/blog/wifi-7-u7-pro-migration). Ältere Access Points werden unterstützt, liefern aber kein MLO.
 
 ## Fazit
 
 Der AirWire löst ein konkretes Problem: Aktuelle WiFi-7-Clients nutzen das Potenzial des Standards nicht aus, weil sie nur EMLSR können. Mit dem AirWire bekommt man echtes STR MLO auf der Client-Seite, und die Testergebnisse zeigen, dass sich das in der Praxis deutlich bemerkbar macht. Wer schon in UniFi WiFi 7 investiert hat und an einem Standort mehr WLAN-Leistung braucht als das eingebaute Notebook-WLAN liefert, bekommt hier eine brauchbare Lösung.
+
+---
+
+*Haben Sie Fragen zu WiFi 7? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

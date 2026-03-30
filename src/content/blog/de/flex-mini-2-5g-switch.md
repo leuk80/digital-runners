@@ -293,4 +293,8 @@ Value: 10/10
 3. **Newsletter** – Wöchentliche Switch-Tipps
 
 **Weiterlesen:**
-[E7 Campus →](#) | [UNAS Pro →](#) | [Network 9.0 →](#)
+[E7 Campus →](/de/blog/e7-campus-enterprise-wifi-7) | [UNAS 4 Desktop NAS →](/de/blog/unas-4-desktop-nas) | [VLANs für KMU →](/de/blog/vlans-fuer-kmu)
+
+---
+
+*Haben Sie Fragen zu Multi-Gig Netzwerken? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

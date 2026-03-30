@@ -19,13 +19,13 @@ Das Ergebnis: Mitarbeitende am anderen Ende des Büros kämpfen mit langsamen Ve
 
 ### 1. Fläche und Raumaufteilung
 
-Grundsätzlich kann ein UniFi Access Point der aktuellen Generation (z. B. U7 Pro oder U6+) auf einer offenen Fläche bis zu 250–300 m² versorgen. In einem Grossraumbüro ohne Wände ist das realistisch – sobald jedoch Wände, Türen und andere Hindernisse vorhanden sind, reduziert sich die effektive Reichweite erheblich.
+Grundsätzlich kann ein UniFi Access Point der aktuellen Generation (z. B. [U7 Pro](/de/blog/wifi-7-u7-pro-migration) oder U6+) auf einer offenen Fläche bis zu 250–300 m² versorgen. In einem Grossraumbüro ohne Wände ist das realistisch – sobald jedoch Wände, Türen und andere Hindernisse vorhanden sind, reduziert sich die effektive Reichweite erheblich.
 
 Eine grobe Faustregel: Pro abgetrenntem Raum (Besprechungszimmer, Einzelbüro, Serverraum) sollte ein Access Point eingeplant werden. Für Grossraumbüros rechnet man einen AP pro 80–120 m² bei normaler Ausstattung.
 
 ### 2. Anzahl der Geräte pro Nutzer
 
-Heute bringt jeder Mitarbeitende durchschnittlich 2–3 Geräte mit ins Büro: Laptop, Smartphone, manchmal ein Tablet. Dazu kommen IoT-Geräte wie Smart Displays, Drucker, Türöffner oder Überwachungskameras. Ein AP kann problemlos 30–40 aktive Clients bedienen – aber die Verbindungsqualität steigt, wenn die Last gleichmässig verteilt wird.
+Heute bringt jeder Mitarbeitende durchschnittlich 2–3 Geräte mit ins Büro: Laptop, Smartphone, manchmal ein Tablet. Dazu kommen IoT-Geräte wie Smart Displays, Drucker, [Türöffner](/de/blog/unifi-access-zutrittskontrolle) oder [Überwachungskameras](/de/blog/unifi-protect-vs-consumer). Ein AP kann problemlos 30–40 aktive Clients bedienen – aber die Verbindungsqualität steigt, wenn die Last gleichmässig verteilt wird.
 
 ### 3. Art der Anwendungen
 

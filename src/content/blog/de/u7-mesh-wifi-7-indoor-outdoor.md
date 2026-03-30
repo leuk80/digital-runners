@@ -43,7 +43,7 @@ Die zentrale Neuerung:
 Praktisch bedeutet das:
 
 - **Rundum‑Abdeckung** für Endgeräte in der Nähe (Smartphones, Laptops, IoT)
-- **Gezielter Richtstrahl** für die Mesh‑Strecke zum „nächsten“ UniFi‑AP – zum Beispiel zum U7 Pro oder einem anderen U7‑Modell
+- **Gezielter Richtstrahl** für die Mesh‑Strecke zum „nächsten“ UniFi‑AP – zum Beispiel zum [U7 Pro](/de/blog/wifi-7-u7-pro-migration) oder einem anderen U7‑Modell
 - **Deutlich mehr Distanz**, ohne dass die Mesh‑Verbindung sofort kollabiert, wenn Hindernisse dazwischen sind oder der Abstand wächst
 
 Dadurch eignet sich der U7 Mesh besonders für Szenarien, in denen bisher entweder unschöne Workarounds (Powerline, Repeater) oder aufwendige Verkabelung nötig war.
@@ -55,7 +55,7 @@ Dadurch eignet sich der U7 Mesh besonders für Szenarien, in denen bisher entwed
 Im Video hebt Ubiquiti hervor, dass **WiFi 7 im U7 Mesh „next generation throughput and efficiency“ freischaltet** – also mehr Datendurchsatz und effizientere Nutzung des Funkspektrums. Gerade im Mesh‑Backhaul ist das entscheidend:
 
 - **Mehr Netto‑Bandbreite für den Uplink**: Auch wenn ein Gerät „nur“ per Mesh angebunden ist, bleibt noch genügend Leistung für die verbundenen Clients.
-- **Stabilere Performance bei vielen Clients**: WiFi 7 ist auf höhere Gerätedichten ausgelegt, was in Aussenbereichen mit vielen Besucher:innen (Events, Gastro, Hotellerie) direkt spürbar wird.
+- **Stabilere Performance bei vielen Clients**: WiFi 7 ist auf höhere Gerätedichten ausgelegt, was in Aussenbereichen mit vielen Besucher:innen (Events, Gastro, [Hotellerie](/de/branchen/hotellerie)) direkt spürbar wird.
 - **Bessere Effizienz**: Verbesserte Modulation und Scheduling bedeuten, dass die verfügbare Airtime sinnvoller genutzt wird.
 
 Ein externer Review betont, dass der U7 Mesh **ideal als Mesh‑Punkt an der Netz‑Peripherie** ist: Der Access Point kann per PoE‑Injektor wahlweise mit Kabel‑Backhaul oder rein drahtlos als Mesh‑Node betrieben werden. So bleibt die Architektur flexibel – von „schnell mal draussen testen“ bis hin zur dauerhaften, sauberen Montage.
@@ -87,7 +87,7 @@ Konkret bedeutet das:
 - **Automatische Kanal‑Optimierung**: Die RF‑Engine unterstützt dabei, Kanäle und Sendeleistungen so zu wählen, dass sich APs gegenseitig möglichst wenig stören.
 - **Neuer Site Manager**: Mehrere Standorte (z.B. verschiedene Firmenstandorte oder Filialen) lassen sich mit zentraler Sicht und Steuerung orchestrieren – **komplett lizenzfrei**, wie Ubiquiti unterstreicht.
 
-Ein externer Test weist zusätzlich darauf hin, dass der U7 Mesh **am besten mit einem UniFi Cloud Gateway läuft**, sich aber auch in bestehende Netze mit Dritt‑Routern einbinden lässt – insbesondere, wenn er per Kabel angeschlossen wird. Für schrittweise Migrationen Richtung UniFi ist das ideal.
+Ein externer Test weist zusätzlich darauf hin, dass der U7 Mesh **am besten mit einem UniFi [Cloud Gateway](/de/blog/cloud-gateway-ultra-test) läuft**, sich aber auch in bestehende Netze mit Dritt‑Routern einbinden lässt – insbesondere, wenn er per Kabel angeschlossen wird. Für schrittweise Migrationen Richtung UniFi ist das ideal.
 
 ---
 
@@ -114,7 +114,7 @@ Der U7 Mesh entfaltet sein volles Potenzial im Verbund mit anderen **U7‑APs (z
 
 - Die **Innenräume** werden über Decken‑ oder In‑Wall‑APs mit hoher Client‑Dichte versorgt.
 - **U7 Mesh‑Knoten** erweitern das Netz in „schwierige“ Zonen – draussen oder in entlegenen Ecken.
-- Das **UniFi Network** verwaltet alles zentral: SSIDs, VLANs, Gast‑Portale, PPSK, Roaming, Mesh‑Policies.
+- Das **UniFi Network** verwaltet alles zentral: SSIDs, [VLAN](/de/blog/vlans-fuer-kmu)s, Gast‑Portale, PPSK, Roaming, Mesh‑Policies.
 
 So entsteht eine Architektur, die
 
@@ -147,3 +147,7 @@ Wenn du planst, dein WLAN mit WiFi 7 und Mesh auf das nächste Level zu bringen 
 4. **Security & Segmentierung**: Gäste‑Netz, interne Netze, IoT‑Segmente sauber trennen (VLAN, PPSK, Captive Portal).
 
 Digital Runners unterstützt dich bei Planung, Hardware‑Auswahl, Konfiguration und Betrieb deiner UniFi‑Umgebung – inklusive WiFi‑7‑Mesh mit dem neuen U7 Mesh.
+
+---
+
+*Haben Sie Fragen zu WiFi-7-Mesh? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

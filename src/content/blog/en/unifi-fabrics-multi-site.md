@@ -23,7 +23,7 @@ The entire system runs through Site Manager and requires no additional licenses.
 
 Under "Consolidated People Management," you can connect an external identity provider. Supported options include Google Workspace, Microsoft Entra (formerly Azure AD), JumpCloud, Active Directory, and LDAP.
 
-Once connected, users are synchronized centrally. An Identity Sync Service runs on the master site, aligning permissions across all sites within the Fabric. The master site is the primary gateway (such as a UDM Pro Max) that coordinates the synchronization.
+Once connected, users are synchronized centrally. An Identity Sync Service runs on the master site, aligning permissions across all sites within the Fabric. The master site is the primary gateway (such as a [UDM Pro Max](/en/blog/udm-pro-max-vs-ucg-max)) that coordinates the synchronization.
 
 For connectivity between sites, there are two options: manual port forwarding or using Ubiquiti's own relay service.
 
@@ -35,7 +35,7 @@ Once a network is distributed through the Fabric, it can no longer be edited loc
 
 ## Access Control Across Multiple Sites
 
-For anyone using UniFi Access, this is likely the most compelling feature. Through Fabrics, door access policies can be managed across sites. You can create custom roles (e.g., "Door Guardian"), restrict them to specific sites, and control access to individual doors.
+For anyone using [UniFi Access](/en/blog/unifi-access-control), this is likely the most compelling feature. Through Fabrics, door access policies can be managed across sites. You can create custom roles (e.g., "Door Guardian"), restrict them to specific sites, and control access to individual doors.
 
 There is also a new capability in the UniFi Identity app: Remote Unlock. Previously, you had to be within Bluetooth range to open a door via the app. Through Fabrics, this now works remotely. In the Identity Endpoint app, a user can see all doors they have access to, even if those doors are at different locations.
 
@@ -43,7 +43,7 @@ For MSPs managing multiple clients with UniFi Access, this is a genuine time sav
 
 ## Physical Security and Protect
 
-Beyond access control, Fabrics also brings physical security (cameras) into centralized management. In the demonstrated setup, both UDM Pro Max sites and a UNVR Pro were part of the Fabric, allowing Protect surveillance to be monitored across sites as well.
+Beyond access control, Fabrics also brings physical security (cameras) into centralized management. In the demonstrated setup, both UDM Pro Max sites and a UNVR Pro were part of the Fabric, allowing [Protect](/en/blog/unifi-protect-vs-consumer) surveillance to be monitored across sites as well.
 
 ## What Is Coming Next
 
@@ -54,3 +54,7 @@ Several features are still marked as "Coming Soon." These include Device Templat
 UniFi Fabrics solves a concrete problem: the cumbersome management of multiple sites. Instead of applying the same settings individually at each location, you define them once and distribute. The integration of access control across sites was long overdue, and the fact that it comes without license fees makes it attractive even for smaller MSP setups.
 
 Fabrics is still in the Early Access phase but already runs stably according to the walkthrough from Mactelecom Networks. If you manage multiple UniFi sites, it is worth a look.
+
+---
+
+*Have questions about multi-site management? [Get in touch](/en/kontakt) for a free initial consultation.*

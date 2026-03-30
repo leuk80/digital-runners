@@ -23,11 +23,11 @@ Under "Air View," there is a new section for Connectivity Insights. You can trac
 
 There is also a roaming map that visually shows how clients move between APs. In small setups with two APs, you will not see much, but in larger installations with ten or more APs, it quickly becomes useful. You can select multiple clients simultaneously and filter by manufacturer, SSID, source AP, and target AP.
 
-For anyone who regularly troubleshoots WiFi issues in larger offices or warehouses, this is a tool that significantly speeds up diagnosis.
+For anyone who regularly troubleshoots [WiFi issues](/en/blog/wifi-planning-offices) in larger offices or warehouses, this is a tool that significantly speeds up diagnosis.
 
 ## Shadow Mode Setup
 
-For those running two gateways (such as two UDM Pro Max units), there is an improved Shadow Mode setup. A guided wizard now appears in the settings, walking you step by step through the wiring and configuration of both gateways.
+For those running two gateways (such as two [UDM Pro Max](/en/blog/udm-pro-max-vs-ucg-max) units), there is an improved Shadow Mode setup. A guided wizard now appears in the settings, walking you step by step through the wiring and configuration of both gateways.
 
 Shadow Mode is based on VRRP and ensures that if one gateway fails, the second automatically takes over. The setup was not particularly intuitive before. With the new wizard, the system verifies that the configuration is correctly synchronized and that failover actually works, rather than just hoping everything is fine.
 
@@ -48,3 +48,7 @@ Network 10.1 brings several other enhancements. Device Tags let you group device
 Network 10.1 is not a spectacular feature update, but it is a solid one. The WiFi Doctor saves time on configuration checks, the roaming visualization helps with troubleshooting in larger installations, and the improved Shadow Mode makes high availability more accessible. The Audit Log was overdue.
 
 The update is currently available as a Release Candidate. To test it, switch to the Release Candidate channel in the settings.
+
+---
+
+*Have questions about WiFi optimisation? [Get in touch](/en/kontakt) for a free initial consultation.*

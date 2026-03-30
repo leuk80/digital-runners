@@ -25,7 +25,7 @@ UniFi wächst mit Ihnen. Sie beginnen mit einem einfachen Setup und erweitern Sc
 
 ### Professionelle Funktionen
 
-VLANs für Netzwerksegmentierung, VPN-Anbindung, detailliertes Traffic-Monitoring, Gastnetzwerke mit Captive Portal – alles ist bereits enthalten und ohne Zusatzkosten nutzbar.
+[VLANs für Netzwerksegmentierung](/de/blog/vlans-fuer-kmu), VPN-Anbindung, detailliertes Traffic-Monitoring, Gastnetzwerke mit Captive Portal – alles ist bereits enthalten und ohne Zusatzkosten nutzbar.
 
 ### Zuverlässigkeit
 
@@ -33,7 +33,7 @@ UniFi-Geräte sind für den Dauerbetrieb ausgelegt. Regelmässige Firmware-Updat
 
 ## Für wen ist UniFi geeignet?
 
-UniFi eignet sich für nahezu jede Unternehmensgrösse und -branche: vom kleinen Büro über Hotels und Arztpraxen bis hin zu grossen Industrie- und Logistikanlagen. Überall dort, wo ein zuverlässiges, professionell verwaltetes Netzwerk gefragt ist.
+UniFi eignet sich für nahezu jede Unternehmensgrösse und -branche: vom kleinen Büro über [Hotels und Arztpraxen](/de/branchen/hotellerie) bis hin zu grossen Industrie- und Logistikanlagen. Überall dort, wo [ein zuverlässiges, professionell verwaltetes Netzwerk](/de/blog/wlan-planung-bueros) gefragt ist.
 
 ## Fazit
 

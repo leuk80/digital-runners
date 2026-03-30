@@ -29,7 +29,7 @@ Unterstützt werden 2.5-Zoll- und 3.5-Zoll-SATA-Laufwerke. SSDs funktionieren in
 
 ## Software: UniFi Drive
 
-Der UNAS 4 läuft mit UniFi Drive, Ubiquitis eigener NAS-Software. Keine Lizenzkosten, keine Abos. Die Verwaltung erfolgt über das bekannte UniFi-Dashboard. Wer bereits Switches, Access Points oder Kameras über UniFi verwaltet, findet sich sofort zurecht.
+Der UNAS 4 läuft mit [UniFi Drive](/de/blog/unifi-drive-4-backup), Ubiquitis eigener NAS-Software. Keine Lizenzkosten, keine Abos. Die Verwaltung erfolgt über das bekannte UniFi-Dashboard. Wer bereits Switches, Access Points oder Kameras über UniFi verwaltet, findet sich sofort zurecht.
 
 An Features bietet Drive 4.0 unter anderem: persönliche und geteilte Laufwerke, Snapshots, Dateiverschlüsselung, Time-Machine-Backups für Macs, Share-Links zum Teilen einzelner Dateien, und Cloud-Backup auf Google Drive, OneDrive, Dropbox, Amazon S3, Backblaze B2 oder Wasabi.
 
@@ -45,8 +45,12 @@ Der UNAS Pro 4 liegt bei 499 Dollar und zielt auf den Rack-Einbau. Er bietet 10-
 
 ## Für wen lohnt sich der UNAS 4?
 
-Wer bereits ein UniFi-Netzwerk mit 2.5-Gigabit-Switches betreibt und lokalen Speicher für Backups, Dateifreigaben oder Protect-Aufnahmen braucht, bekommt mit dem UNAS 4 ein Gerät, das sich nahtlos einfügt. Installation und Verwaltung laufen über dasselbe Dashboard wie der Rest der Infrastruktur.
+Wer bereits ein UniFi-Netzwerk mit 2.5-Gigabit-Switches betreibt und lokalen Speicher für Backups, Dateifreigaben oder [Protect-Aufnahmen](/de/blog/unifi-protect-vs-consumer) braucht, bekommt mit dem UNAS 4 ein Gerät, das sich nahtlos einfügt. Installation und Verwaltung laufen über dasselbe Dashboard wie der Rest der Infrastruktur.
 
 Wer nur zwei Platten braucht, fährt mit dem UNAS 2 günstiger. Wer 10-Gigabit-Netzwerk hat oder Rack-Montage braucht, greift zum UNAS Pro 4. Der UNAS 4 sitzt genau dazwischen: mehr Speicher und Redundanz als der Kleine, ohne den Aufpreis der Pro-Variante.
 
 Ein Punkt noch: Das Gerät ist aktuell nur in Weiss erhältlich und im Ubiquiti Store häufig ausverkauft. Wer einen haben will, sollte die Restock-Benachrichtigung aktivieren.
+
+---
+
+*Haben Sie Fragen zu NAS und lokalem Speicher? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

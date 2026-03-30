@@ -17,7 +17,7 @@ Ubiquiti bietet zwei Varianten an:
 
 Der **UACC-Keystone-Jack-C6** ist ein Cat6-Keystone im 12er-Pack für 29 USD. Er unterstützt Kabel mit Querschnitten von 23 bis 26 AWG und ist kompatibel mit den Verdrahtungsstandards TIA-568A und TIA-568B. Die Masse betragen 34.8 x 14.5 x 16.1 mm bei einem Gewicht von 7.3 Gramm pro Stück. Das Gehäuse besteht aus Polycarbonat.
 
-Der **UACC-Keystone-Jack-C6A** ist die Cat6A-Variante, ebenfalls im 12er-Pack, für 39 USD. Er ist für höhere Übertragungsraten ausgelegt und eignet sich für Installationen, in denen 10-Gbit-Ethernet über Kupfer gefahren werden soll.
+Der **UACC-Keystone-Jack-C6A** ist die Cat6A-Variante, ebenfalls im 12er-Pack, für 39 USD. Er ist für höhere Übertragungsraten ausgelegt und eignet sich für Installationen, in denen [10-Gbit-Ethernet](/de/blog/flex-mini-2-5g-switch) über Kupfer gefahren werden soll.
 
 Beide Modelle werden werkzeuglos montiert. Man braucht weder ein Auflegewerkzeug noch eine Crimpzange. Die Adern werden einfach in die farbcodierten Slots gedrückt und der Deckel eingerastet.
 
@@ -56,3 +56,7 @@ Beide Modelle sind über den Ubiquiti Store und autorisierte Händler erhältlic
 ## Fazit
 
 Die UniFi Keystone Jacks sind solide, toolless Keystones, die farblich ins Ubiquiti-Ökosystem passen. Wer Wert auf ein einheitliches Rack legt, bekommt hier genau das. Wer die Keystones hinter einer geschlossenen Schranktür versteckt, kann auch günstigere Alternativen nehmen, ohne etwas zu verpassen. Die werkzeuglose Montage ist bei beiden Varianten praktisch und spart Zeit, besonders bei grösseren Installationen.
+
+---
+
+*Haben Sie Fragen zu Netzwerkverkabelung? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

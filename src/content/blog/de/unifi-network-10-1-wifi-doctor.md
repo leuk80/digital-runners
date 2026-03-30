@@ -9,7 +9,7 @@ author: "Digital Runners"
 
 ## Was steckt in Network 10.1?
 
-Ubiquiti hat Anfang Februar UniFi Network 10.1 veröffentlicht (Version 10.1.83, aktuell als Release Candidate). Das Update konzentriert sich auf drei Bereiche: automatische WLAN-Optimierung, bessere Sichtbarkeit beim Client-Roaming und ein überarbeitetes Setup für die Gateway-Hochverfügbarkeit.
+Ubiquiti hat Anfang Februar UniFi Network 10.1 veröffentlicht (Version 10.1.83, aktuell als Release Candidate). Das Update konzentriert sich auf drei Bereiche: automatische WLAN-Optimierung, bessere Sichtbarkeit beim Client-[Roaming](/de/blog/wifi-7-u7-pro-migration) und ein überarbeitetes Setup für die Gateway-Hochverfügbarkeit.
 
 ## WiFi Doctor
 
@@ -23,11 +23,11 @@ Unter "Air View" gibt es einen neuen Bereich für Connectivity Insights. Dort la
 
 Dazu kommt eine Roaming-Karte, die visuell darstellt, wie sich Clients zwischen APs bewegen. In kleinen Setups mit zwei APs sieht man wenig, aber bei grösseren Installationen mit zehn oder mehr APs wird das schnell nützlich. Man kann mehrere Clients gleichzeitig auswählen und nach Hersteller, SSID, Quell-AP und Ziel-AP filtern.
 
-Wer regelmässig mit WLAN-Problemen in grösseren Büros oder Lagerhallen zu tun hat, bekommt hier ein Werkzeug, das die Fehlersuche deutlich beschleunigt.
+Wer regelmässig mit [WLAN-Problemen](/de/blog/wlan-planung-bueros) in grösseren Büros oder Lagerhallen zu tun hat, bekommt hier ein Werkzeug, das die Fehlersuche deutlich beschleunigt.
 
 ## Shadow Mode Setup
 
-Für alle, die zwei Gateways im Einsatz haben (etwa zwei UDM Pro Max), gibt es ein verbessertes Shadow-Mode-Setup. In den Einstellungen taucht jetzt ein geführter Assistent auf, der Schritt für Schritt durch die Verkabelung und Konfiguration beider Gateways führt.
+Für alle, die zwei Gateways im Einsatz haben (etwa zwei [UDM Pro Max](/de/blog/udm-pro-max-vs-ucg-max)), gibt es ein verbessertes Shadow-Mode-Setup. In den Einstellungen taucht jetzt ein geführter Assistent auf, der Schritt für Schritt durch die Verkabelung und Konfiguration beider Gateways führt.
 
 Shadow Mode basiert auf VRRP und sorgt dafür, dass bei einem Gateway-Ausfall das zweite Gerät automatisch übernimmt. Die Einrichtung war bisher nicht besonders intuitiv. Mit dem neuen Assistenten prüft das System, ob die Konfiguration korrekt synchronisiert ist und ob der Failover tatsächlich funktioniert, statt sich darauf zu verlassen, dass schon alles stimmen wird.
 
@@ -48,3 +48,7 @@ Network 10.1 bringt noch ein paar zusätzliche Verbesserungen mit. Device Tags e
 Network 10.1 ist kein spektakuläres Feature-Update, aber ein solides. Der WiFi Doctor spart Zeit bei der Konfigurationsprüfung, die Roaming-Visualisierung hilft bei der Fehlersuche in grösseren Installationen, und der verbesserte Shadow Mode macht Hochverfügbarkeit zugänglicher. Das Audit Log war überfällig.
 
 Das Update ist aktuell als Release Candidate verfügbar. Wer es testen will, muss in den Einstellungen auf den Release-Candidate-Kanal wechseln.
+
+---
+
+*Haben Sie Fragen zu WLAN-Optimierung? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*

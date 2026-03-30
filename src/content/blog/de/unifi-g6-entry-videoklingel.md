@@ -9,7 +9,7 @@ author: "Digital Runners"
 
 ## Mehr als eine Klingel
 
-Ubiquiti hat mit der G6 Entry eine Türklingel vorgestellt, die deutlich mehr kann als nur klingeln und ein Kamerabild liefern. Das Gerät vereint drei Funktionen in einem Gehäuse: Videoklingel, Überwachungskamera und Zutrittskontrollleser. Wer bereits UniFi Protect und UniFi Access im Einsatz hat, bekommt damit ein Gerät, das sich nahtlos in beide Systeme einfügt.
+Ubiquiti hat mit der G6 Entry eine Türklingel vorgestellt, die deutlich mehr kann als nur klingeln und ein Kamerabild liefern. Das Gerät vereint drei Funktionen in einem Gehäuse: Videoklingel, Überwachungskamera und Zutrittskontrollleser. Wer bereits [UniFi Protect](/de/blog/unifi-protect-vs-consumer) und [UniFi Access](/de/blog/unifi-access-zutrittskontrolle) im Einsatz hat, bekommt damit ein Gerät, das sich nahtlos in beide Systeme einfügt.
 
 Das Besondere an der G6 Entry ist die Kombination aus Gesichtserkennung und Nummernschilderkennung (License Plate Recognition, kurz LPR) mit einem eingebauten Access Reader. Man kann also die Haustür nicht nur per App oder NFC-Karte öffnen, sondern auch per Gesicht. Das funktioniert direkt über UniFi Access, ohne dass ein separater Kartenleser an der Tür nötig wäre.
 
@@ -60,3 +60,7 @@ Die G6 Entry richtet sich an Nutzer, die bereits im UniFi-Ökosystem unterwegs s
 Der grosse Pluspunkt gegenüber Ring, Google Nest und Co.: Es gibt kein Abo. Alle Aufnahmen bleiben lokal auf dem eigenen NVR. Die AI-Erkennung läuft auf dem Gerät selbst. Und es gibt keinen Cloud-Zwang, bei dem Dritte potenziell auf die Videodaten zugreifen könnten.
 
 Wer UniFi Access noch nicht nutzt, sollte allerdings bedenken, dass die Zugangsfunktionen einen Access Hub voraussetzen. Das ist eine zusätzliche Investition, die sich vor allem lohnt, wenn man mehrere Türen oder Zugänge verwalten möchte.
+
+---
+
+*Haben Sie Fragen zu Videoklingeln und Zutrittskontrolle? [Kontaktieren Sie uns](/de/kontakt) für eine kostenlose Erstberatung.*
