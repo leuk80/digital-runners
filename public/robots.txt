@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
 User-agent: GPTBot
 Allow: /
@@ -19,4 +21,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://www.digital-runners.ch/sitemap-index.xml
+Sitemap: https://digital-runners.ch/sitemap-index.xml

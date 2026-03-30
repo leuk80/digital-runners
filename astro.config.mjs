@@ -5,10 +5,17 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://www.digital-runners.ch',
+  site: 'https://digital-runners.ch',
   output: 'static',
   adapter: cloudflare(),
-  integrations: [mdx(), sitemap()],
+  integrations: [
+    mdx(),
+    sitemap({
+      filter: (page) =>
+        !page.includes('/api/') &&
+        !page.includes('/admin/'),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },
