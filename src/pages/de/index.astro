@@ -79,6 +79,53 @@ const t = useTranslations(lang);
     </div>
   </section>
 
+  <!-- Product highlight: Frequenzmessung -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-slate-900 to-blue-950 rounded-2xl overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 md:p-12">
+          <div>
+            <span class="inline-block bg-cyan-500/20 text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full mb-4">Neu</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">KI-gestützte Frequenzmessung</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+              Wissen, wie viele Kunden wirklich kommen. Besucherzählung mit UniFi Protect — ohne SaaS-Abos, ohne Vendor-Lock-in, ab CHF 25/Monat laufende Kosten.
+            </p>
+            <div class="flex flex-wrap gap-6 text-sm text-slate-400 mb-8">
+              <div>
+                <span class="block text-2xl font-extrabold text-cyan-400">0.—</span>
+                Lizenzkosten
+              </div>
+              <div>
+                <span class="block text-2xl font-extrabold text-cyan-400">>90%</span>
+                Genauigkeit
+              </div>
+              <div>
+                <span class="block text-2xl font-extrabold text-cyan-400">4 Wo</span>
+                Go-Live
+              </div>
+            </div>
+            <a href="/de/frequenzmessung" class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+              Mehr erfahren
+              <Icon name="ArrowRightMD" class="h-4 w-4" />
+            </a>
+          </div>
+          <div class="hidden md:flex flex-col gap-4">
+            {[
+              'Retail & Fachhandel — Kundenfrequenz an Ein- und Ausgängen messen',
+              'Büros & Coworking — Tatsächliche Raumbelegung erfassen',
+              'Gastronomie & Events — Kapazitäten datenbasiert planen',
+            ].map(item => (
+              <div class="flex items-start gap-3 bg-white/5 rounded-lg p-4">
+                <Icon name="CheckBig" class="h-5 w-5 text-cyan-400 shrink-0 mt-0.5" />
+                <span class="text-sm text-slate-300">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Industries -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

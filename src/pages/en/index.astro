@@ -79,6 +79,53 @@ const t = useTranslations(lang);
     </div>
   </section>
 
+  <!-- Product highlight: Footfall Measurement -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-slate-900 to-blue-950 rounded-2xl overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8 md:p-12">
+          <div>
+            <span class="inline-block bg-cyan-500/20 text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full mb-4">New</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">AI-Powered Footfall Measurement</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+              Know how many customers really walk through your doors. Visitor counting with UniFi Protect — no SaaS subscriptions, no vendor lock-in, from CHF 25/month running costs.
+            </p>
+            <div class="flex flex-wrap gap-6 text-sm text-slate-400 mb-8">
+              <div>
+                <span class="block text-2xl font-extrabold text-cyan-400">0.—</span>
+                Licence fees
+              </div>
+              <div>
+                <span class="block text-2xl font-extrabold text-cyan-400">>90%</span>
+                Accuracy
+              </div>
+              <div>
+                <span class="block text-2xl font-extrabold text-cyan-400">4 wks</span>
+                Go-live
+              </div>
+            </div>
+            <a href="/en/footfall-measurement" class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors">
+              Learn more
+              <Icon name="ArrowRightMD" class="h-4 w-4" />
+            </a>
+          </div>
+          <div class="hidden md:flex flex-col gap-4">
+            {[
+              'Retail — Measure customer footfall at entrances and exits',
+              'Offices & Coworking — Track actual room occupancy',
+              'Hospitality & Events — Plan capacity based on real data',
+            ].map(item => (
+              <div class="flex items-start gap-3 bg-white/5 rounded-lg p-4">
+                <Icon name="CheckBig" class="h-5 w-5 text-cyan-400 shrink-0 mt-0.5" />
+                <span class="text-sm text-slate-300">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Industries -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
