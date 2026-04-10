@@ -44,41 +44,6 @@ const t = useTranslations(lang);
   })} />
   <Hero lang={lang} />
 
-  <!-- Services overview -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t('services.title')}</h2>
-        <p class="text-slate-600 max-w-2xl mx-auto">{t('services.subtitle')}</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[
-          { icon: 'Globe',    title: t('services.network.title'), desc: t('services.network.desc') },
-          { icon: 'Camera',   title: t('services.protect.title'), desc: t('services.protect.desc') },
-          { icon: 'Exit',     title: t('services.access.title'),  desc: t('services.access.desc') },
-          { icon: 'Phone',    title: t('services.talk.title'),    desc: t('services.talk.desc') },
-          { icon: 'Data',     title: t('services.drive.title'),   desc: t('services.drive.desc') },
-          { icon: 'Settings', title: t('services.install.title'), desc: t('services.install.desc') },
-          { icon: 'Help',     title: t('services.support.title'), desc: t('services.support.desc') },
-        ].map(service => (
-          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
-            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-4">
-              <Icon name={service.icon} class="h-6 w-6 text-cyan-600" />
-            </div>
-            <h3 class="font-semibold text-slate-900 mb-2">{service.title}</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">{service.desc}</p>
-          </div>
-        ))}
-      </div>
-      <div class="text-center mt-10">
-        <a href="/en/leistungen" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
-          View all services
-          <Icon name="ArrowRightMD" class="h-4 w-4" />
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Product highlight: Footfall Measurement -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,6 +87,41 @@ const t = useTranslations(lang);
             ))}
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services overview -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t('services.title')}</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">{t('services.subtitle')}</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { icon: 'Globe',    title: t('services.network.title'), desc: t('services.network.desc') },
+          { icon: 'Camera',   title: t('services.protect.title'), desc: t('services.protect.desc') },
+          { icon: 'Exit',     title: t('services.access.title'),  desc: t('services.access.desc') },
+          { icon: 'Phone',    title: t('services.talk.title'),    desc: t('services.talk.desc') },
+          { icon: 'Data',     title: t('services.drive.title'),   desc: t('services.drive.desc') },
+          { icon: 'Settings', title: t('services.install.title'), desc: t('services.install.desc') },
+          { icon: 'Help',     title: t('services.support.title'), desc: t('services.support.desc') },
+        ].map(service => (
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-4">
+              <Icon name={service.icon} class="h-6 w-6 text-cyan-600" />
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-2">{service.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{service.desc}</p>
+          </div>
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href="/en/leistungen" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+          View all services
+          <Icon name="ArrowRightMD" class="h-4 w-4" />
+        </a>
       </div>
     </div>
   </section>
