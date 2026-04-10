@@ -5,7 +5,7 @@ pubDate: 2026-03-05
 lang: de
 tags: ["Protect", "Retail", "AI", "Analytics", "UniFi"]
 author: "Digital Runners"
-draft: true
+draft: false
 ---
 
 ## People Counting 2026: Vom Bauchgefühl zur Datengetriebenen Retail-Strategie

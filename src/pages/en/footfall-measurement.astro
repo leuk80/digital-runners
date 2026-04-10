@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import ContactForm from '../../components/ContactForm.astro';
+
+const lang = 'en' as const;
+---
+
+<BaseLayout
+  lang={lang}
+  title="AI-Powered Footfall Measurement — Visitor Counting for Retail, Offices & Hospitality"
+  description="AI-powered footfall measurement for SMBs in Switzerland. No SaaS subscriptions, no vendor lock-in. Visitor counting with UniFi Protect from CHF 25/month running costs."
+  alternatePath="/de/frequenzmessung"
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "AI-Powered Footfall Measurement",
+    "description": "Visitor counting for retail, offices and hospitality. No expensive SaaS subscriptions. No vendor lock-in.",
+    "brand": {
+      "@type": "Organization",
+      "name": "Digital Runners"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "CHF",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Digital Runners",
+        "url": "https://digital-runners.ch"
+      }
+    }
+  })} />
+
+  <!-- Hero -->
+  <section class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-500 rounded-full opacity-10 blur-3xl"></div>
+      <div class="absolute bottom-0 -left-24 w-80 h-80 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <span class="inline-block bg-cyan-500/20 text-cyan-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+          Apply for pilot project now
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          Know how many customers really <span class="text-cyan-400">walk in.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+          AI-powered footfall measurement for retail, offices and hospitality. No expensive SaaS subscriptions. No vendor lock-in. Your data belongs to you.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors"
+          >
+            Free initial consultation
+            <Icon name="ArrowRightMD" class="h-4 w-4" />
+          </a>
+          <a
+            href="#process"
+            class="inline-flex items-center gap-2 border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 text-slate-300 font-medium px-6 py-3 rounded-lg transition-colors"
+          >
+            How does it work?
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-3 gap-6 mt-16 max-w-lg">
+        <div>
+          <p class="text-3xl md:text-4xl font-extrabold text-cyan-400">0.—</p>
+          <p class="text-sm text-slate-400 mt-1">Ongoing licence fees</p>
+        </div>
+        <div>
+          <p class="text-3xl md:text-4xl font-extrabold text-cyan-400">>90%</p>
+          <p class="text-sm text-slate-400 mt-1">Counting accuracy</p>
+        </div>
+        <div>
+          <p class="text-3xl md:text-4xl font-extrabold text-cyan-400">4 wks</p>
+          <p class="text-sm text-slate-400 mt-1">Time to go-live</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Why footfall measurement? -->
+  <section id="benefits" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Why footfall measurement?</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Without data you're steering <span class="text-cyan-600">blind.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            icon: 'Settings',
+            title: 'Staff planning by gut feeling',
+            desc: 'Too many staff during quiet hours, too few during peak times. Without footfall data you plan in the dark — losing revenue or paying for idle time.',
+          },
+          {
+            icon: 'Data',
+            title: 'Avoid SaaS traps',
+            desc: 'Typical solutions cost CHF 200–500 per location per month. Across multiple branches that quickly adds up to five-figure annual costs — for data you don\'t even own.',
+          },
+          {
+            icon: 'Bulb',
+            title: 'Measure marketing ROI',
+            desc: 'You invest in advertising, promotions and window displays. But does it actually bring more customers into the store? Without footfall data the effect remains guesswork.',
+          },
+        ].map(card => (
+          <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-5">
+              <Icon name={card.icon} class="h-7 w-7 text-cyan-600" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">{card.title}</h3>
+            <p class="text-slate-600 leading-relaxed">{card.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process / 4 Steps -->
+  <section id="process" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Live in 4 steps</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Easier than you <span class="text-cyan-600">think.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {[
+          { num: '01', title: 'Floor plan analysis', desc: 'We analyse your floor plan, identify all entrances and create a precise camera positioning plan with a bill of materials.' },
+          { num: '02', title: 'Hardware installation', desc: 'You mount the recommended hardware following our illustrated guide. Alternatively via your electrician — we provide guidance.' },
+          { num: '03', title: 'Remote configuration', desc: 'We configure everything remotely: AI detection, counting lines, webhooks, database. You don\'t need to install or program anything.' },
+          { num: '04', title: 'Data flows', desc: 'From now on the system automatically counts every visitor. Real-time data flows into your database — ready for your dashboard.' },
+        ].map(step => (
+          <div class="relative">
+            <span class="text-5xl font-extrabold text-cyan-100">{step.num}</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">{step.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{step.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">What you get</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Professional measurement, <span class="text-cyan-600">fair pricing.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {[
+          { title: 'No licence fees', desc: 'UniFi Protect is licence-free. Cloudflare costs under CHF 25/month. You pay once for setup and configuration — then the solution is yours.' },
+          { title: 'Full data ownership', desc: 'Your data lives in your database, not with a SaaS provider. No dependency, no price increases, full control.' },
+          { title: 'AI-powered detection', desc: 'The cameras distinguish people from objects, animals and vehicles. Counting lines capture passage precisely — not just movement.' },
+          { title: 'Privacy-compliant', desc: 'No facial recognition, no personal profiles. Only anonymous count values leave the camera. Compliant with Swiss data protection law (DSG).' },
+          { title: 'Endlessly expandable', desc: 'Start with visitor counting. Later add direction detection, dwell time, department heatmaps or POS integration.' },
+          { title: 'Scales with you', desc: 'From 1 location to 50+ branches. The architecture is designed for multi-site from day one. Each new location costs only a fraction.' },
+        ].map(feature => (
+          <div class="flex items-start gap-4">
+            <div class="mt-1 shrink-0">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500" />
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">{feature.title}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">{feature.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Cost comparison -->
+      <div class="bg-white rounded-2xl p-8 md:p-10 border border-slate-200 shadow-sm max-w-2xl mx-auto">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Cost comparison</p>
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">Save up to 80% compared to SaaS</h3>
+        <p class="text-slate-600 mb-8">
+          Most footfall measurement providers charge monthly fees per location. Our solution: one-time setup costs and minimal ongoing costs.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between py-3 border-b border-slate-100">
+            <span class="text-slate-600">Typical SaaS solution (per location/mo.)</span>
+            <span class="font-bold text-slate-900">CHF 300–500</span>
+          </div>
+          <div class="flex items-center justify-between py-3 border-b border-slate-100">
+            <span class="text-slate-600">Our solution (ongoing, total)</span>
+            <span class="font-bold text-cyan-600">CHF ~25</span>
+          </div>
+          <div class="flex items-center justify-between py-3">
+            <span class="text-slate-600">Your savings from location 1</span>
+            <span class="font-extrabold text-cyan-600 text-lg">up to 95%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section id="usecases" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Use cases</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          For everyone who wants to know <span class="text-cyan-600">what's really going on.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            icon: 'Globe',
+            title: 'Retail & Specialist Shops',
+            desc: 'Furniture stores, boutiques, hardware stores — measure customer footfall at entrances and exits. Understand peak times, optimise staff and measure the impact of your campaigns.',
+            tags: ['Staff planning', 'Conversion rate', 'Branch comparison'],
+          },
+          {
+            icon: 'Data',
+            title: 'Offices & Coworking',
+            desc: 'How busy are your spaces really? Measure actual occupancy — for better space planning, energy efficiency and hybrid work models.',
+            tags: ['Occupancy rate', 'Space optimisation', 'Energy savings'],
+          },
+          {
+            icon: 'Settings',
+            title: 'Hospitality & Events',
+            desc: 'How many guests actually come? Plan purchasing, service and capacities based on real footfall data instead of gut feeling.',
+            tags: ['Capacity planning', 'Peak analysis', 'Trend detection'],
+          },
+        ].map(usecase => (
+          <div class="bg-slate-50 rounded-xl p-8 border border-slate-100">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-5">
+              <Icon name={usecase.icon} class="h-7 w-7 text-cyan-600" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">{usecase.title}</h3>
+            <p class="text-slate-600 leading-relaxed mb-5">{usecase.desc}</p>
+            <div class="flex flex-wrap gap-2">
+              {usecase.tags.map(tag => (
+                <span class="text-xs font-medium bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full">{tag}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack -->
+  <section id="technology" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Technology stack</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Enterprise technology, <span class="text-cyan-600">SMB budget.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { icon: 'Camera', title: 'UniFi Protect', desc: '4K cameras with built-in AI. Person detection, counting lines and webhooks — no cloud, no licence fees.' },
+          { icon: 'Globe', title: 'Cloudflare Workers', desc: 'Serverless data processing at the edge. Your webhook events are received, validated and stored in milliseconds.' },
+          { icon: 'Data', title: 'Cloudflare D1', desc: 'Serverless SQL database with global replication. Your footfall data — stored securely, fast and affordably.' },
+          { icon: 'Settings', title: 'Real-time Dashboard', desc: 'React-based dashboard on Cloudflare Pages. Cross-location analytics, responsive, and owned by you.' },
+        ].map(tech => (
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mx-auto mb-4">
+              <Icon name={tech.icon} class="h-7 w-7 text-cyan-600" />
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">{tech.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{tech.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Ready for <span class="text-cyan-600">real numbers?</span>
+          </h2>
+          <p class="text-slate-600 leading-relaxed mb-8">
+            Start with a pilot location. We analyse your floor plan, recommend the optimal solution and get you live in 4 weeks.
+          </p>
+          <div class="space-y-4 text-sm text-slate-500">
+            <div class="flex items-center gap-3">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0" />
+              <span>No obligation</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0" />
+              <span>Free initial assessment</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0" />
+              <span>No hidden costs</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+          <h3 class="font-bold text-slate-900 mb-6">Request a consultation</h3>
+          <ContactForm lang={lang} />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

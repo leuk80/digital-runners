@@ -68,6 +68,19 @@ const services = [
     ],
   },
   {
+    icon: 'Camera',
+    title: 'KI-Frequenzmessung',
+    desc: 'KI-gestützte Besucherzählung mit UniFi Protect – ohne SaaS-Abos, ohne Vendor-Lock-in. Ihre Daten gehören Ihnen.',
+    details: [
+      'Personenerkennung und Zähllinien mit UniFi Protect KI',
+      'Keine laufenden Lizenzkosten – laufende Kosten unter CHF 25/Monat',
+      'Datenschutzkonform: keine Gesichtserkennung, nur anonyme Zählwerte',
+      'Echtzeit-Dashboard mit filialübergreifender Auswertung',
+      'Skalierbar von 1 Standort bis 50+ Filialen',
+    ],
+    link: '/de/frequenzmessung',
+  },
+  {
     icon: 'Settings',
     title: 'Installation & Beratung',
     desc: 'Wir analysieren Ihre Anforderungen, planen die optimale Lösung und installieren Ihre UniFi-Infrastruktur fachgerecht.',
@@ -115,8 +128,8 @@ const services = [
             <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-4"><Icon name={service.icon} class="h-8 w-8 text-cyan-600" /></div>
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{service.title}</h2>
             <p class="text-slate-600 leading-relaxed mb-6">{service.desc}</p>
-            <a href="/de/kontakt" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
-              Anfrage stellen →
+            <a href={service.link ?? '/de/kontakt'} class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+              {service.link ? 'Mehr erfahren →' : 'Anfrage stellen →'}
             </a>
           </div>
           <div class:list={['bg-slate-50 rounded-2xl p-8 border border-slate-100', i % 2 !== 0 ? 'md:order-1' : '']}>
