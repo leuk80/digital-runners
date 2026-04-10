@@ -1,0 +1,318 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import ContactForm from '../../components/ContactForm.astro';
+
+const lang = 'de' as const;
+---
+
+<BaseLayout
+  lang={lang}
+  title="KI-gestützte Frequenzmessung — Besucherzählung für Retail, Büros & Gastronomie"
+  description="KI-gestützte Frequenzmessung für KMU in der Schweiz. Ohne SaaS-Abos, ohne Vendor-Lock-in. Besucherzählung mit UniFi Protect ab CHF 25/Monat laufende Kosten."
+  alternatePath="/en/footfall-measurement"
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "KI-gestützte Frequenzmessung",
+    "description": "Besucherzählung für Retail, Büros und Gastronomie. Ohne teure SaaS-Abos. Ohne Vendor-Lock-in.",
+    "brand": {
+      "@type": "Organization",
+      "name": "Digital Runners"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "CHF",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Digital Runners",
+        "url": "https://digital-runners.ch"
+      }
+    }
+  })} />
+
+  <!-- Hero -->
+  <section class="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-500 rounded-full opacity-10 blur-3xl"></div>
+      <div class="absolute bottom-0 -left-24 w-80 h-80 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <span class="inline-block bg-cyan-500/20 text-cyan-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+          Jetzt für Pilotprojekt bewerben
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          Wissen, wie viele Kunden wirklich <span class="text-cyan-400">kommen.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+          KI-gestützte Frequenzmessung für Retail, Büros und Gastronomie. Ohne teure SaaS-Abos. Ohne Vendor-Lock-in. Ihre Daten gehören Ihnen.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#kontakt"
+            class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-6 py-3 rounded-lg transition-colors"
+          >
+            Kostenlose Erstberatung
+            <Icon name="ArrowRightMD" class="h-4 w-4" />
+          </a>
+          <a
+            href="#ablauf"
+            class="inline-flex items-center gap-2 border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 text-slate-300 font-medium px-6 py-3 rounded-lg transition-colors"
+          >
+            Wie funktioniert's?
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-3 gap-6 mt-16 max-w-lg">
+        <div>
+          <p class="text-3xl md:text-4xl font-extrabold text-cyan-400">0.—</p>
+          <p class="text-sm text-slate-400 mt-1">Laufende Lizenzkosten</p>
+        </div>
+        <div>
+          <p class="text-3xl md:text-4xl font-extrabold text-cyan-400">>90%</p>
+          <p class="text-sm text-slate-400 mt-1">Zählgenauigkeit</p>
+        </div>
+        <div>
+          <p class="text-3xl md:text-4xl font-extrabold text-cyan-400">4 Wo</p>
+          <p class="text-sm text-slate-400 mt-1">Bis zum Go-Live</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Warum Frequenzmessung? -->
+  <section id="vorteile" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Warum Frequenzmessung?</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Ohne Daten steuern Sie <span class="text-cyan-600">blind.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            icon: 'Settings',
+            title: 'Personalplanung nach Gefühl',
+            desc: 'Zu viele Mitarbeiter in ruhigen Stunden, zu wenige in Stosszeiten. Ohne Frequenzdaten planen Sie im Dunkeln — und verlieren Umsatz oder bezahlen Leerlauf.',
+          },
+          {
+            icon: 'Data',
+            title: 'SaaS-Fallen vermeiden',
+            desc: 'Marktübliche Lösungen kosten CHF 200–500 pro Standort und Monat. Bei mehreren Filialen summiert sich das schnell auf fünfstellige Jahresbeträge — für Daten, die Ihnen nicht einmal gehören.',
+          },
+          {
+            icon: 'Bulb',
+            title: 'Marketing-ROI messen',
+            desc: 'Sie investieren in Werbung, Aktionen und Schaufenster-Dekoration. Aber bringt das tatsächlich mehr Kunden in den Laden? Ohne Frequenzdaten bleibt der Effekt eine Vermutung.',
+          },
+        ].map(card => (
+          <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-5">
+              <Icon name={card.icon} class="h-7 w-7 text-cyan-600" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">{card.title}</h3>
+            <p class="text-slate-600 leading-relaxed">{card.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf / 4 Schritte -->
+  <section id="ablauf" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">In 4 Schritten live</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Einfacher als Sie <span class="text-cyan-600">denken.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {[
+          { num: '01', title: 'Grundriss\u00ADanalyse', desc: 'Wir analysieren Ihren Grundriss, identifizieren alle Eingänge und erstellen einen präzisen Kamerapositionsplan mit Stückliste.' },
+          { num: '02', title: 'Hardware\u00ADmontage', desc: 'Sie montieren die empfohlene Hardware nach unserer bebilderten Anleitung. Alternativ über Ihren Hauselektriker — wir leiten an.' },
+          { num: '03', title: 'Remote-Konfiguration', desc: 'Wir konfigurieren alles remote: KI-Erkennung, Zähllinien, Webhooks, Datenbank. Sie müssen nichts installieren oder programmieren.' },
+          { num: '04', title: 'Daten fliessen', desc: 'Ab sofort zählt das System automatisch jeden Besucher. Echtzeit-Daten fliessen in Ihre Datenbank — bereit für Ihr Dashboard.' },
+        ].map(step => (
+          <div class="relative">
+            <span class="text-5xl font-extrabold text-cyan-100">{step.num}</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">{step.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{step.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Was Sie bekommen</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Professionelle Messung, <span class="text-cyan-600">faire Konditionen.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {[
+          { title: 'Keine Lizenzkosten', desc: 'UniFi Protect ist lizenzfrei. Cloudflare kostet unter CHF 25/Monat. Sie zahlen einmal für Setup und Konfiguration — danach gehört die Lösung Ihnen.' },
+          { title: 'Volle Datenhoheit', desc: 'Ihre Daten liegen in Ihrer Datenbank, nicht bei einem SaaS-Anbieter. Keine Abhängigkeit, keine Preiserhöhungen, volle Kontrolle.' },
+          { title: 'KI-gestützte Erkennung', desc: 'Die Kameras unterscheiden Personen von Gegenständen, Tieren und Fahrzeugen. Zähllinien erfassen den Durchgang präzise — nicht bloss Bewegung.' },
+          { title: 'Datenschutzkonform', desc: 'Keine Gesichtserkennung, keine Personenprofile. Nur anonyme Zählwerte verlassen die Kamera. Konform mit dem Schweizer Datenschutzgesetz (DSG).' },
+          { title: 'Beliebig erweiterbar', desc: 'Starten Sie mit Besucherzählung. Erweitern Sie später um Richtungserkennung, Verweildauer, Abteilungs-Heatmaps oder POS-Integration.' },
+          { title: 'Skaliert mit Ihnen', desc: 'Von 1 Standort bis 50+ Filialen. Die Architektur ist von Anfang an auf Multi-Site ausgelegt. Jeder neue Standort kostet nur einen Bruchteil.' },
+        ].map(feature => (
+          <div class="flex items-start gap-4">
+            <div class="mt-1 shrink-0">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500" />
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">{feature.title}</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">{feature.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Kostenvergleich -->
+      <div class="bg-white rounded-2xl p-8 md:p-10 border border-slate-200 shadow-sm max-w-2xl mx-auto">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Kostenvergleich</p>
+        <h3 class="text-2xl font-bold text-slate-900 mb-6">Sparen Sie bis zu 80% gegenüber SaaS</h3>
+        <p class="text-slate-600 mb-8">
+          Die meisten Frequenzmessungs-Anbieter arbeiten mit monatlichen Gebühren pro Standort. Unsere Lösung: einmalige Setup-Kosten und minimale laufende Kosten.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between py-3 border-b border-slate-100">
+            <span class="text-slate-600">Typische SaaS-Lösung (pro Standort/Mt.)</span>
+            <span class="font-bold text-slate-900">CHF 300–500</span>
+          </div>
+          <div class="flex items-center justify-between py-3 border-b border-slate-100">
+            <span class="text-slate-600">Unsere Lösung (laufend, gesamt)</span>
+            <span class="font-bold text-cyan-600">CHF ~25</span>
+          </div>
+          <div class="flex items-center justify-between py-3">
+            <span class="text-slate-600">Ihre Ersparnis ab Standort 1</span>
+            <span class="font-extrabold text-cyan-600 text-lg">bis 95%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Einsatzbereiche -->
+  <section id="usecases" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Einsatzbereiche</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Für alle, die wissen wollen, <span class="text-cyan-600">was wirklich los ist.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            icon: 'Globe',
+            title: 'Retail & Fachhandel',
+            desc: 'Möbelhäuser, Boutiquen, Baumärkte — messen Sie Kundenfrequenz an Ein- und Ausgängen. Verstehen Sie Stosszeiten, optimieren Sie Personal und messen Sie den Effekt Ihrer Aktionen.',
+            tags: ['Personalplanung', 'Conversion Rate', 'Filialvergleich'],
+          },
+          {
+            icon: 'Data',
+            title: 'Büros & Coworking',
+            desc: 'Wie stark sind Ihre Räume wirklich ausgelastet? Messen Sie die tatsächliche Belegung — für bessere Raumplanung, Energieeffizienz und hybride Arbeitsmodelle.',
+            tags: ['Belegungsrate', 'Raumoptimierung', 'Energiesparen'],
+          },
+          {
+            icon: 'Settings',
+            title: 'Gastronomie & Events',
+            desc: 'Wie viele Gäste kommen tatsächlich? Planen Sie Einkauf, Service und Kapazitäten auf Basis realer Frequenzdaten statt Bauchgefühl.',
+            tags: ['Kapazitätsplanung', 'Peak-Analyse', 'Trend-Erkennung'],
+          },
+        ].map(usecase => (
+          <div class="bg-slate-50 rounded-xl p-8 border border-slate-100">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mb-5">
+              <Icon name={usecase.icon} class="h-7 w-7 text-cyan-600" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">{usecase.title}</h3>
+            <p class="text-slate-600 leading-relaxed mb-5">{usecase.desc}</p>
+            <div class="flex flex-wrap gap-2">
+              {usecase.tags.map(tag => (
+                <span class="text-xs font-medium bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full">{tag}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologie-Stack -->
+  <section id="technologie" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <p class="text-cyan-600 font-semibold text-sm uppercase tracking-widest mb-3">Technologie-Stack</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+          Enterprise-Technologie, <span class="text-cyan-600">KMU-Budget.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { icon: 'Camera', title: 'UniFi Protect', desc: '4K-Kameras mit integrierter KI. Personenerkennung, Zähllinien und Webhooks — ohne Cloud, ohne Lizenzkosten.' },
+          { icon: 'Globe', title: 'Cloudflare Workers', desc: 'Serverless Datenverarbeitung am Edge. Ihre Webhook-Events werden in Millisekunden empfangen, validiert und gespeichert.' },
+          { icon: 'Data', title: 'Cloudflare D1', desc: 'Serverlose SQL-Datenbank mit globaler Replikation. Ihre Frequenzdaten — sicher, schnell und günstig gespeichert.' },
+          { icon: 'Settings', title: 'Echtzeit-Dashboard', desc: 'React-basiertes Dashboard auf Cloudflare Pages. Filialübergreifende Auswertung, responsive, Ihnen gehörend.' },
+        ].map(tech => (
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
+            <div class="bg-cyan-50 rounded-lg p-3 w-fit mx-auto mb-4">
+              <Icon name={tech.icon} class="h-7 w-7 text-cyan-600" />
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">{tech.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{tech.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Kontakt -->
+  <section id="kontakt" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Bereit für <span class="text-cyan-600">echte Zahlen?</span>
+          </h2>
+          <p class="text-slate-600 leading-relaxed mb-8">
+            Starten Sie mit einem Pilotstandort. Wir analysieren Ihren Grundriss, empfehlen die optimale Lösung und bringen Sie in 4 Wochen live.
+          </p>
+          <div class="space-y-4 text-sm text-slate-500">
+            <div class="flex items-center gap-3">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0" />
+              <span>Unverbindlich</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0" />
+              <span>Kostenlose Ersteinschätzung</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Icon name="CheckBig" class="h-5 w-5 text-cyan-500 shrink-0" />
+              <span>Keine versteckten Kosten</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+          <h3 class="font-bold text-slate-900 mb-6">Erstberatung anfragen</h3>
+          <ContactForm lang={lang} />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
